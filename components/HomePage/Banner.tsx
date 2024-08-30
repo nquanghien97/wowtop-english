@@ -16,7 +16,7 @@ function Banner() {
         navigation={true}
         modules={[Navigation, Autoplay]}
         autoplay={{
-          delay: 6000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
       >
