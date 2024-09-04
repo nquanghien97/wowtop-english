@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-// import jwt, { JwtPayload } from 'jsonwebtoken';
-// interface AuthJwt extends JwtPayload {
-//   userId: string;
-// }
+import { jwtVerify, type JWTPayload } from 'jose'; // Import JwtPayload from 'jose'
+interface AuthJwt extends JWTPayload {
+  userId: string;
+}
+
 const publicRoutes = ['/api/auth/login', '/api/auth/register'];
-export function middleware(req: NextRequest) {
+export async function middleware(req: NextRequest) {
   const res = NextResponse.next();
 
   res.headers.set('Access-Control-Allow-Origin', '*');
@@ -15,7 +16,7 @@ export function middleware(req: NextRequest) {
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204 });
   }
-  //jwt
+  // jwt
   // const isPublicRoute = publicRoutes.some(route => req.nextUrl.pathname.startsWith(route));
   // if (isPublicRoute) {
   //   return res;
@@ -34,10 +35,12 @@ export function middleware(req: NextRequest) {
   //     JSON.stringify({ success: false, message: 'Access token not found' }),
   //     { status: 401, headers: { 'Content-Type': 'application/json' } }
   //   );
-  // }
-
+  // };
+  // const encodedKey = new TextEncoder().encode(process.env.NEXT_PUBLIC_ACCESS_TOKEN_SECRET)
   // try {
-  //   const payload = jwt.verify(token, process.env.NEXT_PUBLIC_ACCESS_TOKEN_SECRET as string) as AuthJwt;
+  //   const { payload } = await jwtVerify(token, encodedKey, {
+  //     algorithms: ['HS256'],
+  //   }) as { payload: AuthJwt};
   //   // In Next.js middleware, we can't modify the request object directly.
   //   // Instead, we can add custom headers to pass information to the API route.
   //   res.headers.set('X-User-ID', payload.userId);

@@ -7,7 +7,7 @@ function FormOrder() {
         <div className="mb-8">
           <h2 className="text-[#065691] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
         </div>
-        <div className="w-2/3 px-4">
+        <div className="w-full md:w-2/3 px-4">
           <form className="flex flex-col gap-4">
             <div className="w-full flex gap-4">
               <div className="w-full">

@@ -2,10 +2,16 @@ import Banner from '@/components/HomePage/Banner'
 import Certificate from '@/components/HomePage/Certificate'
 import Feedback from '@/components/HomePage/Feedback';
 import FormOrder from '@/components/HomePage/FormOrder';
+import { getNews } from '@/services/news';
 import Image from 'next/image'
 import Link from 'next/link';
+import { NewsEntity } from '@/entities/news';
+import { truncateText } from '@/utils/truncateText';
+import { formatDate } from '@/utils/formatDate';
 
-export default function Home() {
+export default async function Home() {
+  const { data } = await getNews({ page: 1, pageSize: 4 }) as { data: NewsEntity[] }
+  const dataWithoutFirstItem = data.slice(1)
   return (
     <main>
       <Banner />
@@ -328,6 +334,64 @@ export default function Home() {
       <Certificate />
       <Feedback />
       <FormOrder />
+      <section className="mb-20">
+        <div className="max-w-6xl m-auto px-4">
+          <div className="flex gap-4 max-md:flex-col">
+            <div className="w-full md:w-3/4">
+              <div className="mb-4">
+                <h2 className="text-3xl font-bold">Bí kíp tăng chiều cao</h2>
+              </div>
+              <div className="flex mb-7 h-[2px] bg-[#ccc] w-4/5" />
+              <div className="flex gap-4 flex-col md:flex-row">
+                <div className="w-full md:w-2/5 flex flex-col">
+                  <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[0].imageUrl}`} alt={data[0].title} width={350} height={220} className="m-auto" />
+                  <div className="mt-2">
+                    <p className="text-[#065691] font-semibold text-lg max-md:text-center">{data[0].title}</p>
+                  </div>
+                  <div className="my-3 text-justify" dangerouslySetInnerHTML={{ __html: truncateText(data[0].content, 200) }} />
+                  <div className="text-[#065691]">
+                    <small>{formatDate(data[0].createdAt)}</small>
+                  </div>
+                  <div>
+                  <Link className="mt-3 text-[#065691] px-4 py-2 rounded-md border-[1px] border-[#065691] inline-block" href={`/`} >
+                    Tất cả bài viết
+                  </Link>
+                  </div>
+                </div>
+                <div className="w-full md:w-3/5">
+                  {dataWithoutFirstItem.map(item => (
+                    <div key={item.id} className="flex gap-6">
+                      <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item.imageUrl}`} alt={item.title} width={150} height={100} />
+                      <div className="flex flex-col">
+                        <Link href={`/${item.slug}`} className="text-[#065691] font-semibold text-lg">{item.title}</Link>
+                        <div className="text-[#065691]">
+                          <small>{formatDate(item.createdAt)}</small>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/4">
+              <div className="mb-4">
+                <h2 className="text-3xl font-bold">Tin mới</h2>
+              </div>
+              <div className="flex mb-7 h-[2px] bg-[#ccc] w-4/5" />
+              <ul className="list-decimal max-md:px-4">
+                {data.map(item => (
+                  <li key={item.id} className="mb-4">
+                    <Link href={`/${item.slug}`} className="text-[#065691] font-semibold text-lg">{item.title}</Link>
+                    <div className="text-[#065691]">
+                      <small>{formatDate(item.createdAt)}</small>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
