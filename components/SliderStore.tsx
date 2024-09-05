@@ -99,6 +99,7 @@ function SliderStore() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <p>{ListFeedbacks[indexSlider].title}</p>
     </div>
   )
 }
