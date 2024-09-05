@@ -5,19 +5,19 @@ function Footer() {
     <footer className="bg-[#065691]">
       <div className="max-w-6xl m-auto px-4">
         <div className="flex items-center gap-8 py-4">
-          <Image src="/logo.png" alt="logo" width={275} height={75} className="relative top-[-12px]" />
-          <h3 className="uppercase text-xl font-semibold">
+          <Image src="/logo.png" alt="logo" width={275} height={75} className="relative md:top-[-12px] max-md:w-[190px] max-md:h-[50px] top-[-8px]" />
+          <h3 className="uppercase text-xs md:text-xl font-semibold">
             <Link href={`/`} className="text-white">Nhận tư vấn</Link>
           </h3>
-          <h3 className="uppercase text-xl font-semibold">
+          <h3 className="uppercase text-xs md:text-xl font-semibold">
             <Link href={`/`} className="text-white">Hòm thư góp ý</Link>
           </h3>
         </div>
       </div>
       <div className="bg-[url('/bg-footer.webp')] bg-[length:100%_100%]">
         <div className="max-w-6xl m-auto px-4 py-7">
-          <div className="flex w-full justify-between mb-8">
-            <div>
+          <div className="flex w-full justify-between mb-8 flex-col md:flex-row">
+            <div className="max-md:mb-4">
               <h3 className="text-xl text-white font-bold">Theo dõi chúng tôi</h3>
               <div>
 
@@ -42,20 +42,20 @@ function Footer() {
               <li className="py-2">Câu hỏi thường gặp</li>
             </ul>
           </div>
-          <div className="flex">
-            <div className="w-1/2">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-1/2">
               <h4 className="text-white font-bold mb-2">Trụ sở chính:</h4>
               <p className="text-white mb-4">Nhà B2 Dự án khu hỗn hợp trung tâm thương mại, dịch vụ công cộng văn phòng và nhà ở để bán tại 108 Nguyễn Trãi, Phường Thượng Đình, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</p>
               <div className="mb-4">
                 <p className="text-white font-bold">Số giấy chứng nhận đăng ký kinh doanh</p>
                 <p className="text-white">0110015834</p>
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mb-4">
                 <Image src="/footer-image/bct.png" alt="Bộ công thương" width={130} height={40} />
                 <Image src="/footer-image/dmca.png" alt="DMCA" width={130} height={40} />
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <h4 className="text-white font-bold">Đây là một website ứng dụng</h4>
               <p className="text-white mb-4">Trong website này chúng tôi tổng hợp các thông tin liên quan về sản phẩm, thành phần hoạt chất, thông tin dinh dưỡng, ứng dụng tính toán ộ trình tăng chiều cao, trò chơi trí tuệ cho trẻ. Tuy nhiên trẻ em cần phải có sự cho phép của cha mẹ khi tham quan website.</p>
               <div className="text-white">

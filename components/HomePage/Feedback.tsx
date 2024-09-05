@@ -36,7 +36,7 @@ function Feedback() {
         <div className="flex justify-center relative mb-8">
           <Image src="/bg4.png" alt="/bg4.png" width={758} height={125} />
           <div className="absolute top-1 md:top-3">
-            <p className="text-center uppercase text-xl md:text-3xl text-white font-bold">Bé uống Kid&apos;s care plus</p>
+            <p className="text-center uppercase text-lg md:text-3xl text-white font-bold">Bé uống Kid&apos;s care plus</p>
           </div>
           <div className="absolute bottom-2 md:bottom-4">
             <p className="text-center uppercase text-xl md:text-3xl text-[#065691] font-bold">Con lớn vượt trội</p>
@@ -62,7 +62,7 @@ function Feedback() {
             },
           }}
         >
-          {ListFeedbacks.map(feedback => (
+          {ListFeedbacks.map((feedback) => (
             <SwiperSlide key={feedback.id}>
               <div className="flex flex-col items-center">
                 <div className="mb-4">

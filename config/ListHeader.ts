@@ -14,7 +14,7 @@ export const ListHeader: ListHeaderType[] = [
   {
     id: 2,
     title: 'Giới thiệu',
-    path: '/gioi-thieu',
+    path: '#',
   },
   {
     id: 3,
@@ -24,7 +24,24 @@ export const ListHeader: ListHeaderType[] = [
   {
     id: 4,
     title: 'Bản tin',
-    path: 'ban-tin'
+    path: 'tin-tuc',
+    children: [
+      {
+        id: 41,
+        title: 'Cách tăng chiều cao',
+        path: '#'
+      },
+      {
+        id: 42,
+        title: 'Bài tập tăng chiều cao',
+        path: '#'
+      },
+      {
+        id: 43,
+        title: 'Sữa tăng chiều cao',
+        path: '#'
+      }
+    ]
   },
   {
     id: 5,

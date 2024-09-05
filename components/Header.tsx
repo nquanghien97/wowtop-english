@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <>
-      <header className="lg:h-[80px] lg:bg-[#065691] h-[60px] shadow-sm shadow-black/20 fixed top-0 right-0 left-0 z-[100]">
+      <header className="lg:h-[80px] md:bg-[#065691] h-[60px] shadow-sm shadow-black/20 fixed top-0 right-0 left-0 z-[100] bg-white">
         <div className="w-full h-full flex justify-between max-w-6xl m-auto">
           <div className="flex justify-center items-center max-lg:w-full">
             <Image src="/logo.png" alt="logo" width={200} height={50} className="max-lg:hidden" />
@@ -24,17 +24,17 @@ function Header() {
           <div className="max-lg:hidden flex items-center">
             <ul className="flex items-center gap-4 text-white">
               {ListHeader.map(item => (
-                <li key={item.path} className="px-3 py-1 font-bold">
+                <li key={item.id} className="px-3 py-1 font-bold">
                   {item.children ? (
                     <MenuDropdown
                       title={item.title}
                       path={item.path}
                       key={item.id}
                     >
-                      <ul className="bg-[#3e7c30] flex flex-col min-w-[15rem] border border-[#ffffff12] rounded-lg lg:py-2 text-white">
+                      <ul className="bg-white flex flex-col min-w-[15rem] border border-[#ffffff12] rounded-lg text-black">
                         {item.children.map(childItem => (
-                          <li key={childItem.path}>
-                            <Link className={`cursor-pointer hover:text-[#f18017] px-4 py-2 w-full flex items-center`} href={childItem.path}>
+                          <li key={childItem.path} className="border-b-[1px]">
+                            <Link className={`cursor-pointer hover:text-[#f18017] p-4 w-full flex items-center duration-300`} href={childItem.path}>
                               {childItem.title}
                             </Link>
                           </li>
