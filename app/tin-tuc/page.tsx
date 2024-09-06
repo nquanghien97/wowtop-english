@@ -10,7 +10,7 @@ async function News() {
   return (
     <div className="my-8">
       <div className="max-w-6xl m-auto">
-        <div className="w-2/3">
+        <div className="md:w-2/3 max-md:px-4">
           <div className="my-4">
             <h2 className="text-[#2c5d6c] font-semibold text-3xl">Tin tức</h2>
           </div>

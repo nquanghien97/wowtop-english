@@ -24,7 +24,7 @@ export const ListHeader: ListHeaderType[] = [
   {
     id: 4,
     title: 'Bản tin',
-    path: 'tin-tuc',
+    path: '/tin-tuc',
     children: [
       {
         id: 41,

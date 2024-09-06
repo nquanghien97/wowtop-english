@@ -1,3 +1,6 @@
+import FacebookIcon from "@/assets/icons/FacebookIcon"
+import PhoneIcon from "@/assets/icons/PhoneIcon"
+import YoutubeIcon from "@/assets/icons/YoutubeIcon"
 import Image from "next/image"
 import Link from "next/link"
 function Footer() {
@@ -19,8 +22,16 @@ function Footer() {
           <div className="flex w-full justify-between mb-8 flex-col md:flex-row">
             <div className="max-md:mb-4">
               <h3 className="text-xl text-white font-bold">Theo dõi chúng tôi</h3>
-              <div>
-
+              <div className="flex gap-4">
+                <Link href="#">
+                  <FacebookIcon fill="white" width={32} height={32} />
+                </Link>
+                <Link href="#">
+                  <YoutubeIcon fill="white" width={32} height={32} />
+                </Link>
+                <Link href="#">
+                  <PhoneIcon fill="white" width={32} height={32} />
+                </Link>
               </div>
             </div>
             <ul className="text-white">

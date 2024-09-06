@@ -483,7 +483,7 @@ function Product() {
               <div className="flex gap-4">
                 <Image src="/default.jpg" alt="default" width={75} height={75} className="border-[#065691] border-[1px] rounded-full" />
                 <div className="flex flex-col">
-                  <Image src="/3.png" alt="buoc-3" width={100} height={45} />
+                  <Image src="/b3.png" alt="buoc-3" width={100} height={45} />
                   <p className="text-[#065691] font-semibold">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
                 </div>
               </div>
@@ -525,7 +525,7 @@ function Product() {
                       <Image src="/icon_muong.png" alt="icon_muong" width={200} height={200} className="max-md:w-[100px] max-md:h-[59px]" />
                     </div>
                   </div>
-                  <p className="text-[#065691] font-bold text-lg md:text-xl">Pha 4 muỗng (40g) sữa KID'S CARE PLUS vào nước ấm</p>
+                  <p className="text-[#065691] font-bold text-lg md:text-xl">Pha 4 muỗng (40g) sữa KID&apos;S CARE PLUS vào nước ấm</p>
                 </div>
                 <div className="flex justify-center">
                   <Image src="/mui_ten.png" alt="mui-ten" width={30} height={73} />
@@ -537,7 +537,7 @@ function Product() {
                 <div className="flex items-center w-full">
                   <Image src="/b3.png" alt="b3" width={305} height={137} />
                 </div>
-                <p className="text-[#065691] font-bold text-xl w-full">Khuấy đều để có được một ly 220ml sữa tăng chiều cao KID'S CARE PLUS đầy đủ dưỡng chất</p>
+                <p className="text-[#065691] font-bold text-xl w-full">Khuấy đều để có được một ly 220ml sữa tăng chiều cao KID&apos;S CARE PLUS đầy đủ dưỡng chất</p>
                 <div className="flex items-center w-1/2 justify-center">
                   <Image src="/icon_coc.png" alt="icon_coc" width={200} height={200} />
                 </div>
@@ -550,7 +550,7 @@ function Product() {
                   <Image src="/icon_coc.png" alt="icon_coc" width={200} height={200} className="max-md:w-[100px] max-md:h-[131px]" />
                 </div>
               </div>
-              <p className="text-[#065691] font-bold text-lg md:text-xl">Khuấy đều để có được một ly 220ml sữa tăng chiều cao KID'S CARE PLUS đầy đủ dưỡng chất</p>
+              <p className="text-[#065691] font-bold text-lg md:text-xl">Khuấy đều để có được một ly 220ml sữa tăng chiều cao KID&apos;S CARE PLUS đầy đủ dưỡng chất</p>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import StarIcon from '@/assets/icons/StarIcon';
 
 const ListFeedbacks = [
@@ -45,8 +45,7 @@ function Feedback() {
         <Swiper
           slidesPerView={1}
           loop={true}
-          navigation={true}
-          modules={[Navigation, Autoplay]}
+          modules={[Autoplay]}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
