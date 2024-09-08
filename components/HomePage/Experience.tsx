@@ -21,7 +21,10 @@ async function Experience() {
               <h2 className="text-3xl font-bold">Bí kíp tăng chiều cao</h2>
             </div>
             <div className="flex mb-7 h-[2px] bg-[#ccc] w-4/5" />
-            <div className="flex gap-4 flex-col md:flex-row">
+            {data.length === 0 ? (
+              <div>Không có dữ liệu</div>
+            ) : (
+              <div className="flex gap-4 flex-col md:flex-row">
               <div className="w-full md:w-2/5 flex flex-col">
                 <Link href={`/tin-tuc/${data[0].slug}`}>
                   <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[0].imageUrl}`} alt={data[0].title} width={350} height={220} className="m-auto" />
@@ -55,6 +58,7 @@ async function Experience() {
                 ))}
               </div>
             </div>
+            )}
           </div>
           <div className="w-full md:w-1/4">
             <div className="mb-4">

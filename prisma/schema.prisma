@@ -24,3 +24,24 @@ model News {
   author    User     @relation(fields: [authorId], references: [id])
   createdAt DateTime @default(now())
 }
+
+model HeightCalculator {
+  id            Int      @id @default(autoincrement())
+  code          String
+  fatherName    String
+  fatherHeight  Int
+  motherName    String
+  motherHeight  Int
+  phoneNumber   String
+  fullName      String
+  date_of_birth String
+  currentHeight Int
+  currentWeight Int
+  gender        Gender
+  createdAt     DateTime @default(now())
+}
+
+enum Gender {
+  BOY
+  GIRL
+}
