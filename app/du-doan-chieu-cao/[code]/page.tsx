@@ -15,6 +15,7 @@ async function Successfully({ params }: { params: { code: string } }) {
     data[0].motherHeight,
     data[0].gender as Gender
   )
+  if(!data) return <p>Không có dữ liệu</p>
   return (
     <div className="max-w-6xl m-auto">
       <div className="my-4">
