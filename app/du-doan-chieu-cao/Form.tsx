@@ -37,7 +37,7 @@ function Form() {
     const submitForm = { ...information, gender, date_of_birth: format(dateOfBirth.toString(), 'dd-MM-yyyy'), currentProduct, sport, timeSleep }
     try {
       const res = await postInformations(submitForm)
-      router.push(`/${res.data.code}`)
+      router.push(`/du-doan-chieu-cao/${res.data.code}`)
     } catch (e) {
       console.log(e)
     }
