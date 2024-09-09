@@ -21,8 +21,9 @@ export async function middleware(req: NextRequest) {
   if (isPublicRoute) {
     return res;
   };
-  
-  if (req.method === 'POST') {
+
+  const protectedMethods = ['POST', 'PUT', 'DELETE'];
+  if (protectedMethods.includes(req.method)) {
     const authHeader = req.headers.get('Authorization');
     if (!authHeader) {
       return new NextResponse(
