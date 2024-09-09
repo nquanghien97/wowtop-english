@@ -6,6 +6,8 @@ interface AuthJwt extends JWTPayload {
 }
 
 const publicRoutes = ['/api/auth/login', '/api/auth/register'];
+const excludedRoutes = ['/api/height-calculator'];
+
 export async function middleware(req: NextRequest) {
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204 });
@@ -18,7 +20,9 @@ export async function middleware(req: NextRequest) {
 
   // jwt
   const isPublicRoute = publicRoutes.some(route => req.nextUrl.pathname.startsWith(route));
-  if (isPublicRoute) {
+  const isExcludedRoute = excludedRoutes.some(route => req.nextUrl.pathname.startsWith(route));
+
+  if (isPublicRoute || isExcludedRoute) {
     return res;
   };
 
