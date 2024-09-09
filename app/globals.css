@@ -90,3 +90,21 @@ body {}
 .content a {
   color: #2C5D6C;
 }
+
+.css-13cymwt-control {
+  border-radius: 16px !important;
+  padding: 4px 0;
+  outline: none !important;
+  border-color: transparent !important;;
+}
+
+.css-t3ipsp-control {
+  border-radius: 16px !important;
+  padding: 4px 0;
+}
+
+@media (min-width: 768px) {
+  .react-datepicker-wrapper {
+    width: 50% !important;
+  }
+}

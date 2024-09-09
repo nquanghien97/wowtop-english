@@ -26,19 +26,22 @@ model News {
 }
 
 model HeightCalculator {
-  id            Int      @id @default(autoincrement())
-  code          String
-  fatherName    String
-  fatherHeight  Int
-  motherName    String
-  motherHeight  Int
-  phoneNumber   String
-  fullName      String
-  date_of_birth String
-  currentHeight Int
-  currentWeight Int
-  gender        Gender
-  createdAt     DateTime @default(now())
+  id             Int      @id @default(autoincrement())
+  code           String
+  fatherName     String
+  fatherHeight   Int
+  motherName     String
+  motherHeight   Int
+  phoneNumber    String
+  fullName       String
+  gender         Gender
+  date_of_birth  String
+  currentHeight  Int
+  currentWeight  Int
+  currentProduct String
+  sport          String
+  timeSleep      String
+  createdAt      DateTime @default(now())
 }
 
 enum Gender {
