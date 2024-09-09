@@ -4,6 +4,7 @@ import './globals.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import "react-datepicker/dist/react-datepicker.css";
 import Header from '@/components/Header'
 import Footer from '@/components/Footer';
 

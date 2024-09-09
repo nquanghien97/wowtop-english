@@ -1,29 +1,43 @@
 import prisma from "../../../lib/db";
 import { NextResponse } from "next/server";
-import { deleteFile, uploadFile } from "@/utils/fileUpload";
-import { File } from 'formdata-node';
 
 export async function POST(req: Request) {
   // const authorId = req.headers.get('X-User-ID');
   // if (!authorId) {
   //   return NextResponse.json({ status: 401, headers: { 'Content-Type': 'application/json' } })
   // }
-  const { code, fatherName, fatherHeight, motherName, motherHeight, phoneNumber, fullName, date_of_birth, currentHeight, currentWeight, gender } = await req.json();
-  try {
+  const now = new Date();
+  const year = now.getFullYear().toString().slice(-2); // lấy 2 số cuối của năm
+  const month = (`0${now.getMonth() + 1}`).slice(-2); // định dạng tháng 2 chữ số
+  const day = (`0${now.getDate()}`).slice(-2); // định dạng ngày 2 chữ số
 
+  const { fatherName, fatherHeight, motherName, motherHeight, phoneNumber, fullName, date_of_birth, currentHeight, currentWeight, gender, currentProduct, sport, timeSleep } = await req.json();
+  try {
+    const count = await prisma.heightCalculator.count({
+      where: {
+        createdAt: {
+          gte: new Date(now.getFullYear(), now.getMonth(), now.getDate()), // từ đầu ngày
+          lt: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1), // đến cuối ngày
+        },
+      },
+    });
+    const code = `WT${year}${month}${day}${(`000${count + 1}`).slice(-3)}`;
     const data = await prisma.heightCalculator.create({
       data: {
         code,
         fatherName,
-        fatherHeight,
+        fatherHeight: +fatherHeight,
         motherName,
-        motherHeight,
+        motherHeight: +motherHeight,
         phoneNumber,
         fullName,
+        gender,
         date_of_birth,
-        currentHeight,
-        currentWeight,
-        gender
+        currentHeight: +currentHeight,
+        currentWeight: +currentWeight,
+        currentProduct,
+        sport,
+        timeSleep
       }
     })
     return NextResponse.json({ data }, { status: 200 })
