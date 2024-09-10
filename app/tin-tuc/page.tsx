@@ -5,6 +5,7 @@ import { truncateText } from '@/utils/truncateText';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic'
 async function News() {
   const { data } = await getNews({ page: 1, pageSize: 9 }) as { data: NewsEntity[] }
   return (

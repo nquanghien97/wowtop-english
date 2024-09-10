@@ -5,6 +5,8 @@ import { ageCalculator } from '@/utils/ageCalculator'
 import { Gender, heightCalculator } from '@/utils/heightCalculator'
 import { InformationEntity } from '@/entities/information'
 
+export const dynamic = 'force-dynamic'
+
 async function Successfully({ params }: { params: { code: string } }) {
   const { data } = await getInformations({ code: params.code }) as { data: InformationEntity[] }
   const resultCalculator = heightCalculator(
