@@ -28,11 +28,14 @@ model News {
 model HeightCalculator {
   id             Int      @id @default(autoincrement())
   code           String
-  fatherName     String
-  fatherHeight   Int
-  motherName     String
-  motherHeight   Int
+  parentName     String
   phoneNumber    String
+  fatherHeight   Int
+  motherHeight   Int
+  province       String
+  district       String
+  ward           String
+  address        String
   fullName       String
   gender         Gender
   date_of_birth  String

@@ -11,7 +11,7 @@ export async function POST(req: Request) {
   const month = (`0${now.getMonth() + 1}`).slice(-2); // định dạng tháng 2 chữ số
   const day = (`0${now.getDate()}`).slice(-2); // định dạng ngày 2 chữ số
 
-  const { fatherName, fatherHeight, motherName, motherHeight, phoneNumber, fullName, date_of_birth, currentHeight, currentWeight, gender, currentProduct, sport, timeSleep } = await req.json();
+  const { parentName, fatherHeight, motherHeight, phoneNumber, province, district, ward, address, fullName, date_of_birth, currentHeight, currentWeight, gender, currentProduct, sport, timeSleep } = await req.json();
   try {
     const count = await prisma.heightCalculator.count({
       where: {
@@ -25,11 +25,14 @@ export async function POST(req: Request) {
     const data = await prisma.heightCalculator.create({
       data: {
         code,
-        fatherName,
-        fatherHeight: +fatherHeight,
-        motherName,
-        motherHeight: +motherHeight,
+        parentName,
         phoneNumber,
+        fatherHeight: +fatherHeight,
+        motherHeight: +motherHeight,
+        province,
+        district,
+        ward,
+        address,
         fullName,
         gender,
         date_of_birth,
@@ -67,12 +70,7 @@ export async function GET(req: Request) {
         ...(code && { code: { contains: code } }),
         ...(phoneNumber && { phoneNumber: { contains: phoneNumber } }),
         ...(fullName && { fullName: { contains: fullName } }),
-        ...(parentName && {
-          OR: [
-            { motherName: { contains: parentName } },
-            { fatherName: { contains: parentName } }
-          ]
-        })
+        ...(parentName && { parentName: { contains: parentName } })
       },
       skip,
       take

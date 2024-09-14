@@ -19,25 +19,33 @@ async function Successfully({ params }: { params: { code: string } }) {
   )
   if(!data) return <p>Không có dữ liệu</p>
   return (
-    <div className="max-w-6xl m-auto">
+    <div className="max-w-6xl m-auto px-4">
       <div className="my-4">
         <div className="flex justify-center">
           <Image src="/logo2.png" alt="logo2" width={500} height={134} />
         </div>
         <div className="text-center">
-          <h2 className="text-[#065691] text-6xl py-2">Chúc mừng</h2>
+          <h2 className="text-[#065691] text-6xl py-2 uppercase">Chúc mừng</h2>
           <p className="text-2xl py-2">Mã phác đồ: {params.code}</p>
         </div>
-        <div className="max-w-4xl m-auto my-2">
-          <p className="text-center">Chúc mừng bố <strong>{data[0].fatherName}</strong> và <strong>{data[0].motherName}</strong> đã hoàn thành thông tin của bé <strong>{data[0].fullName}</strong>, đội ngũ chuyên gia sức khỏe của KID&apos;S CARE PLUS sẽ lên phác đồ chi tiết để gửi lại bạn.</p>
+        <div className="max-w-2xl m-auto my-2">
+          <p className="text-center">Chúc mừng phụ huynh <strong>{data[0].parentName}</strong> đã hoàn thành thông tin của bé <strong>{data[0].fullName}</strong>, đội ngũ chuyên gia sức khỏe của WOWTOP sẽ lên phác đồ chi tiết để gửi lại bạn.</p>
         </div>
         <div className="flex justify-center my-2">
           <p className="px-4 py-2 bg-liner rounded-2xl">Dự kiến chiều cao của con ở độ tuổi 20 là: <strong>{resultCalculator?.predictedHeightAt20}</strong>cm</p>
         </div>
-        <p className="max-w-2xl m-auto text-center my-4">Để nhận kết quả Phác đồ dự đoán chiều cao chi tiết từng giai đoạn của bé <strong>{data[0].fullName}</strong>, phụ huynh vui lòng làm theo hướng dẫn sau đây:</p>
-        <div className="max-w-3xl m-auto text-[#065691]">
+        <p className="max-w-2xl m-auto text-center my-4">Để nhận kết quả Phác đồ dự đoán chiều cao chi tiết từng giai đoạn của bé <strong>{data[0].fullName}</strong>, phụ huynh <strong>{data[0].parentName}</strong> vui lòng làm theo hướng dẫn sau đây:</p>
+        <div className="max-w-3xl m-auto text-[#065691] mb-8">
           <p>Bước 1: Tham gia Nhóm <strong>Cho con cao lớn trưởng thành tận cùng</strong></p>
           <p>Bước 2: Nhắn tin cho admin <strong>Bác sĩ Lăng Hường</strong> mã phác đồ để nhận kết quả Phác đồ dự đoán chiều cao chi tiết nhất cùng hướng dẫn giúp tăng chiều cao phù hợp với tình trạng của con</p>
+        </div>
+        <div className="max-w-xl m-auto flex justify-end gap-8">
+          <div className="px-8 py-2 rounded-full bg-liner w-[330px] flex justify-center items-center cursor-pointer hover:opacity-80 duration-300">
+            <span className="text-center text-[#065691]">Đến Group</span>
+          </div>
+          <div className="px-8 py-2 rounded-full bg-[#065691] w-[330px] flex justify-center items-center cursor-pointer hover:opacity-80 duration-300">
+            <span className="text-center text-white">Nhắn tin bác sĩ ... để nhận phác đồ</span>
+          </div>
         </div>
       </div>
     </div>

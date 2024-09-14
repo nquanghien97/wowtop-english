@@ -1,7 +1,6 @@
 export interface InformationEntity {
-  fatherName: string,
   fatherHeight: number,
-  motherName: string,
+  parentName: string,
   motherHeight: number,
   phoneNumber: string,
   fullName: string,
