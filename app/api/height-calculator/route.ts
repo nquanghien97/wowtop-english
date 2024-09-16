@@ -75,7 +75,7 @@ export async function GET(req: Request) {
       skip,
       take
     })
-    const total = await prisma.news.count()
+    const total = await prisma.heightCalculator.count()
     return NextResponse.json(
       {
         data,
