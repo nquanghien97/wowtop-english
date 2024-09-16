@@ -76,10 +76,15 @@ const schema = yup.object().shape({
     .date()
     .nullable()
     .required('Vui lòng chọn ngày sinh')
-    .test('age', 'Tuổi của bé không được quá 20 tuổi', (value) => {
+    .test('age', 'Tuổi của bé không được quá 20 tuổi', (value: Date) => {
       if (!value) return false;
       const age = new Date().getFullYear() - value.getFullYear();
       return age <= 20;
+    })
+    .test('dob', 'Ngày sinh không hợp lệ', (value: Date) => {
+      if (!value) return false;
+      const today = new Date();
+      return value <= today;
     }),
   gender: yup.string().required('Vui lòng chọn giới tính'),
   province: yup.string().required('Vui lòng chọn tỉnh thành'),
