@@ -8,6 +8,10 @@ export async function postInformations(data: InformationEntity) {
     },
     body: JSON.stringify(data),
   })
+  if (!res.ok) {
+    const errorResponse = await res.json(); // Lấy thêm thông tin lỗi từ body nếu có
+    throw new Error(errorResponse.message || 'Something went wrong!');
+  }
   return res.json();
 }
 

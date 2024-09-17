@@ -168,7 +168,7 @@ function Form() {
       router.push(`/du-doan-chieu-cao/${res.data.code}`)
     } catch (err) {
       if (err instanceof Error) {
-        toast.error(err.message)
+        toast.error("Có lỗi xảy ra, vui lòng thử lại!")
       }
     } finally {
       setLoading(false);
