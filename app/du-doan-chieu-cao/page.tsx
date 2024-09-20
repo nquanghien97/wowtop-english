@@ -7,7 +7,7 @@ function DuDoanChieuCao() {
     <main>
       <section className="mb-8">
         <div className="my-12 text-[#7f4807]">
-          <div className="max-w-4xl m-auto">
+          <div className="max-w-4xl m-auto max-md:px-4">
             <h1 className="text-4xl font-bold text-center my-4 uppercase">Phác đồ dự đoán chiều cao tương lai</h1>
             <p className="text-center">Phát triển chiều cao luôn là mong muốn không chỉ của các phụ huynh mà còn của chính các con. Chiều
               cao không chỉ phụ thuộc vào gen mà còn phụ thuộc nhiều vào chế độ dinh dưỡng, sinh hoạt và tập luyện.</p>

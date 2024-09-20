@@ -9,7 +9,7 @@ async function NewsDetail({ params }: { params: { slug: string } }) {
   return (
     <div className="my-4">
       <div className="max-w-6xl m-auto shadow-xl my-4">
-        <div className="py-8 px-[160px]">
+        <div className="py-8 md:px-[160px] px-4">
           <h2 className="text-[40px] text-[#2C5D6C] font-bold">{data.title}</h2>
           <div className="bg-[#f2f2f2] px-8 py-4 rounded-xl">
             <p className="text-[#888] text-sm">{formatDate(data.createdAt)}</p>

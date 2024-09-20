@@ -315,7 +315,7 @@ export default async function Home() {
               <p>Sữa từ khi được vắt tại trang trại cho đến khi ra thành phẩm chỉ mất 24 giờ. Các thành phần dinh dưỡng sau khi trộn với sữa tươi sẽ được đưa vào sấy lạnh 1 lần duy nhất, đảm bảo dưỡng chất được giữ trọn vẹn và phân bố đều trong từng muỗng sữa.</p>
             </div>
           </div>
-          <div className="absolute bottom-1/4 right-1/4">
+          <div className="absolute bottom-1/4 right-1/4 max-md:hidden">
             <Image src="/dong-co-d-2.webp" alt="dong-co-d-2" width={360} height={360} />
           </div>
         </div>

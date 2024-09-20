@@ -3,7 +3,7 @@ import React from 'react'
 function FormOrder() {
   return (
     <section className="mb-8 bg-[bg-[#69dbe1]">
-      <div className="px-4 py-8 max-w-6xl m-auto bg-[url('/bgr-dk-pc.webp')] bg-cover bg-center rounded-2xl">
+      <div className="px-4 py-8 max-w-6xl m-auto bg-[url('/bgr-dk-pc.webp')] bg-[length:100%_100%] md:bg-cover bg-center rounded-2xl">
         <div className="mb-8">
           <h2 className="text-[#065691] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
         </div>

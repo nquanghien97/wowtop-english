@@ -50,28 +50,28 @@ async function Successfully({ params }: { params: { code: string } }) {
               </div>
             </div>
             <div className="px-4 py-8 border border-[#135689] rounded-2xl">
-              <h4 className="text-[#135689]">Thứ nhất: Bổ sung nhiều canxi là con sẽ cao</h4>
+              <h4 className="text-[#135689] font-bold">Thứ nhất: Bổ sung nhiều canxi là con sẽ cao</h4>
               <p className="text-sm pb-1">Thực tế, Canxi chỉ tham gia quá trình khoáng hóa, cao về lượng phải do Nguyên bào xương quyết định, nên Canxi còn cần các khoáng chất khác như Magie, Phospho. Canxi cần D3, K2 để hỗ trợ hấp thu và chuyển hóa, Vitamin A cũng rất quan trọng với chiều cao.<br />
                 Và đặc biệt không được thiếu thành phần CBP giúp con cao hơn từ cấp độ nguyên bào
               </p>
-              <h4 className="text-[#135689]">Thứ 2: Con cao rồi không cần tăng chiều cao</h4>
+              <h4 className="text-[#135689] font-bold">Thứ 2: Con cao rồi không cần tăng chiều cao</h4>
               <p className="text-sm pb-1">Thực thế, con cao thì nhu cầu dưỡng chất cho chiều cao rất lớn, không bổ sung sẽ khiến chất lượng xương kém và kìm hãm chiều cao về lâu dài<br />
                 Không quan tâm chất lượng chiều cao sẽ khiến xương bị cong, vẹo, loãng xương, hoặc lâu dài kìm hãm chiều cao
               </p>
-              <h4 className="text-[#135689]">Thứ 3: Chỉ quan tâm chiều cao</h4>
+              <h4 className="text-[#135689] font-bold">Thứ 3: Chỉ quan tâm chiều cao</h4>
               <p className="text-sm pb-1">Trong khi Trí não của trẻ phát triển trong giai đoạn dưới 6 tuổi<br />
                 Sức khỏe hệ tiêu hóa của trẻ ảnh hưởng đến hấp thu<br />
                 Mải mê tăng chiều cao mà không quan tâm cân nặng, con sẽ bị gày yếu, thiếu chất. Do vậy,  bố mẹ cần hỗ trợ con phát triển toàn diện<br />
               </p>
-              <h4 className="text-[#135689]">Thứ 4: Chỉ uống sữa tươi là đủ</h4>
+              <h4 className="text-[#135689] font-bold">Thứ 4: Chỉ uống sữa tươi là đủ</h4>
               <p className="text-sm pb-1">
                 Thực tế, sữa tươi có hàm lượng dưỡng chất thấp, chủ yếu “mát” là chính
               </p>
-              <h4 className="text-[#135689]">Thứ 5: Không để ý đến luyện tập, sinh hoạt</h4>
+              <h4 className="text-[#135689] font-bold">Thứ 5: Không để ý đến luyện tập, sinh hoạt</h4>
               <p className="text-sm pb-1">
                 Ngủ muộn, thường xuyên căng thẳng tâm lý làm giảm hormone tăng trưởng khiến trẻ hạn chế về chiều cao
               </p>
-              <h4 className="text-[#135689]">Thứ 6: Bố mẹ thấp thì con không cao được hay bố mẹ cao thì không lo con thấp</h4>
+              <h4 className="text-[#135689] font-bold">Thứ 6: Bố mẹ thấp thì con không cao được hay bố mẹ cao thì không lo con thấp</h4>
               <p className="text-sm pb-1">
                 Gen chiếm 23% yếu tố ảnh hưởng chiều cao<br />
                 Gen không chỉ thể hiện ở chiều cao của bố mẹ<br />
@@ -82,7 +82,7 @@ async function Successfully({ params }: { params: { code: string } }) {
                   <div className="mb-8">
                     <iframe className="rounded-2xl w-full h-[315px]" src="https://www.youtube.com/embed/6IrJ8Q4Fg6k?si=kqutl4M6KCgvW9DV" />
                   </div>
-                  <p className="uppercase text-[#135689] text-center mx-8">Chuyên gia chia sẽ nguyên lý tăng chiều cao từ cấp độ nguyên bào</p>
+                  <p className="uppercase text-[#135689] font-bold text-center mx-8">Chuyên gia chia sẽ nguyên lý tăng chiều cao từ cấp độ nguyên bào</p>
                 </div>
                 <div className="md:w-1/2 w-full">
                   <p className="text-justify mb-2">Giúp trẻ tăng chiều cao bằng cách bổ sung <span className="text-[#135689] font-semibold">CBP</span> để kích thích <span className="text-[#135689] font-semibold">nguyên bào xương</span> (tế bào tạo xương) phát triển để sản xuất ra xương mới, hình thành khung xương dài hơn. Đồng thời bổ sung canxi cùng các dưỡng chất thiết yếu cho tăng trưởng và giúp xương chắc khoẻ hơn, để con <span className="text-[#135689] font-semibold">đạt chiều cao tối ưu không chỉ về lượng mà còn về chất.</span></p>
