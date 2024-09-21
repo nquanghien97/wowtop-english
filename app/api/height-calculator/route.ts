@@ -66,6 +66,9 @@ export async function GET(req: Request) {
   const take = pageSize ? parseInt(pageSize, 10) : undefined;
   try {
     const data = await prisma.heightCalculator.findMany({
+      orderBy: {
+        createdAt: 'desc'
+      },
       where: {
         ...(code && { code: { contains: code } }),
         ...(phoneNumber && { phoneNumber: { contains: phoneNumber } }),
