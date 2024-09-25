@@ -1,8 +1,32 @@
 import { NewsEntity } from "@/entities/news"
 import { getNewsBySlug } from "@/services/news"
 import { formatDate } from "@/utils/formatDate"
+import { Metadata } from "next"
 
 export const dynamic = 'force-dynamic'
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const { data } = await getNewsBySlug(params.slug) as unknown as { data: NewsEntity };
+
+  return {
+    metadataBase: new URL('https://kidscareplus.vn'),
+    title: data.title || 'Tin tức',
+    description: data.title || 'Kids Care Plus',
+    keywords: 'Oz Farm Kid\'s Care Plus',
+    robots: {
+      follow: true,
+      index: true,
+    },
+    openGraph: {
+      locale: 'vi_VN',
+      title: data.title || 'Kids Care Plus',
+      url: `https://kidscareplus.vn/tin-tuc/${params.slug}`,
+      siteName: 'KidsCarePlus',
+      type: 'article',
+    },
+  };
+}
+
 
 async function NewsDetail({ params }: { params: { slug: string } }) {
   const { data } = await getNewsBySlug(params.slug) as unknown as { data: NewsEntity }

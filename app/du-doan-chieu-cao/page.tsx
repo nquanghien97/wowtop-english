@@ -1,7 +1,24 @@
 
-import React from 'react'
 import Form from './Form';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  metadataBase: new URL('https://kidscareplus.vn'),
+  title: 'Phác đồ dự đoán chiều cao tương lai',
+  description: '',
+  keywords: 'Oz Farm Kid\'s Care Plus',
+  robots: {
+    follow: true,
+    index: true,
+  },
+  openGraph: {
+    locale: 'vi_VN',
+    title: 'Kids Care Plus',
+    url: 'https://kidscareplus.vn/du-doan-chieu-cao',
+    siteName: 'KidsCarePlus',
+    type: 'website'
+  }
+}
 function DuDoanChieuCao() {
   return (
     <main>

@@ -2,10 +2,30 @@ import { NewsEntity } from '@/entities/news';
 import { getNews } from '@/services/news';
 import { formatDate } from '@/utils/formatDate';
 import { truncateText } from '@/utils/truncateText';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic'
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://kidscareplus.vn'),
+  title: 'Tin tức',
+  description: '',
+  keywords: 'Oz Farm Kid\'s Care Plus',
+  robots: {
+    follow: true,
+    index: true,
+  },
+  openGraph: {
+    locale: 'vi_VN',
+    title: 'Kids Care Plus',
+    url: 'https://kidscareplus.vn/tin-tuc',
+    siteName: 'KidsCarePlus',
+    type: 'website'
+  }
+}
+
 async function News() {
   const { data } = await getNews({ page: 1, pageSize: 9 }) as { data: NewsEntity[] }
   return (

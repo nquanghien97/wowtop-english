@@ -1,6 +1,25 @@
 import SliderStore from '@/components/SliderStore'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import React from 'react'
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://kidscareplus.vn'),
+  title: 'Đại lý',
+  description: '',
+  keywords: 'Oz Farm Kid\'s Care Plus',
+  robots: {
+    follow: true,
+    index: true,
+  },
+  openGraph: {
+    locale: 'vi_VN',
+    title: 'Kids Care Plus',
+    url: 'https://kidscareplus.vn/dai-ly',
+    siteName: 'KidsCarePlus',
+    type: 'website'
+  }
+}
 
 function Store() {
   return (

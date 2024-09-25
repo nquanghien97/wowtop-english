@@ -2,8 +2,27 @@ import Certificate from "@/components/HomePage/Certificate"
 import Experience from "@/components/HomePage/Experience"
 import Feedback from "@/components/HomePage/Feedback"
 import FormOrder from "@/components/HomePage/FormOrder"
+import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://kidscareplus.vn'),
+  title: 'Oz Farm Kid\'s Care Plus 800g',
+  description: 'Nếu được chăm sóc tốt, trẻ có thể cao lên đến 8-12cm mỗi năm. OZ FARM KID\'S CARE PLUS chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP ...',
+  keywords: 'Oz Farm Kid\'s Care Plus',
+  robots: {
+    follow: true,
+    index: true,
+  },
+  openGraph: {
+    locale: 'vi_VN',
+    title: 'Kids Care Plus',
+    url: 'https://kidscareplus.vn/san-pham',
+    siteName: 'KidsCarePlus',
+    type: 'website'
+  }
+}
 
 function Product() {
   return (
