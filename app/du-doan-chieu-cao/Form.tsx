@@ -81,6 +81,11 @@ const schema = yup.object().shape({
       const age = new Date().getFullYear() - value.getFullYear();
       return age <= 20;
     })
+    .test('age', 'Tuổi của bé phải lớn hơn 1 tuổi', (value: Date) => {
+      if (!value) return false;
+      const age = new Date().getFullYear() - value.getFullYear();
+      return age >= 1;
+    })
     .test('dob', 'Ngày sinh không hợp lệ', (value: Date) => {
       if (!value) return false;
       const today = new Date();
