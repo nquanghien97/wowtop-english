@@ -45,10 +45,12 @@ async function Experience() {
               <div className="w-full md:w-3/5">
                 {dataWithoutFirstItem.map(item => (
                   <div key={item.id} className="flex gap-6">
-                    <Link href={`/tin-tuc/${data[0].slug}`}>
-                      <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item.imageUrl}`} alt={item.title} width={150} height={100} />
-                    </Link>
-                    <div className="flex flex-col">
+                    <div className="w-[100px] flex">
+                      <Link href={`/tin-tuc/${data[0].slug}`} className="w-full">
+                        <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item.imageUrl}`} alt={item.title} width={150} height={100} className="w-full" />
+                      </Link>
+                    </div>
+                    <div className="flex flex-col flex-1">
                       <Link href={`/tin-tuc/${item.slug}`} className="text-[#065691] font-semibold text-lg">{item.title}</Link>
                       <div className="text-[#065691]">
                         <small>{formatDate(item.createdAt)}</small>
@@ -65,7 +67,7 @@ async function Experience() {
               <h2 className="text-3xl font-bold">Tin mới</h2>
             </div>
             <div className="flex mb-7 h-[2px] bg-[#ccc] w-4/5" />
-            <ul className="list-decimal max-md:px-4">
+            <ul className="list-decimal max-md:px-4 pl-4">
               {data.map(item => (
                 <li key={item.id} className="mb-4">
                   <Link href={`/tin-tuc/${item.slug}`} className="text-[#065691] font-semibold text-lg">{item.title}</Link>
