@@ -1,5 +1,5 @@
 // import prisma from "@/lib/db";
-import { removeVietnameseTones } from "@/utils/removeVietnameseTones";
+import { createSlug } from "@/utils/createSlug";
 import prisma from "../../../../lib/db"
 import { NextResponse } from "next/server";
 import { File } from 'formdata-node';
@@ -25,7 +25,7 @@ export async function PUT(req: Request, { params }: { params: { param: number } 
     const title = formData.get('title') as string;
     const content = formData.get('content') as string;
     const files = Array.from(formData.values()).filter((value): value is File => value instanceof File);
-    const slug = removeVietnameseTones(title);
+    const slug = createSlug(title);
     if (files.length === 0) {
       const updatedNews = await prisma.$transaction(async (tx) => {
         const news = await tx.news.update({

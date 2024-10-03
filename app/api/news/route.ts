@@ -1,4 +1,4 @@
-import { removeVietnameseTones } from "@/utils/removeVietnameseTones";
+import { createSlug } from "@/utils/createSlug";
 import prisma from "../../../lib/db";
 import { NextResponse } from "next/server";
 import { deleteFile, uploadFile } from "@/utils/fileUpload";
@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     const title = formData.get('title') as string;
     const content = formData.get('content') as string;
     const files = Array.from(formData.values()).filter((value): value is File => value instanceof File);
-    const slug = removeVietnameseTones(title);
+    const slug = createSlug(title);
 
     if (files.length === 0) {
       return NextResponse.json({ message: "Không file nào được chọn" }, { status: 400 });
