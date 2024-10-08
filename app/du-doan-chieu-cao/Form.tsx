@@ -1,23 +1,26 @@
 'use client';
 
 // import { locale } from '@/config/VietnameseLocale';
-import { da, vi } from 'date-fns/locale';
+import { vi } from 'date-fns/locale';
 import Select, { SelectInstance, SingleValue } from 'react-select';
 import { optionsGender, optionsProduct, optionsSport, optionsTime } from "@/config/SelectInformation";
-import { ChangeEvent, FormEvent, useEffect, useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { postInformations } from "@/services/heightCalculator";
-import DatePicker, { registerLocale } from 'react-datepicker';
+import DatePicker from 'react-datepicker';
 import { format } from 'date-fns';
 import { useRouter } from 'next/navigation';
 import LoadingIcon from '@/assets/icons/LoadingIcon';
 import { toast, ToastContainer } from 'react-toastify';
-import { useForm, Controller, Control } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+import { getDistricts, getProvinces, getWards } from '@/services/provinces';
 
 interface FormValues {
   parentName: string;
   phoneNumber: string;
   fatherHeight: number;
+
   motherHeight: number;
   fullName: string;
   currentHeight: number;
@@ -36,8 +39,6 @@ interface FormValues {
   wardLabel?: string;
 }
 
-import * as yup from 'yup';
-import { getDistricts, getProvinces, getWards } from '@/services/provinces';
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
@@ -97,7 +98,7 @@ const schema = yup.object().shape({
   ward: yup.string().required('Vui lòng chọn phường/xã'),
   address: yup.string().required('Vui lòng nhập địa chỉ'),
   currentProduct: yup.array().required('Trường sản phẩm con sử dụng không được bỏ trống.'),
-  sport: yup.string().required('Vui lòng chọn sport'),
+  sport: yup.string().required('Vui lòng chọn tần suất vận động'),
   timeSleep: yup.string().required('Vui lòng chọn thời gian ngủ'),
   provinceLabel: yup.string(),
   districtLabel: yup.string(),
@@ -109,7 +110,7 @@ interface Option {
   value: string;
 }
 function Form() {
-  const { register, handleSubmit, watch, control, setValue, reset, resetField, formState: { errors } } = useForm({
+  const { register, handleSubmit, watch, control, setValue, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
   });
   const [loading, setLoading] = useState(false);
@@ -256,7 +257,7 @@ function Form() {
                       />
                     )}
                   />
-                  {errors.gender && <span className="text-[red] text-xs p-2">{errors.gender.message}</span>}
+                  {errors.province && <span className="text-[red] text-xs p-2">{errors.province.message}</span>}
                 </div>
                 <div className="md:w-1/2">
                   <Controller
@@ -287,7 +288,7 @@ function Form() {
                       />
                     )}
                   />
-                  {errors.gender && <span className="text-[red] text-xs p-2">{errors.gender.message}</span>}
+                  {errors.district && <span className="text-[red] text-xs p-2">{errors.district.message}</span>}
                 </div>
                 <div className="md:w-1/2">
                   <Controller
@@ -303,7 +304,7 @@ function Form() {
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
-                        value={optionsGender.find((opt) => opt.value === field.value)} // Set the value correctly
+                        value={optionsWards.find((opt) => opt.value === field.value)} // Set the value correctly
                         onChange={(selectedOption: SingleValue<Option>) => {
                           setValue('wardLabel', selectedOption ? selectedOption.label : "")
                           field.onChange(selectedOption ? selectedOption.value : "")
@@ -312,7 +313,7 @@ function Form() {
                       />
                     )}
                   />
-                  {errors.gender && <span className="text-[red] text-xs p-2">{errors.gender.message}</span>}
+                  {errors.ward && <span className="text-[red] text-xs p-2">{errors.ward.message}</span>}
                 </div>
                 <div className="md:w-1/2">
                   <input
@@ -320,7 +321,7 @@ function Form() {
                     className="w-full rounded-full px-4 py-3 outline-none"
                     {...register("address", { required: true })}
                   />
-                  {errors.fullName && <span className="text-[red] text-xs p-2">Vui lòng nhập họ tên con</span>}
+                  {errors.address && <span className="text-[red] text-xs p-2">{errors.address.message}</span>}
                 </div>
               </div>
             </div>

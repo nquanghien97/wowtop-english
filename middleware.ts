@@ -22,46 +22,52 @@ export async function middleware(req: NextRequest) {
   const isPublicRoute = publicRoutes.some(route => req.nextUrl.pathname.startsWith(route));
   const isExcludedRoute = excludedRoutes.some(route => req.nextUrl.pathname.startsWith(route));
 
+  // Check if the request is for '/api/order'
+  if (req.nextUrl.pathname.startsWith('/api/order')) {
+    // Allow POST method without authentication
+    if (req.method === 'POST') {
+      return res;
+    }
+  }
+
   if (isPublicRoute || isExcludedRoute) {
     return res;
-  };
-
-  const protectedMethods = ['POST', 'PUT', 'DELETE'];
-  if (protectedMethods.includes(req.method)) {
-    const authHeader = req.headers.get('Authorization');
-    if (!authHeader) {
-      return new NextResponse(
-        JSON.stringify({ success: false, message: 'UnAuthorized' }),
-        { status: 401, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
-    const token = authHeader.split(' ')[1];
-    if (!token) {
-      return new NextResponse(
-        JSON.stringify({ success: false, message: 'Access token not found' }),
-        { status: 401, headers: { 'Content-Type': 'application/json' } }
-      );
-    };
-    const encodedKey = new TextEncoder().encode(process.env.NEXT_PUBLIC_ACCESS_TOKEN_SECRET)
-    try {
-      const { payload } = await jwtVerify(token, encodedKey, {
-        algorithms: ['HS256'],
-      }) as { payload: AuthJwt };
-      // In Next.js middleware, we can't modify the request object directly.
-      // Instead, we can add custom headers to pass information to the API route.
-      res.headers.set('X-User-ID', payload.userId);
-    } catch (error) {
-      console.error(error);
-      return new NextResponse(
-        JSON.stringify({ success: false, message: 'Invalid token' }),
-        { status: 401, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
-
-    return res;
   }
+
+  // For all other methods (GET, PUT, DELETE, etc.), require authentication
+  const authHeader = req.headers.get('Authorization');
+  if (!authHeader) {
+    return new NextResponse(
+      JSON.stringify({ success: false, message: 'UnAuthorized' }),
+      { status: 401, headers: { 'Content-Type': 'application/json' } }
+    );
+  }
+
+  const token = authHeader.split(' ')[1];
+  if (!token) {
+    return new NextResponse(
+      JSON.stringify({ success: false, message: 'Access token not found' }),
+      { status: 401, headers: { 'Content-Type': 'application/json' } }
+    );
+  }
+  const encodedKey = new TextEncoder().encode(process.env.NEXT_PUBLIC_ACCESS_TOKEN_SECRET);
+  try {
+    const { payload } = await jwtVerify(token, encodedKey, {
+      algorithms: ['HS256'],
+    }) as { payload: AuthJwt };
+
+    // In Next.js middleware, we can't modify the request object directly.
+    // Instead, we can add custom headers to pass information to the API route.
+    res.headers.set('X-User-ID', payload.userId);
+  } catch (error) {
+    console.error(error);
+    return new NextResponse(
+      JSON.stringify({ success: false, message: 'Invalid token' }),
+      { status: 401, headers: { 'Content-Type': 'application/json' } }
+    );
+  }
+
+  return res;
 }
 
 export const config = {
