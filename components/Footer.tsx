@@ -17,8 +17,9 @@ function Footer() {
           </h3>
         </div>
       </div>
-      <div className="bg-[url('/bg-footer.webp')] bg-[length:100%_100%]">
-        <div className="max-w-6xl m-auto px-4 py-7">
+      <div className="bg-[url('/bg-footer.webp')] bg-cover bg-[80%] relative">
+        <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+        <div className="max-w-6xl m-auto px-4 py-7 relative z-10">
           <div className="flex w-full justify-between mb-8 flex-col md:flex-row">
             <div className="max-md:mb-4">
               <h3 className="text-xl text-white font-bold">Theo dõi chúng tôi</h3>

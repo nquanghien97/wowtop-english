@@ -16,10 +16,10 @@ function Header() {
     <>
       <header className="md:h-[80px] md:bg-[#065691] h-[60px] shadow-sm shadow-black/20 fixed top-0 right-0 left-0 z-[100] bg-white">
         <div className="h-full flex justify-between max-w-6xl m-auto">
-          <div className="flex justify-center items-center max-md:w-full">
+          <Link href="/" className="flex justify-center items-center max-md:w-full">
             <Image src="/logo.png" alt="logo" width={200} height={50} className="max-md:hidden" />
             <Image src="/logo-mini.png" alt="logo" width={200} height={50} className="md:hidden w-[50px] h-[50px]" />
-          </div>
+          </Link>
           <div className="max-md:hidden flex items-center">
             <ul className="flex items-center gap-4 text-white">
               {ListHeader.map(item => (
