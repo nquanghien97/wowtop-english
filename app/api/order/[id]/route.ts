@@ -32,15 +32,15 @@ export async function DELETE(req: Request, { params }: { params: { id: number } 
   try {
     const order = await prisma.order.findUnique({
       where: {
-        id
+        id: +id,
       }
     })
     if (!order) {
       return NextResponse.json({ message: 'Đơn hàng không tồn tại' }, { status: 404 });
     }
-    await prisma.news.delete({
+    await prisma.order.delete({
       where: {
-        id
+        id: +id
       }
     })
     return NextResponse.json(
