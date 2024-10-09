@@ -36,7 +36,10 @@ export async function GET(req: Request) {
   try {
     const order = await prisma.order.findMany({
       skip,
-      take
+      take,
+      orderBy: {
+        createdAt: 'desc'
+      }
     })
     const total = await prisma.order.count()
     return NextResponse.json(
