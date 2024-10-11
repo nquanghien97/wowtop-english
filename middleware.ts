@@ -30,6 +30,10 @@ export async function middleware(req: NextRequest) {
     }
   }
 
+  if (req.nextUrl.pathname.startsWith('/api/news') && req.method === 'GET') {
+    return res;
+  }
+
   if (isPublicRoute || isExcludedRoute) {
     return res;
   }

@@ -36,7 +36,7 @@ async function News() {
             <h2 className="text-[#2c5d6c] font-semibold text-3xl">Tin tức</h2>
           </div>
           <div className="mt-4">
-            {data.map(item => (
+            {data?.map(item => (
               <div className="flex py-4 border-t-[1px] border-[#e1e1e1]" key={item.id}>
                 <Link className="w-1/3 px-4 overflow-hidden" href={`/tin-tuc/${item.slug}`}>
                   <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item.imageUrl}`} alt={item.title} width={255} height={135} />
