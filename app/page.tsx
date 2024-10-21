@@ -306,7 +306,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="md:hidden">
+      <section className="hidden">
         <div className="flex flex-col px-4">
           <div className="w-full">
             <div className="px-12 py-2 rounded-2xl bg-liner relative z-[2]">
@@ -336,7 +336,7 @@ export default async function Home() {
         <div className="px-4">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
             <h2 className="uppercase text-4xl text-[#84571B] font-bold">Nhà máy OZ Farm</h2>
-            <p className="text-4xl text-[#84571B] uppercase">và hành trình 12 năm phá vỡ mọi kỷ lục</p>
+            {/* <p className="text-4xl text-[#84571B] uppercase">và hành trình 12 năm phá vỡ mọi kỷ lục</p> */}
           </div>
         </div>
       </section>
