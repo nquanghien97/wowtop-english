@@ -335,7 +335,7 @@ export default async function Home() {
       <section className="mb-8 bg-[url('/nha-may-2.webp')] h-[450px] md:h-[1050px] bg-[length:100%_100%] pt-16">
         <div className="px-4">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
-            <h2 className="uppercase text-4xl text-[#84571B] font-bold">Nhà máy OZ Farm</h2>
+            <h2 className="uppercase text-4xl text-[#84571B] font-bold">Nhà máy sản xuất WOWTOP tại NewZealand</h2>
             {/* <p className="text-4xl text-[#84571B] uppercase">và hành trình 12 năm phá vỡ mọi kỷ lục</p> */}
           </div>
         </div>
