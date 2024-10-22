@@ -20,7 +20,7 @@ export default async function Home() {
           <Image src="/lon-gau@2x-8.png" alt="" width={544} height={802} className="w-1/2 h-full md:w-full" />
         </div>
       </section>
-      <section className="mb-8 mt-4 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
+      {/* <section className="mb-8 mt-4 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
         <div className="max-w-6xl m-auto">
           <div className="flex flex-col items-center justify-center text-2xl md:text-[40px] uppercase text-center py-4">
             <div>
@@ -119,8 +119,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="mb-20 bg-[url('/pt-bg-yellow.webp')]">
+      </section> */}
+      {/* <section className="mb-20 bg-[url('/pt-bg-yellow.webp')]">
         <div className="max-w-4xl m-auto">
           <div className="flex flex-col items-center justify-center text-2xl md:text-3xl uppercase mb-8 text-center">
             <div>
@@ -162,7 +162,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <section className="mb-8 md:mb-20">
         <div className="max-w-6xl m-auto px-4">
           <div>
@@ -181,7 +181,7 @@ export default async function Home() {
           </div>
         </div>
       </section> */}
-      <section className="md:mb-20">
+      {/* <section className="md:mb-20">
         <div className="max-w-6xl m-auto px-4">
           <div className="mb-8">
             <h2 className="text-xl md:text-5xl text-[#84571B] font-bold uppercase text-center">Những sai lầm trong tăng chiều cao</h2>
@@ -244,8 +244,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="max-md:mb-8 bg-[url('/dong-co-d-1.webp')] bg-[length:100%_100%] bg-center h-[1062px] relative max-md:hidden">
+      </section> */}
+      {/* <section className="max-md:mb-8 bg-[url('/dong-co-d-1.webp')] bg-[length:100%_100%] bg-center h-[1062px] relative max-md:hidden">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex justify-center mb-4">
             <div className="bg-text2 flex px-6 py-2 text-4xl rounded-full">
@@ -285,8 +285,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="pt-20 mb-8 md:mb-20 bg-[url('/bgr-co-m.webp')] bg-center bg-[length:100%_100%] h-[820px] relative md:hidden">
+      </section> */}
+      {/* <section className="pt-20 mb-8 md:mb-20 bg-[url('/bgr-co-m.webp')] bg-center bg-[length:100%_100%] h-[820px] relative md:hidden">
         <div className="mb-8">
           <h2 className="text-xl md:text-5xl text-[#135689] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
         </div>
@@ -331,7 +331,7 @@ export default async function Home() {
             <Image src="/dong-co-d-2.webp" alt="dong-co-d-2" width={360} height={360} />
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="mb-8 h-[450px] md:h-[1050px] bg-[length:100%_100%] pt-16 relative">
         <Image src="/nha-may@2x-100.jpg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
         <div className="px-4 relative z-10">
