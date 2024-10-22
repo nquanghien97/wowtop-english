@@ -26,8 +26,8 @@ async function Experience() {
             ) : (
               <div className="flex gap-4 flex-col md:flex-row">
               <div className="w-full md:w-2/5 flex flex-col">
-                <Link href={`/tin-tuc/${data[0].slug}`}>
-                <Link href="/"></Link>
+                {/* <Link href={`/tin-tuc/${data[0].slug}`}> */}
+                <Link href="/">
                   <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[0].imageUrl}`} alt={data[0].title} width={350} height={220} className="m-auto" />
                 </Link>
                 {/* <Link href={`/tin-tuc/${data[0].slug}`} className="mt-2"> */}

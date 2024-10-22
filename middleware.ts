@@ -30,6 +30,10 @@ export async function middleware(req: NextRequest) {
     }
   }
 
+  if (req.nextUrl.pathname.startsWith('/api/images') && req.method === 'GET') {
+    return res; // Không cần xác thực cho GET đến hình ảnh
+  }
+
   if (req.nextUrl.pathname.startsWith('/api/news') && req.method === 'GET') {
     return res;
   }

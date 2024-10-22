@@ -56,8 +56,8 @@ function Footer() {
           </div>
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
-              <h4 className="text-white font-bold mb-2">Trụ sở chính:</h4>
-              <p className="text-white mb-4">Địa chỉ: Unit 3, 14 Canaveral drive, Rosedale, Auckland, New Zealand.</p>
+            <p className="text-white font-bold">Sản xuất tại: NEW ZEALAND PURE DAIRY PRODUCTS LIMITED</p>
+            <p className="text-white font-bold mb-4">Địa chỉ: Unit 3, 14 Canaveral drive, Rosedale, Auckland, New Zealand.</p>
               {/* <div className="mb-4">
                 <p className="text-white font-bold">Số giấy chứng nhận đăng ký kinh doanh</p>
                 <p className="text-white">0110015834</p>
@@ -69,9 +69,8 @@ function Footer() {
             </div>
             <div className="md:w-1/2">
               <h4 className="text-white font-bold">Đây là một website ứng dụng</h4>
-              <p className="text-white mb-4">Trong website này chúng tôi tổng hợp các thông tin liên quan về sản phẩm, thành phần hoạt chất, thông tin dinh dưỡng, ứng dụng tính toán ộ trình tăng chiều cao, trò chơi trí tuệ cho trẻ. Tuy nhiên trẻ em cần phải có sự cho phép của cha mẹ khi tham quan website.</p>
+              <p className="text-white mb-4">Trong website này chúng tôi tổng hợp các thông tin liên quan về sản phẩm, thành phần hoạt chất, thông tin dinh dưỡng, ứng dụng tính toán lộ trình tăng chiều cao, trò chơi trí tuệ cho trẻ. Tuy nhiên trẻ em cần phải có sự cho phép của cha mẹ khi tham quan website.</p>
               <div className="text-white">
-                <p className="font-bold">Sản xuất tại: NEW ZEALAND PURE DAIRY PRODUCTS LIMITED</p>
                 <p>Thương nhân nhập khẩu, phân phối và chịu trách nhiệm về sản phẩm</p>
                 <p>CÔNG TY TNHH THƯƠNG MẠI 7WEALTH</p> 
                 <p>Địa chỉ: Lô 01A-B1 Tòa R2 Royal City, số 71A Nguyễn Trãi, phường Thượng Đình, quận Thanh Xuân, thành phố Hà Nội, Việt Nam.</p>

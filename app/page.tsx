@@ -12,15 +12,15 @@ export default async function Home() {
   return (
     <main>
       {/* <Banner /> */}
-      <section className="mb-8 mt-4 md:bg-[url('/banner2x.webp')] bg-cover md:h-[760px]">
+      <section className="mb-8 mt-4 bg-cover md:h-[660px]">
         <div className="max-w-6xl m-auto px-6 flex items-center h-full relative">
-          <p className="bg-text text-base md:text-5xl max-w-[200px] md:max-w-[600px] absolute font-bold">
+          <p className="bg-text text-base md:text-5xl max-w-[200px] md:max-w-[600px] font-bold">
             WOWTOP PREMIUM NUTRITIONAL GROWTH MILK FORMULA FOR 1+ YEAR OLD
           </p>
-          <Image src="/banner2x.webp" alt="" width={200} height={200} className="h-auto w-full md:hidden" />
+          <Image src="/lon-gau@2x-8.png" alt="" width={544} height={802} className="w-1/2 h-full md:w-full" />
         </div>
       </section>
-      <section className="mb-8 mt-4 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
+      {/* <section className="mb-8 mt-4 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
         <div className="max-w-6xl m-auto">
           <div className="flex flex-col items-center justify-center text-2xl md:text-[40px] uppercase text-center py-4">
             <div>
@@ -65,7 +65,7 @@ export default async function Home() {
                   </div>
                   <div className="w-2/3 flex items-center">
                     <span className="text-[#84571B] font-semibold">
-                      Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP & CPP</strong> tăng cường hoạt động của nguyên bào xương, Hàm lượng Canxi cao hàng đầu (1200mg), tỷ lệ vàng Canxi : Photo = 1,4:1 kết hợp với D3K2 & khoáng chất·giúp hấp thu Canxi tối đa.
+                    Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP</strong> (125 mg/100g) & <strong>CPP</strong> (571 mg/100g) tăng cường hoạt động của nguyên bào xương. Hàm lượng <strong>Canxi</strong> cao hàng đầu (1475 mg/100g), tỷ lệ vàng <strong>Canxi : Phospho</strong> = 1,8:1 kết hợp với D3K1 & khoáng chất·giúp hấp thu Canxi tối đa.
                     </span>
                   </div>
                 </div>
@@ -119,8 +119,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="mb-20 bg-[url('/pt-bg-yellow.webp')]">
+      </section> */}
+      {/* <section className="mb-20 bg-[url('/pt-bg-yellow.webp')]">
         <div className="max-w-4xl m-auto">
           <div className="flex flex-col items-center justify-center text-2xl md:text-3xl uppercase mb-8 text-center">
             <div>
@@ -162,8 +162,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="mb-8 md:mb-20">
+      </section> */}
+      {/* <section className="mb-8 md:mb-20">
         <div className="max-w-6xl m-auto px-4">
           <div>
             <p className="bg-text text-center text-xl md:text-3xl uppercase">Chuyên gia new zealand <br /><strong>chia sẻ nguyên lý tăng chiều cao</strong><br /> từ cấp độ nguyên bào</p>
@@ -180,8 +180,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="md:mb-20">
+      </section> */}
+      {/* <section className="md:mb-20">
         <div className="max-w-6xl m-auto px-4">
           <div className="mb-8">
             <h2 className="text-xl md:text-5xl text-[#84571B] font-bold uppercase text-center">Những sai lầm trong tăng chiều cao</h2>
@@ -244,8 +244,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="max-md:mb-8 bg-[url('/dong-co-d-1.webp')] bg-[length:100%_100%] bg-center h-[1062px] relative max-md:hidden">
+      </section> */}
+      {/* <section className="max-md:mb-8 bg-[url('/dong-co-d-1.webp')] bg-[length:100%_100%] bg-center h-[1062px] relative max-md:hidden">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex justify-center mb-4">
             <div className="bg-text2 flex px-6 py-2 text-4xl rounded-full">
@@ -285,8 +285,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="pt-20 mb-8 md:mb-20 bg-[url('/bgr-co-m.webp')] bg-center bg-[length:100%_100%] h-[820px] relative md:hidden">
+      </section> */}
+      {/* <section className="pt-20 mb-8 md:mb-20 bg-[url('/bgr-co-m.webp')] bg-center bg-[length:100%_100%] h-[820px] relative md:hidden">
         <div className="mb-8">
           <h2 className="text-xl md:text-5xl text-[#135689] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
         </div>
@@ -306,7 +306,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="md:hidden">
+      <section className="hidden">
         <div className="flex flex-col px-4">
           <div className="w-full">
             <div className="px-12 py-2 rounded-2xl bg-liner relative z-[2]">
@@ -331,19 +331,20 @@ export default async function Home() {
             <Image src="/dong-co-d-2.webp" alt="dong-co-d-2" width={360} height={360} />
           </div>
         </div>
-      </section>
-      <section className="mb-8 bg-[url('/nha-may-2.webp')] h-[450px] md:h-[1050px] bg-[length:100%_100%] pt-16">
-        <div className="px-4">
+      </section> */}
+      <section className="mb-8 h-[450px] md:h-[1050px] bg-[length:100%_100%] pt-16 relative">
+        <Image src="/nha-may@2x-100.jpg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
+        <div className="px-4 relative z-10">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
-            <h2 className="uppercase text-4xl text-[#84571B] font-bold">Nhà máy OZ Farm</h2>
-            <p className="text-4xl text-[#84571B] uppercase">và hành trình 12 năm phá vỡ mọi kỷ lục</p>
+            <h2 className="uppercase text-4xl text-[#84571B] font-bold">Nhà máy sản xuất WOWTOP tại NewZealand</h2>
+            {/* <p className="text-4xl text-[#84571B] uppercase">và hành trình 12 năm phá vỡ mọi kỷ lục</p> */}
           </div>
         </div>
       </section>
       {/* <Certificate />
       <Feedback /> */}
       <FormOrder />
-      <Experience />
+      {/* <Experience /> */}
     </main>
   )
 }
