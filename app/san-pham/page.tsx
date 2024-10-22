@@ -27,19 +27,19 @@ export const metadata: Metadata = {
 function Product() {
   return (
     <main>
-      <section className="bg-[url('/banner1.webp')] bg-cover bg-center md:bg-[length:100%_100%] mt-12 mb-8">
+      <section className="bg-[url('/nen-ct.webp')] bg-cover bg-center md:bg-[length:100%_100%] mb-8">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex pb-[100px] flex-col md:flex-row">
             <div className="md:w-2/5 flex items-center">
-              <Image src="/banner_hop.webp" alt="banner-hop-sua" width={380} height={500} />
+              <Image src="/lon-gau@2x-8.png" alt="banner-hop-sua" width={380} height={500} />
             </div>
             <div className="md:w-3/5">
               <div className="md:h-[565px] md:overflow-y-scroll md:px-8 py-8">
                 <Image src="/logo2.png" alt="logo2" width={500} height={132} />
                 <div className="mb-4">
-                  <h2 className="text-[#065691] font-bold text-3xl">OZ FARM KID’S CARE PLUS CAO HƠN TỪ CẤP NGUYÊN BÀO XƯƠNG</h2>
+                  <h2 className="text-[#065691] font-bold text-3xl">CAO TỪ CẤP NGUYÊN BÀO XƯƠNG</h2>
                 </div>
-                <p className="text-[#065691] text-xl mb-4">Sữa bột 800g</p>
+                <p className="text-[#065691] text-xl mb-4">Sữa bột 700g</p>
                 <div className="mb-4">
                   <p className="text-[#D9A834] text-sm">Sở hữu chiều cao đạt chuẩn thế giới là bệ phóng tuyệt vời cho sự phát triển toàn diện về ngoại hình, sức khỏe, tinh thần hay sự nghiệp sau này của trẻ. Nếu được chăm sóc tốt, trẻ có thể cao lên đến 8-12cm mỗi năm.</p>
                 </div>

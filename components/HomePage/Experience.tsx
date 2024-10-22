@@ -12,7 +12,7 @@ async function Experience() {
     <section className="mb-20">
       <div className="max-w-6xl m-auto px-4">
         <div className="bg-text font-bold text-4xl uppercase text-center mb-4">
-          <p className="mb-2">Kinh nghiệm</p>
+          <p className="py-2">Kinh nghiệm</p>
           <p className="mb-2">TĂNG CHIỀU CAO VƯỢT TRỘI CHO BÉ</p>
         </div>
         <div className="flex gap-4 max-md:flex-col">

@@ -9,12 +9,12 @@ function Footer() {
       <div className="max-w-6xl m-auto px-4">
         <div className="flex items-center gap-8 py-4">
           <Image src="/logo-footer-2.png" alt="logo" width={275} height={75} className="relative md:top-[-12px] max-md:w-[190px] max-md:h-[50px] top-[-8px]" />
-          {/* <h3 className="uppercase text-xs md:text-xl font-semibold">
+          <h3 className="uppercase text-xs md:text-xl font-semibold">
             <Link href={`/`} className="text-white">Nhận tư vấn</Link>
           </h3>
           <h3 className="uppercase text-xs md:text-xl font-semibold">
             <Link href={`/`} className="text-white">Hòm thư góp ý</Link>
-          </h3> */}
+          </h3>
         </div>
       </div>
       <div className="bg-[url('/bg-footer.webp')] bg-cover bg-[80%] relative">
