@@ -256,7 +256,7 @@ function FormOrder() {
             </form>
           </div>
           <div className="mt-[-40px] max-md:hidden">
-            <Image src="/giot2.webp" alt="giot2" width={300} height={400} />
+            <Image src="/lon-gau@2x-8.png" alt="giot2" width={300} height={400} />
           </div>
         </div>
       </div>
