@@ -73,7 +73,7 @@ function Footer() {
               <div className="text-white">
                 <p>Thương nhân nhập khẩu, phân phối và chịu trách nhiệm về sản phẩm</p>
                 <p>CÔNG TY TNHH THƯƠNG MẠI 7WEALTH</p> 
-                <p>Địa chỉ: Lô 01A-B1 Tòa R2 Royal City, số 71A Nguyễn Trãi, phường Thượng Đình, quận Thanh Xuân, thành phố Hà Nội, Việt Nam.</p>
+                <p>Địa chỉ: Lô 01A-B1 Tòa R2 Royal City, số 72A Nguyễn Trãi, phường Thượng Đình, quận Thanh Xuân, thành phố Hà Nội, Việt Nam.</p>
               </div>
             </div>
           </div>
