@@ -3,19 +3,19 @@ import Form from './Form';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kidscareplus.vn'),
+  metadataBase: new URL('https://wowtop.com.vn'),
   title: 'Phác đồ dự đoán chiều cao tương lai',
   description: '',
-  keywords: 'Oz Farm Kid\'s Care Plus',
+  keywords: 'Oz Farm Wowtop',
   robots: {
     follow: true,
     index: true,
   },
   openGraph: {
     locale: 'vi_VN',
-    title: 'Kids Care Plus',
-    url: 'https://kidscareplus.vn/du-doan-chieu-cao',
-    siteName: 'KidsCarePlus',
+    title: 'Wowtop',
+    url: 'https://wowtop.com.vn/du-doan-chieu-cao',
+    siteName: 'Wowtop',
     type: 'website'
   }
 }

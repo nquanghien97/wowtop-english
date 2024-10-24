@@ -26,7 +26,7 @@ const ListFeedbacks = [
     src: '/feedbacks/f4.jpg',
     path: '#',
     title: 'Chị Nguyễn Thị Phượng',
-    content: 'Con gái chị đã cao thêm 4cm sau 6 tháng uống đều đặn mỗi ngày 2 ly Oz Farm Kid+, ưng lắm'
+    content: 'Con gái chị đã cao thêm 4cm sau 6 tháng uống đều đặn mỗi ngày 2 ly Oz Farm Wowtop, ưng lắm'
   }
 ]
 function Feedback() {
@@ -34,12 +34,12 @@ function Feedback() {
     <section>
       <div className="max-w-6xl m-auto px-4 mb-8">
         <div className="flex justify-center relative mb-8">
-          <Image src="/bg4.png" alt="/bg4.png" width={758} height={125} />
+          <Image src="/asset_11_2.png" alt="/bg4.png" width={758} height={125} />
           <div className="absolute top-1 md:top-3">
-            <p className="text-center uppercase text-lg md:text-3xl text-white font-bold">Bé uống Kid&apos;s care plus</p>
+            <p className="text-center uppercase text-lg md:text-3xl text-white font-bold">Bé uống WOWTOP</p>
           </div>
           <div className="absolute bottom-2 md:bottom-4">
-            <p className="text-center uppercase text-xl md:text-3xl text-[#065691] font-bold">Con lớn vượt trội</p>
+            <p className="text-center uppercase text-xl md:text-3xl bg-text font-bold">Con lớn vượt trội</p>
           </div>
         </div>
         <Swiper
@@ -74,7 +74,7 @@ function Feedback() {
                     <p>{feedback.content}</p>
                   </div>
                   <div className="mb-4">
-                    <p className="text-[#135689] font-bold text-center">{feedback.title}</p>
+                    <p className="text-[#84571B] font-bold text-center">{feedback.title}</p>
                   </div>
                   <div className="flex justify-center">
                     <StarIcon width={20} height={20} fill='#FFD37B' />

@@ -4,19 +4,19 @@ import Image from 'next/image'
 import React from 'react'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kidscareplus.vn'),
+  metadataBase: new URL('https://wowtop.com.vn'),
   title: 'Đại lý',
   description: '',
-  keywords: 'Oz Farm Kid\'s Care Plus',
+  keywords: 'Oz Farm Wowtop',
   robots: {
     follow: true,
     index: true,
   },
   openGraph: {
     locale: 'vi_VN',
-    title: 'Kids Care Plus',
-    url: 'https://kidscareplus.vn/dai-ly',
-    siteName: 'KidsCarePlus',
+    title: 'Wowtop',
+    url: 'https://wowtop.com.vn/dai-ly',
+    siteName: 'Wowtop',
     type: 'website'
   }
 }

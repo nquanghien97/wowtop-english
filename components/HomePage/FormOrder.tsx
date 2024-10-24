@@ -98,7 +98,7 @@ function FormOrder() {
     <section className="mb-8 bg-[bg-[#69dbe1]">
       <div className="px-4 py-8 max-w-6xl m-auto bg-[url('/dki3.webp')] bg-[length:100%_100%]  bg-center rounded-[50px]">
         <div className="mb-8">
-          <h2 className="text-[#065691] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
+          <h2 className="text-[#84571B] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
         </div>
         <div className="flex">
           <div className="w-full px-4">
@@ -248,7 +248,7 @@ function FormOrder() {
               </div>
               {/* <p className="text-white italic">Hãy liên hệ chuyên gia dinh dưỡng theo số <strong>028 555 555 555</strong> để được tư vấn thêm</p> */}
               <div className="flex justify-center">
-                <div className="flex justify-center items-center bg-[#065691] rounded-full px-8 py-2">
+                <div className="flex justify-center items-center bg-[#84571B] rounded-full px-8 py-2">
                   <button type='submit' className="text-white italic uppercase hover:opacity-85 duration-300 mr-2">Xác nhận</button>
                   {loading && <LoadingIcon size="small" />}
                 </div>

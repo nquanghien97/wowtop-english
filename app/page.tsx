@@ -26,7 +26,10 @@ export default async function Home() {
         </div>
       </section>
       <section className="mb-8 mt-4 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
-        <div className="max-w-6xl m-auto">
+        <div className="max-w-6xl m-auto relative">
+          <Image src="/pt1.webp" alt="" width={230} height={200} className="absolute top-[-10%] left-[40px] max-md:hidden" />
+          <Image src="/pt2.webp" alt="" width={120} height={120} className="absolute top-[20%] left-0 max-md:hidden" />
+          <Image src="/PT.webp" alt="" width={150} height={150} className="absolute bottom-0 right-0 max-md:hidden" />
           <div className="flex flex-col items-center justify-center text-2xl md:text-[40px] uppercase text-center py-4">
             <div>
               <p className="bg-text bg-clip-text text-transparent font-bold md:pt-4 pt-1">Công thức tối ưu</p>
@@ -146,7 +149,7 @@ export default async function Home() {
                 <Image src="/cbp.webp" alt="bg-sua" width={160} height={175} />
                 <span className="text-[#135689]">
                   <strong>CBP </strong>
-                  trong KID&apos;S CARE PLUS có kích thước phân tử siêu nhỏ, <strong>30 Kilodalton (≈ 1/50 tỷ hạt Nano),</strong> dễ dàng len lỏi và kích thích Nguyên bào xương hoạt động hiệu quả hơn*
+                  trong Wowtop có kích thước phân tử siêu nhỏ, <strong>30 Kilodalton (≈ 1/50 tỷ hạt Nano),</strong> dễ dàng len lỏi và kích thích Nguyên bào xương hoạt động hiệu quả hơn*
                 </span>
               </div>
               <div className="md:w-1/2 bg-10-lit bg-cover bg-center rounded-2xl px-8 py-5 shadow-2xl">
@@ -178,7 +181,7 @@ export default async function Home() {
               <iframe className="rounded-2xl w-full h-[315px]" src="https://www.youtube.com/embed/y9vlAFDEr7I?rel=0&showinfo=0&autoplay=1" />
             </div>
             <div className="md:w-1/2 w-full">
-              <p className="text-[#84571B] text-justify">Xương dài ra do quá trình <strong>cốt hóa</strong> sụn tăng trưởng thành xương. Hầu hết quá trình này do <strong>nguyên bào xương</strong> chịu trách nhiệm. Nguyên bào xương tạo ra ma tr ận xương (Khung nền xương) đồng thời tăng cường chuyển hóa, lắng đọng Canxi, Phospho để lấp đầy và làm cứng ma trận xương, giúp xương dài ra ở 2 đầu. <strong>KID&apos;S CARE PLUS</strong> vừa bổ sung <strong>Canxi, Phospho, D3, K2</strong> làm nguyên liệu cho quá trình tạo xương, vừa chứa thành phần <strong>CBP</strong> kích thích nguyên bào xương phát triển, nhờ đó thúc đẩy mạnh mẽ quá trình cốt hóa ở 2 đầu xương, giúp <strong>tăng chiều cao cả về lượng và về chất.</strong></p>
+              <p className="text-[#84571B] text-justify">Xương dài ra do quá trình <strong>cốt hóa</strong> sụn tăng trưởng thành xương. Hầu hết quá trình này do <strong>nguyên bào xương</strong> chịu trách nhiệm. Nguyên bào xương tạo ra ma tr ận xương (Khung nền xương) đồng thời tăng cường chuyển hóa, lắng đọng Canxi, Phospho để lấp đầy và làm cứng ma trận xương, giúp xương dài ra ở 2 đầu. <strong>Wowtop</strong> vừa bổ sung <strong>Canxi, Phospho, D3, K2</strong> làm nguyên liệu cho quá trình tạo xương, vừa chứa thành phần <strong>CBP</strong> kích thích nguyên bào xương phát triển, nhờ đó thúc đẩy mạnh mẽ quá trình cốt hóa ở 2 đầu xương, giúp <strong>tăng chiều cao cả về lượng và về chất.</strong></p>
               <Image src="/asset_11.png" alt='asset_11' width={400} height={1} className="mx-auto my-4" />
               <p className="text-[#84571B] mb-4"><strong>Chuyên gia tăng chiều cao David - viện dinh dưỡng New Zealand.</strong></p>
               <Link href="#" className="text-[#84571B] underline">Tìm hiểu ngay</Link>
@@ -199,7 +202,7 @@ export default async function Home() {
               <div>
                 <h4 className="text-[#84571B] font-semibold text-center text-xl mb-4">Chỉ quan tâm cao về lượng</h4>
                 <p className="text-[#84571B]">
-                  Chiều cao về centimet rất quan trọng, nhưng nếu Chất lượng xương không được đảm bảo, trẻ sẽ dễ bị loãng xương và các bệnh về xương khác. KID&apos;S CARE PLUS giúp cao hơn từ nguyên bào xương, cải thiện chiều cao cả về lượng và chất.
+                  Chiều cao về centimet rất quan trọng, nhưng nếu Chất lượng xương không được đảm bảo, trẻ sẽ dễ bị loãng xương và các bệnh về xương khác. Wowtop giúp cao hơn từ nguyên bào xương, cải thiện chiều cao cả về lượng và chất.
                 </p>
               </div>
             </div>
@@ -221,7 +224,7 @@ export default async function Home() {
               <div>
                 <h4 className="text-[#84571B] font-semibold text-center text-xl mb-4">Uống sữa là đủ để cao</h4>
                 <p className="text-[#84571B]">
-                  Sữa là giải pháp dinh dưỡng tối ưu. Tuy nhiên vẫn cần kết hợp luyện tập & sinh hoạt để tăng chiều cao. KID&apos;S CARE PLUS có đội ngũ Healthcoach đồng hành cùng con từ chế độ dinh dưỡng tới vận động để con đạt chiều cao tối đa.
+                  Sữa là giải pháp dinh dưỡng tối ưu. Tuy nhiên vẫn cần kết hợp luyện tập & sinh hoạt để tăng chiều cao. Wowtop có đội ngũ Healthcoach đồng hành cùng con từ chế độ dinh dưỡng tới vận động để con đạt chiều cao tối đa.
                 </p>
               </div>
             </div>
@@ -253,7 +256,7 @@ export default async function Home() {
       <section className="max-md:mb-8 bg-[url('/dong-co-d-1.webp')] bg-[length:100%_100%] bg-center h-[1062px] relative max-md:hidden">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex justify-center mb-4">
-            <div className="bg-text2 flex px-6 py-2 text-4xl rounded-full">
+            <div className="bg-text2 flex px-12 py-4 text-4xl rounded-full">
               <h3 className="text-[#84571B] font-bold">Đăng kí dùng thử</h3>
             </div>
           </div>
@@ -308,32 +311,6 @@ export default async function Home() {
           </div>
           <div className="flex justify-center">
             <Image src="/non-gmo.png" alt="non-gmo.png" width={320} height={120} />
-          </div>
-        </div>
-      </section>
-      <section className="hidden">
-        <div className="flex flex-col px-4">
-          <div className="w-full">
-            <div className="px-12 py-2 rounded-2xl bg-liner relative z-[2]">
-              <p className="text-lg text-center text-white">Nguồn sữa Úc tự nhiên giàu giá trị dinh dưỡng</p>
-            </div>
-            <div className="bg-[#e8f2e9] text-[#204D97] border-[1px] border-white text-justify relative bottom-5 z-[1] py-8 px-4 rounded-2xl">
-              <p>Phương thức chăn nuôi bò tự nhiên cùng thức ăn là đồng cỏ tươi và sạch giúp nguồn sữa Úc chứa hàm lượng dinh dưỡng cao, cụ thể: hàm lượng omega-3 cao hơn 147% so với sữa thông thường, hàm lượng acid béo linoleic liên hợp (dưỡng chất có khả năng chống viêm) nhiều gấp đôi,…
-                <br />
-                <br />
-                Úc là vùng đất của những đàn bò sữa được chăn nuôi tự nhiên: Bò tại các trang trại Úc được thả tự do, uống nước sạch và ăn cỏ tươi. Các trang trại này tách biệt với khu đô thị, do vậy hoàn toàn trong lành. Mỗi ngày, đàn bò Úc còn được massage và cho nghe nhạc để thả lỏng. Đặc biệt, bò còn được gắn chip để theo dõi sức khỏe nhằm đảm bảo cho ra dòng sữa chất lượng bậc nhất. Mỗi con bò đều được cấp mã số và quản lý theo Chương trình Định danh Vật nuôi Quốc gia</p>
-            </div>
-          </div>
-          <div className="w-full">
-            <div className="px-12 py-2 rounded-2xl bg-liner relative z-[2]">
-              <p className="text-lg text-center text-white">Công nghệ sản xuất tiên tiến bậc nhất từ Úc</p>
-            </div>
-            <div className="bg-[#e8f2e9] text-[#204D97] border-[1px] border-white text-justify relative bottom-5 z-[1] py-8 px-4 rounded-2xl">
-              <p>Sữa từ khi được vắt tại trang trại cho đến khi ra thành phẩm chỉ mất 24 giờ. Các thành phần dinh dưỡng sau khi trộn với sữa tươi sẽ được đưa vào sấy lạnh 1 lần duy nhất, đảm bảo dưỡng chất được giữ trọn vẹn và phân bố đều trong từng muỗng sữa.</p>
-            </div>
-          </div>
-          <div className="absolute bottom-1/4 right-1/4 max-md:hidden">
-            <Image src="/dong-co-d-2.webp" alt="dong-co-d-2" width={360} height={360} />
           </div>
         </div>
       </section>

@@ -9,10 +9,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const { data } = await getNewsBySlug(params.slug) as unknown as { data: NewsEntity };
 
   return {
-    metadataBase: new URL('https://kidscareplus.vn'),
+    metadataBase: new URL('https://wowtop.com.vn'),
     title: data.title || 'Tin tức',
-    description: data.title || 'Kids Care Plus',
-    keywords: 'Oz Farm Kid\'s Care Plus',
+    description: data.title || 'Wowtop',
+    keywords: 'Oz Farm Wowtop',
     robots: {
       follow: true,
       index: true,
@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       locale: 'vi_VN',
       title: data.title || 'Kids Care Plus',
-      url: `https://kidscareplus.vn/tin-tuc/${params.slug}`,
-      siteName: 'KidsCarePlus',
+      url: `https://wowtop.com.vn/tin-tuc/${params.slug}`,
+      siteName: 'Wowtop',
       type: 'article',
     },
   };
