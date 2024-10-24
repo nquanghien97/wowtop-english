@@ -186,7 +186,7 @@ function Form() {
   const id = useId()
   return (
     <div className="max-w-6xl m-auto">
-      <div className="bg-[url('/dk12.webp')] bg-[length:100%_100%] rounded-2xl p-8">
+      <div className="backgound-form rounded-2xl p-8">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <h2 className="text-center text-3xl mb-4 uppercase font-bold">Thông tin phụ huynh</h2>
@@ -502,7 +502,7 @@ function Form() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex justify-center items-center bg-[#065691] rounded-full px-4 py-3">
+            <div className="flex justify-center items-center header-bg rounded-full px-4 py-3 font-bold">
               <button disabled={loading} className={`${loading ? 'text-[#ccc]' : 'text-white'} text-xl mr-2`} type="submit">Nhận phác đồ chiều cao</button>
               {loading && <LoadingIcon size="small" />}
             </div>
