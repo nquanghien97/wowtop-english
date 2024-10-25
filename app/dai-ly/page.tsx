@@ -150,7 +150,7 @@ function Store() {
                 <Image src="/z2.png" alt="z2.png" width={30} height={45} />
               </div>
               <div>
-                <p className="text-[#06568D] font-bold">Website: Kid&apos;s Care Plus</p>
+                <p className="text-[#06568D] font-bold">Website: Wowtop.vn</p>
               </div>
             </div>
           </div>

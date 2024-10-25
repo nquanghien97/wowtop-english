@@ -43,7 +43,7 @@ function Product() {
                 <div className="mb-4">
                   <p className="text-[#D9A834] text-sm">Sở hữu chiều cao đạt chuẩn thế giới là bệ phóng tuyệt vời cho sự phát triển toàn diện về ngoại hình, sức khỏe, tinh thần hay sự nghiệp sau này của trẻ. Nếu được chăm sóc tốt, trẻ có thể cao lên đến 8-12cm mỗi năm.</p>
                 </div>
-                <p className="text-justify"><strong>OZ FARM KID’S CARE PLUS</strong> chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP 400mg, Canxi 800mg cùng 30 loại vitamin và khoáng chất thiết yếu cho sự phát triển thể chất ở trẻ. Sử dụng KID&apos;S CARE PLUS giúp kích thích nguyên bào Xương từ sâu bên trong, giúp tăng khả năng hấp thụ canxi, cho xương dài hơn và chắc khỏe hơn. Cùng OZ FARM tăng trưởng chiều cao cho trẻ không chỉ ở lượng mà còn ở chất.</p>
+                <p className="text-justify"><strong>OZ FARM WOWTOP</strong> chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP 400mg, Canxi 800mg cùng 30 loại vitamin và khoáng chất thiết yếu cho sự phát triển thể chất ở trẻ. Sử dụng WOWTOP giúp kích thích nguyên bào Xương từ sâu bên trong, giúp tăng khả năng hấp thụ canxi, cho xương dài hơn và chắc khỏe hơn. Cùng OZ FARM tăng trưởng chiều cao cho trẻ không chỉ ở lượng mà còn ở chất.</p>
                 <Image src="/cn.png" alt="cn" width={496} height={66} />
                 <ul className="mt-8 font-semibold">
                   <li className="text-[#D9A834] flex gap-2 items-center mb-2">
@@ -548,7 +548,7 @@ function Product() {
                       <Image src="/icon_muong.png" alt="icon_muong" width={200} height={200} className="max-md:w-[100px] max-md:h-[59px]" />
                     </div>
                   </div>
-                  <p className="text-[#84571B] font-bold text-lg md:text-xl">Pha 4 muỗng (40g) sữa KID&apos;S CARE PLUS vào nước ấm</p>
+                  <p className="text-[#84571B] font-bold text-lg md:text-xl">Pha 4 muỗng (40g) sữa WOWTOP vào nước ấm</p>
                 </div>
                 <div className="flex justify-center">
                   <Image src="/mui_ten.png" alt="mui-ten" width={30} height={73} />
@@ -560,7 +560,7 @@ function Product() {
                 <div className="flex items-center w-full">
                   <Image src="/b3.png" alt="b3" width={305} height={137} />
                 </div>
-                <p className="text-[#84571B] font-bold text-xl w-full">Khuấy đều để có được một ly 220ml sữa tăng chiều cao KID&apos;S CARE PLUS đầy đủ dưỡng chất</p>
+                <p className="text-[#84571B] font-bold text-xl w-full">Khuấy đều để có được một ly 220ml sữa tăng chiều cao WOWTOP đầy đủ dưỡng chất</p>
                 <div className="flex items-center w-1/2 justify-center">
                   <Image src="/icon_coc.png" alt="icon_coc" width={200} height={200} />
                 </div>
@@ -573,7 +573,7 @@ function Product() {
                   <Image src="/icon_coc.png" alt="icon_coc" width={200} height={200} className="max-md:w-[100px] max-md:h-[131px]" />
                 </div>
               </div>
-              <p className="text-[#84571B] font-bold text-lg md:text-xl">Khuấy đều để có được một ly 220ml sữa tăng chiều cao KID&apos;S CARE PLUS đầy đủ dưỡng chất</p>
+              <p className="text-[#84571B] font-bold text-lg md:text-xl">Khuấy đều để có được một ly 220ml sữa tăng chiều cao WOWTOP đầy đủ dưỡng chất</p>
             </div>
           </div>
         </div>

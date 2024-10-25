@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     },
     openGraph: {
       locale: 'vi_VN',
-      title: data.title || 'Kids Care Plus',
+      title: data.title || 'Wowtop',
       url: `https://wowtop.com.vn/tin-tuc/${params.slug}`,
       siteName: 'Wowtop',
       type: 'article',
