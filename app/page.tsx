@@ -12,20 +12,19 @@ export default async function Home() {
   return (
     <main>
       {/* <Banner /> */}
-      <section className="mb-8 mt-4 bg-cover md:h-[660px]">
+      <section className="md:h-[760px] h-[240px] bg-[url('/banner.png')] bg-[length:100%_100%]">
         <div className="max-w-6xl m-auto px-6 flex items-center h-full relative">
           <div className="max-w-[200px] md:max-w-[600px]">
-            <p className="bg-text uppercase py-4 font-bold md:text-5xl text-base">
+            <p className="bg-text-blue uppercase py-4 font-bold md:text-5xl text-base mb-2">
               Giúp tăng chiều cao từ cấp độ nguyên bào
             </p>
-            <Link href="/" className="header-bg px-6 py-2 rounded-full uppercase text-white">
+            <Link href="/" className="header-bg px-6 py-2 md:text-2xl rounded-full uppercase text-white">
               Tìm hiểu thêm
             </Link>
           </div>
-          <Image src="/lon-gau@2x-8.png" alt="" width={544} height={802} className="w-1/2 h-full md:w-full" />
         </div>
       </section>
-      <section className="mb-8 mt-4 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
+      <section className="mb-8 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
         <div className="max-w-6xl m-auto relative">
           <Image src="/pt1.webp" alt="" width={230} height={200} className="absolute top-[-10%] left-[40px] max-md:hidden" />
           <Image src="/pt2.webp" alt="" width={120} height={120} className="absolute top-[20%] left-0 max-md:hidden" />
@@ -37,17 +36,17 @@ export default async function Home() {
             <div>
               <p className="md:pt-6 pt-1">
                 <span className="bg-text bg-clip-text text-transparent">Cho </span>
-                <span className="py-2 px-4 bg-text2 rounded-md text-white">Chiều cao vượt đỉnh</span>
+                <span className="py-2 px-4 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 rounded-md text-white">Chiều cao vượt đỉnh</span>
               </p>
             </div>
           </div>
           <div className="relative text-xs max-md:hidden">
-            <Image src="/fhdgt@3x.webp" alt="hop-sua" width={1200} height={900} />
+            <Image src="/tach.png" alt="hop-sua" width={1200} height={900} />
             <div className="text-[#84571B]">
               <p className="w-[240px] absolute xl:top-[60px] xl:left-[140px] md:top-[100px] md:left-12 top-[96px] left-11">
                 Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP & CPP</strong> tăng cường hoạt động của nguyên bào xương, Hàm lượng Canxi cao hàng đầu (1200mg), tỷ lệ vàng Canxi : Photo = 1,4:1 kết hợp với D3K2 & khoáng chất·giúp hấp thu Canxi tối đa.
               </p>
-              <p className="w-[190px] absolute xl:top-[20px] xl:right-[150px] sm:top-[30px] sm:right-[20px] lg:top-[72px] lg:right-[60px]">
+              <p className="w-[190px] absolute xl:top-[60px] xl:right-[120px] sm:top-[30px] sm:right-[20px] lg:top-[72px] lg:right-[60px]">
                 <strong>DHA và ARA </strong>
                 giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt</p>
               <p className="lg:w-[204px] w-[160px] absolute xl:top-[320px] xl:right-16 md:top-[254px] md:right-[12px] top-[200px] right-[12px]">
@@ -55,7 +54,7 @@ export default async function Home() {
                 tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
               </p>
               <p className="w-[190px] absolute xl:bottom-[200px] xl:left-24 bottom-[180px] left-[80px]">
-                Chứa <strong>200 triệu lợi khuẩn Lactobacillus</strong> giúp hệ tiêu hóa luôn khỏe mạnh. Hệ chất xơ <strong>GOS & FOS</strong> bảo vệ đường ruột, giúp hấp thu Canxi tốt hơn
+                <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
               </p>
               <p className="w-[190px] absolute xl:bottom-[180px] xl:right-32 bottom-[200px] right-0">
                 Cung cấp <strong>chất béo</strong> và <strong>năng lượng</strong> bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. <strong>Protein từ Đạm Whey thủy phân</strong> với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
@@ -84,7 +83,7 @@ export default async function Home() {
                   </div>
                   <div className="w-2/3 flex items-center">
                     <span className="text-[#84571B] font-semibold">
-                      Chứa <strong>200 triệu lợi khuẩn Lactobacillus</strong> giúp hệ tiêu hóa luôn khỏe mạnh. Hệ chất xơ <strong>GOS & FOS</strong> bảo vệ đường ruột, giúp hấp thu Canxi tốt hơn
+                    <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
                     </span>
                   </div>
                 </div>
@@ -132,15 +131,15 @@ export default async function Home() {
         <div className="max-w-4xl m-auto">
           <div className="flex flex-col items-center justify-center text-2xl md:text-3xl uppercase mb-8 text-center">
             <div>
-              <p className="bg-[#84571B] bg-clip-text text-transparent pt-2">Tăng chiều cao từ cấp độ nguyên bào xương*</p>
+              <p className="bg-[#002A9E] bg-clip-text text-transparent pt-2">Tăng chiều cao từ cấp độ nguyên bào xương*</p>
             </div>
             <div>
-              <p className="bg-[#84571B] bg-clip-text font-bold text-transparent pt-2">Cao hơn cả về chất lượng</p>
+              <p className="bg-[#002A9E] bg-clip-text font-bold text-transparent pt-2">Cao hơn cả về chất lượng</p>
             </div>
           </div>
           <div className="mt-4 mb-14 px-4">
             <div className="border-[1px] border-[#84571B] rounded-full px-8">
-              <span className="relative top-[-15px] bg-[#e9fafb] text-xs md:text-base rounded-full text-[#84571B] inline-block px-3 py-2 text-center">(*) Nguyên bào xương xây dựng cấu trúc ma trận xương, dẫn các hạt Canxi và khoáng chất vào xương, từ đó tác động trực tiếp tới chất lượng xương và chiều cao tối đa của cơ thể.</span>
+              <span className="relative top-[-15px] bg-[#e9fafb] text-xs md:text-base rounded-full text-[#84571B] font-semibold inline-block px-3 py-2 text-center">(*) Nguyên bào xương xây dựng cấu trúc ma trận xương, dẫn các hạt Canxi và khoáng chất vào xương, từ đó tác động trực tiếp tới chất lượng xương và chiều cao tối đa của cơ thể.</span>
             </div>
           </div>
           <div className="flex flex-col">
@@ -190,18 +189,19 @@ export default async function Home() {
         </div>
       </section>
       <section className="md:mb-20">
-        <div className="max-w-6xl m-auto px-4">
-          <div className="mb-8">
-            <h2 className="text-xl md:text-5xl text-[#84571B] font-bold uppercase text-center">Những sai lầm trong tăng chiều cao</h2>
+        <div className="max-w-6xl m-auto md:px-4">
+          <div className="mb-4">
+            <h2 className="text-xl md:text-5xl bg-text py-4 font-bold uppercase text-center">Những sai lầm trong tăng chiều cao</h2>
           </div>
-          <div className="p-3 bg-[#fcf2d9] border-2 border-[#fcf2d9] rounded-2xl flex flex-wrap justify-center">
+          <div className="p-3 bg-[#f6f0de] border-2 border-[#fcf2d9] rounded-2xl flex flex-wrap justify-center relative">
+            <Image src="/PT.webp" alt="" width={175} height={175} className="absolute bottom-[-10%] left-[-10%] max-md:hidden" />
             <div className="w-full md:w-1/3 p-4">
               <div className="flex justify-center items-center mb-4">
                 <Image src="/h4.png" alt="h4" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#84571B] font-semibold text-center text-xl mb-4">Chỉ quan tâm cao về lượng</h4>
-                <p className="text-[#84571B]">
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Chỉ quan tâm cao về lượng</h4>
+                <p className="text-[#002A9E]">
                   Chiều cao về centimet rất quan trọng, nhưng nếu Chất lượng xương không được đảm bảo, trẻ sẽ dễ bị loãng xương và các bệnh về xương khác. Wowtop giúp cao hơn từ nguyên bào xương, cải thiện chiều cao cả về lượng và chất.
                 </p>
               </div>
@@ -211,8 +211,8 @@ export default async function Home() {
                 <Image src="/h5.png" alt="h5" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#84571B] font-semibold text-center text-xl mb-4">Canxi, Khoáng chất là đủ</h4>
-                <p className="text-[#84571B]">
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Canxi, Khoáng chất là đủ</h4>
+                <p className="text-[#002A9E]">
                   Chiều cao do khung xương quyết định. Canxi & khoáng chất chỉ là nguyên liệu cho xương hình thành. Cần có CBP, CPP thúc đẩy nguyên bào xương hoạt động, thu hút và hấp thụ tốt Canxi & khoáng chất thì khung xương mới dài hơn, chắc khỏe hơn.
                 </p>
               </div>
@@ -222,19 +222,19 @@ export default async function Home() {
                 <Image src="/h1.png" alt="h1" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#84571B] font-semibold text-center text-xl mb-4">Uống sữa là đủ để cao</h4>
-                <p className="text-[#84571B]">
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Uống sữa là đủ để cao</h4>
+                <p className="text-[#002A9E]">
                   Sữa là giải pháp dinh dưỡng tối ưu. Tuy nhiên vẫn cần kết hợp luyện tập & sinh hoạt để tăng chiều cao. Wowtop có đội ngũ Healthcoach đồng hành cùng con từ chế độ dinh dưỡng tới vận động để con đạt chiều cao tối đa.
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 p-4">
+            <div className="w-full md:w-2/5 p-4">
               <div className="flex justify-center items-center mb-4">
                 <Image src="/h3.png" alt="h3" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#84571B] font-semibold text-center text-xl mb-4">Tin rằng GEN quyết định chiều cao</h4>
-                <p className="text-[#84571B]">
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Tin rằng GEN quyết định chiều cao</h4>
+                <p className="text-[#002A9E]">
                   GEN chỉ quyết định 23% Dinh dưỡng, luyện tập và chế độ sinh hoạt mới thực sự giúp con cao vượt trội.
                 </p>
               </div>
@@ -244,8 +244,8 @@ export default async function Home() {
                 <Image src="/h2.png" alt="h2" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#84571B] font-semibold text-center text-xl mb-4">Bỏ qua giai đoạn vàng</h4>
-                <p className="text-[#84571B]">
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Bỏ qua giai đoạn vàng</h4>
+                <p className="text-[#002A9E]">
                   Giai đoạn 0 – 5 tuổi và giai đoạn trước dậy thì là các mốc tăng chiều cao quan trọng ở trẻ, cần được đặc biệt lưu ý và bổ sung dinh dưỡng tối đa.
                 </p>
               </div>
@@ -253,7 +253,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="max-md:mb-8 bg-[url('/dong-co-d-1.webp')] bg-[length:100%_100%] bg-center h-[1062px] relative max-md:hidden">
+      <section className="bg-[url('/dong-co-d-1.webp')] bg-[length:100%_100%] bg-center h-[1062px] relative max-md:hidden">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex justify-center mb-4">
             <div className="bg-text2 flex px-12 py-4 text-4xl rounded-full">
@@ -261,29 +261,29 @@ export default async function Home() {
             </div>
           </div>
           <div className="mb-8">
-            <h2 className="text-xl md:text-5xl bg-text uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
+            <h2 className="text-xl md:text-5xl text-[#002A9E] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
           </div>
           <div className="flex flex-col">
-            <div className="flex justify-between w-full">
+            <div className="flex justify-between w-full mb-8">
               <div className="flex justify-center w-2/5">
                 <Image src="/non-gmo.png" alt="non-gmo.png" width={400} height={120} />
               </div>
-              <div className="mx-12 w-3/5 flex flex-col justify-center">
+              <div className="mx-12 w-2/5 flex flex-col justify-center">
                 <div className="flex justify-between w-full mb-4">
-                  <Image src="/conbo_img_1.png" alt="conbo_img_1" width={120} height={45} />
-                  <Image src="/conbo_img_2.png" alt="conbo_img_2" width={120} height={45} />
-                  <Image src="/conbo_img_3.png" alt="conbo_img_3" width={120} height={45} />
+                  <Image src="/conbo_img_1.png" alt="conbo_img_1" width={100} height={45} />
+                  <Image src="/conbo_img_2.png" alt="conbo_img_2" width={100} height={45} />
+                  <Image src="/conbo_img_3.png" alt="conbo_img_3" width={100} height={45} />
                 </div>
                 <div>
-                  <p className="text-center text-xl font-semibold text-[white]">Nông trại bò sữa chuẩn Quốc tế</p>
+                  <p className="text-center text-2xl font-semibold text-[white]">Nông trại bò sữa chuẩn Quốc tế</p>
                 </div>
               </div>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center relative mb-24">
               <div>
                 <Image src="/conbo_img_5.png" alt="conbo_img_5" width={434} height={252} />
               </div>
-              <div>
+              <div className="absolute top-0 right-0">
                 <Image src="/dong-co-d-2.webp" alt="dong-co-d-2" width={467} height={382} />
               </div>
             </div>
@@ -294,9 +294,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="pt-20 mb-8 md:mb-20 bg-[url('/bgr-co-m.webp')] bg-center bg-[length:100%_100%] h-[820px] relative md:hidden">
+      <section className="pt-20 bg-[url('/bgr-co-m.webp')] bg-center bg-[length:100%_100%] h-[820px] relative md:hidden">
         <div className="mb-8">
-          <h2 className="text-xl md:text-5xl text-[#135689] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
+          <h2 className="text-xl md:text-5xl text-[#002A9E] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
         </div>
         <div className="flex justify-center w-full flex-col">
           <div className="mb-12 mx-12">
@@ -314,16 +314,15 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-8 h-[450px] md:h-[1050px] bg-[length:100%_100%] pt-16 relative">
+      <section className="mb-8 h-[450px] md:h-[1200px] bg-[length:100%_100%] pt-16 relative">
         <Image src="/nha-may@2x-100.jpg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
         <div className="px-4 relative z-10">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
-            <h2 className="uppercase text-4xl text-[#84571B] font-bold">Nhà máy sản xuất WOWTOP tại NewZealand</h2>
-            {/* <p className="text-4xl text-[#84571B] uppercase">và hành trình 12 năm phá vỡ mọi kỷ lục</p> */}
+            <h2 className="uppercase md:text-4xl text-[#002A9E] font-bold pb-1">Nhà máy sản xuất WOWTOP tại NewZealand</h2>
+            <p className="md:text-4xl text-[#002A9E] uppercase">Dẫn đầu về công nghệ sản xuất sữa</p>
           </div>
         </div>
       </section>
-      <Certificate />
       <Feedback />
       <FormOrder />
       <Experience />

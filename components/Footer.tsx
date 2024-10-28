@@ -7,8 +7,8 @@ function Footer() {
   return (
     <footer className="footer-bg">
       <div className="max-w-6xl m-auto px-4">
-        <div className="flex items-center gap-8 py-4">
-          <Image src="/logo-footer-2.png" alt="logo" width={275} height={75} className="relative md:top-[-12px] max-md:w-[190px] max-md:h-[50px] top-[-8px]" />
+        <div className="flex items-center gap-8 py-2">
+          <Image src="/logo-ngang.png" alt="logo" width={275} height={75} />
           <h3 className="uppercase text-xs md:text-xl font-semibold">
             <Link href={`/`} className="text-white">Nhận tư vấn</Link>
           </h3>

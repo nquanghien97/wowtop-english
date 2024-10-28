@@ -39,7 +39,7 @@ function Feedback() {
             <p className="text-center uppercase text-lg md:text-3xl text-white font-bold">Bé uống WOWTOP</p>
           </div>
           <div className="absolute bottom-2 md:bottom-4">
-            <p className="text-center uppercase text-xl md:text-3xl bg-text font-bold">Con lớn vượt trội</p>
+            <p className="text-center uppercase text-xl md:text-3xl bg-text font-bold">Cao lớn vượt trội</p>
           </div>
         </div>
         <Swiper

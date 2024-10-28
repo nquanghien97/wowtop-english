@@ -21,9 +21,9 @@ async function Successfully({ params }: { params: { code: string } }) {
   return (
     <div className="bg-[url('/bg-detail.png')] bg-[length:100%_100%]">
       <div className="max-w-6xl m-auto px-4 py-8">
-        <div className="">
-          <div className="flex justify-center">
-            <Image src="/logo.webp" alt="logo2" width={400} height={134} />
+        <div className="relative">
+          <div className="flex justify-center absolute">
+            <Image src="/logo.png" alt="logo2" width={400} height={134} />
           </div>
           <div className="text-center">
             <h2 className="text-[#135689] text-6xl py-2 uppercase">Chúc mừng</h2>
