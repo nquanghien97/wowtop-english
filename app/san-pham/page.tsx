@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 function Product() {
   return (
     <main>
-      <section className="bg-[url('/bgr-sua.webp')] bg-cover bg-center md:bg-[length:100%_100%] mb-8">
+      <section className="bg-[url('/bgr-sua.webp')] bg-cover bg-center md:bg-[length:100%_100%] pb-8">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex pb-[100px] flex-col md:flex-row">
             <div className="md:w-2/5 flex items-center">
@@ -80,28 +80,30 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="max-w-6xl m-auto px-4 mb-8">
-        <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/2 w-full flex flex-col justify-center max-md:mb-4">
-            <div className="flex justify-center mb-4">
-              <Image src="/artboard_14.png" alt="artboard_14" width={240} height={160} />
+      <section className="bg-custom-yellow">
+        <div className="max-w-6xl m-auto px-4 pb-8">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-1/2 w-full flex flex-col justify-center max-md:mb-4">
+              <div className="flex justify-center mb-4">
+                <Image src="/artboard_14.png" alt="artboard_14" width={240} height={160} />
+              </div>
+              <div className="flex justify-evenly items-center">
+                <Image src="/artboard_16.png" alt="artboard_16" width={100} height={100} />
+                <Image src="/bfdhb.png" alt="bfdhb" width={100} height={64} className="h-full" />
+                <Image src="/artboard_15.png" alt="artboard_15" width={100} height={100} />
+                <Image src="/artboard_13.png" alt="artboard_13" width={100} height={100} />
+              </div>
             </div>
-            <div className="flex justify-evenly items-center">
-              <Image src="/artboard_16.png" alt="artboard_16" width={100} height={100} />
-              <Image src="/bfdhb.png" alt="bfdhb" width={100} height={64} className="h-full" />
-              <Image src="/artboard_15.png" alt="artboard_15" width={100} height={100} />
-              <Image src="/artboard_13.png" alt="artboard_13" width={100} height={100} />
-            </div>
-          </div>
-          <div className="md:w-1/2 w-full bg-[url('/artboard_12.png')] bg-[length:100%_100%] px-4 py-8">
-            <div>
-              <h2 className="font-semibold text-4xl uppercase text-center mb-4">NON - GMO VERIFIED</h2>
-              <p className="text-lg font-semibold">Một trong số công ty hiếm hoi ở New Zealand có đầy đủ chứng nhận về sữa công thức dành cho trẻ sơ sinh.WowTop chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP 125mg, Canxi 1200mg cùng 29 loại vitamin và khoáng chất thiết yếu cho sự phát triển thể chất ở trẻ. Sử dụng WowTop không chỉ giúptrẻ tăng chiều cao lành mạnh mà còn kích thích sự phát triển ở cấp nguyên bào Xương từ sâu bên trong,giúp tăng khả năng hấp thụ canxi, cho xương dài hơn và chắc khỏe hơn. Cùng WowTop tăng trưởng chiều caocho trẻ không chỉ ở lượng mà còn ở chất.</p>
+            <div className="md:w-1/2 w-full bg-[url('/artboard_12.png')] bg-[length:100%_100%] px-4 py-8">
+              <div>
+                <h2 className="font-semibold text-4xl uppercase text-center mb-4">NON - GMO VERIFIED</h2>
+                <p className="text-lg font-semibold">Một trong số công ty hiếm hoi ở New Zealand có đầy đủ chứng nhận về sữa công thức dành cho trẻ sơ sinh.WowTop chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP 125mg, Canxi 1200mg cùng 29 loại vitamin và khoáng chất thiết yếu cho sự phát triển thể chất ở trẻ. Sử dụng WowTop không chỉ giúptrẻ tăng chiều cao lành mạnh mà còn kích thích sự phát triển ở cấp nguyên bào Xương từ sâu bên trong,giúp tăng khả năng hấp thụ canxi, cho xương dài hơn và chắc khỏe hơn. Cùng WowTop tăng trưởng chiều caocho trẻ không chỉ ở lượng mà còn ở chất.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="mb-8">
+      <section className="pb-8 bg-custom-yellow">
         <div className="max-w-4xl m-auto px-4">
           <div>
             <div className="flex flex-col items-center justify-center text-xl md:text-[40px] uppercase text-center mb-8">
@@ -128,36 +130,38 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="md:max-w-4xl w-full m-auto px-4 mb-8 relative">
-        <div className="flex justify-center relative w-full">
-          <Image src="/bgr-giot.webp" alt="bgr-giot" width={896} height={1000} />
-          <div className="uppercase absolute top-4 md:top-12 left-[16%] md:text-2xl text-xs font-semibold text-[#84571B]">
-            <span className="text-[#002A9E]"><strong>Có thành phần CBP</strong></span>
-            <br />
-            <span>giúp kích thích</span>
-            <br />
-            <span><strong>quá trình tạo xương</strong></span>
-            <br />
-            <span>từ cấp độ nguyên bào</span>
+      <section className="bg-custom-yellow">
+        <div className="md:max-w-4xl w-full m-auto px-4 relative">
+          <div className="flex justify-center relative w-full">
+            <Image src="/bgr-giot.webp" alt="bgr-giot" width={896} height={1000} />
+            <div className="uppercase absolute top-4 md:top-12 left-[16%] md:text-2xl text-xs font-semibold text-[#84571B]">
+              <span className="text-[#002A9E]"><strong>Có thành phần CBP</strong></span>
+              <br />
+              <span>giúp kích thích</span>
+              <br />
+              <span><strong>quá trình tạo xương</strong></span>
+              <br />
+              <span>từ cấp độ nguyên bào</span>
+            </div>
+            <div className="uppercase absolute top-[25%] left-[10%] text-2xl md:text-[48px] font-bold py-4">
+              <span className="text-[#002A9E]">CBP ≈ 1/50 tỷ Nano</span>
+            </div>
+            <div className="uppercase absolute top-[44%] right-[16%] md:text-2xl font-semibold">
+              <span className="bg-text"><strong>10 lít sữa non của bò</strong></span>
+              <br />
+              <span className="bg-text">tiết ra trong 24h đầu</span>
+              <br />
+              <span className="bg-text">chiết xuất ra được</span>
+              <br />
+              <p className="md:text-[48px] text-4xl font-bold text-center mt-4 py-2 text-[#002A9E]">4g CBP</p>
+            </div>
           </div>
-          <div className="uppercase absolute top-[25%] left-[10%] text-2xl md:text-[48px] font-bold py-4">
-            <span className="text-[#002A9E]">CBP ≈ 1/50 tỷ Nano</span>
+          <div className="absolute bottom-[-20%] right-[-20%] rotate-[-90deg] max-md:hidden">
+            <Image src="/PT.webp" alt="pt" width={400} height={400} />
           </div>
-          <div className="uppercase absolute top-[44%] right-[16%] md:text-2xl font-semibold">
-            <span className="bg-text"><strong>10 lít sữa non của bò</strong></span>
-            <br />
-            <span className="bg-text">tiết ra trong 24h đầu</span>
-            <br />
-            <span className="bg-text">chiết xuất ra được</span>
-            <br />
-            <p className="md:text-[48px] text-4xl font-bold text-center mt-4 py-2 text-[#002A9E]">4g CBP</p>
-          </div>
-        </div>
-        <div className="absolute bottom-[-20%] right-[-20%] rotate-[-90deg] max-md:hidden">
-          <Image src="/PT.webp" alt="pt" width={400} height={400} />
         </div>
       </section>
-      <section className="mb-8">
+      <section className="bg-custom-yellow">
         <div className="max-w-4xl m-auto px-4">
           <div className="mb-8">
             <p className="text-[#84571B] font-bold text-2xl md:text-4xl mb-2 uppercase">Tác dụng của <span className="text-4xl">CBP</span> với</p>
@@ -168,7 +172,7 @@ function Product() {
           </div>
           <div className="flex flex-col gap-8 mb-8">
             <div className="flex items-center gap-4 md:gap-8">
-              <Image src="/artboard_20.png" alt="a2" width={140} height={184} className="w-20 md:w-[140px]" />
+              <Image src="/artboard16.png" alt="a2" width={140} height={184} className="w-20 md:w-[140px]" />
               <div>
                 <div className="flex mb-4">
                   <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Nguyên bào xương</div>
@@ -177,7 +181,7 @@ function Product() {
               </div>
             </div>
             <div className="flex items-center gap-4 md:gap-8">
-              <Image src="/artboard_21.png" alt="a3" width={140} height={184} className="w-20 md:w-[140px]" />
+              <Image src="/artboard14.png" alt="a3" width={140} height={184} className="w-20 md:w-[140px]" />
               <div>
                 <div className="flex mb-4">
                   <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Cao về lượng</div>
@@ -186,7 +190,7 @@ function Product() {
               </div>
             </div>
             <div className="flex items-center gap-4 md:gap-8">
-              <Image src="/artboard_22.png" alt="a4" width={140} height={184} className="w-20 md:w-[140px]" />
+              <Image src="/artboard15.png" alt="a4" width={140} height={184} className="w-20 md:w-[140px]" />
               <div>
                 <div className="flex mb-4">
                   <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Cao về chất</div>
@@ -200,7 +204,7 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="mb-8">
+      <section className="mb-8 bg-custom-yellow">
         <div className="max-w-4xl m-auto px-4">
           <div className="flex justify-center flex-col items-center mb-8">
             <h2 className="uppercase bg-text pt-4 text-6xl font-bold mb-8">3 bước</h2>
@@ -232,7 +236,18 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="mb-8 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
+      <section className="bg-[url('/artboard17.png')] bg-[length:100%_100%] h-[800px] max-w-4xl m-auto">
+        <div className="flex justify-end relative">
+          <p className="text-[#002A9E] font-black text-8xl">OPO</p>
+          <div className="mt-[-24px]">
+            <p className="bg-[url('/bgr-tp-2.png')] bg-[length:100%_100%] text-[#84571B] text-6xl font-bold px-16 py-4">HỮU CƠ</p>
+          </div>
+        </div>
+        <div className="flex justify-end">
+          <p className="w-2/3 text-xl text-[#002A9E]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam harum officia cupiditate doloremque fugit assumenda, sint necessitatibus reprehenderit.</p>
+        </div>
+      </section>
+      <section className="mb-8 bg-[url('/nen-ct.png')] bg-[length:100%_100%]">
         <div className="max-w-6xl m-auto relative">
           <Image src="/pt1.webp" alt="" width={230} height={200} className="absolute top-[-10%] left-[40px] max-md:hidden" />
           <Image src="/pt2.webp" alt="" width={120} height={120} className="absolute top-[10%] left-[-10%] max-md:hidden" />
@@ -280,7 +295,7 @@ function Product() {
                   </div>
                   <div className="w-2/3 flex items-center">
                     <span className="text-[#84571B] font-semibold">
-                    Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP</strong> (125 mg/100g) & <strong>CPP</strong> (571 mg/100g) tăng cường hoạt động của nguyên bào xương. Hàm lượng <strong>Canxi</strong> cao hàng đầu (1475 mg/100g), tỷ lệ vàng <strong>Canxi : Phospho</strong> = 1,8:1 kết hợp với D3K1 & khoáng chất·giúp hấp thu Canxi tối đa.
+                      Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP</strong> (125 mg/100g) & <strong>CPP</strong> (571 mg/100g) tăng cường hoạt động của nguyên bào xương. Hàm lượng <strong>Canxi</strong> cao hàng đầu (1475 mg/100g), tỷ lệ vàng <strong>Canxi : Phospho</strong> = 1,8:1 kết hợp với D3K1 & khoáng chất·giúp hấp thu Canxi tối đa.
                     </span>
                   </div>
                 </div>
@@ -291,7 +306,7 @@ function Product() {
                   </div>
                   <div className="w-2/3 flex items-center">
                     <span className="text-[#84571B] font-semibold">
-                    <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
+                      <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
                     </span>
                   </div>
                 </div>

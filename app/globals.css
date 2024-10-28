@@ -186,3 +186,7 @@
   left: 0;
   z-index: 100;
 }
+
+.bg-custom-yellow {
+  background: linear-gradient(to right, #fdf9ed, #f6f0de);
+}
