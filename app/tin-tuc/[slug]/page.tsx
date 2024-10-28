@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 
 async function NewsDetail({ params }: { params: { slug: string } }) {
+  if(!params.slug) return (
+    <p>Tin tức không tồn tại</p>
+  );
   const { data } = await getNewsBySlug(params.slug) as unknown as { data: NewsEntity }
   return (
     <div className="my-4">

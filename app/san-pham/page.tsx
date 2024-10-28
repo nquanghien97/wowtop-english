@@ -1,10 +1,10 @@
-import Certificate from "@/components/HomePage/Certificate"
-import Experience from "@/components/HomePage/Experience"
 import Feedback from "@/components/HomePage/Feedback"
 import FormOrder from "@/components/HomePage/FormOrder"
 import { Metadata } from "next"
+import dynamic from "next/dynamic"
 import Image from "next/image"
 import Link from "next/link"
+const Experience = dynamic(() => import('@/components/HomePage/Experience'), { ssr: false })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://wowtop.com.vn'),

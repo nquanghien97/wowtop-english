@@ -6,7 +6,9 @@ import { getNews } from '@/services/news';
 import Image from 'next/image'
 import Link from 'next/link';
 import { NewsEntity } from '@/entities/news';
-import Experience from '@/components/HomePage/Experience';
+// import Experience from '@/components/HomePage/Experience';
+import dynamic from "next/dynamic";
+const Experience = dynamic(() => import('@/components/HomePage/Experience'), { ssr: false })
 
 export default async function Home() {
   return (

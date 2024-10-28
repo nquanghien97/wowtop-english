@@ -6,7 +6,7 @@ import { NewsEntity } from "@/entities/news";
 import { truncateText } from "@/utils/truncateText";
 
 async function Experience() {
-  const { data } = await getNews({ page: 1, pageSize: 5 }) as { data: NewsEntity[] }
+  const { data } = await getNews({ page: 1, pageSize: 10 }) as { data: NewsEntity[] }
   const dataWithoutFirstItem = data.slice(1, -1)
   return (
     <section className="mb-20">
@@ -68,29 +68,35 @@ async function Experience() {
             </div>
             <div className="flex mb-7 h-[2px] bg-[#ccc] w-4/5" />
             <ul className="list-decimal max-md:px-4 pl-4">
-              {data.map(item => (
-                <li key={item.id} className="mb-4">
-                  <Link href={`/tin-tuc/${item.slug}`} className="text-[#84571B] font-semibold text-lg line-clamp-2">{item.title}</Link>
-                  <div className="text-[#84571B]">
-                    <small>{formatDate(item.createdAt)}</small>
-                  </div>
-                </li>
-              ))}
+              {data.length === 0 ? (
+                <p>Không có dữ liệu</p>
+              ) : (
+                data.map(item => (
+                  <li key={item.id} className="mb-4">
+                    <Link href={`/tin-tuc/${item.slug}`} className="text-[#84571B] font-semibold text-lg line-clamp-2">{item.title}</Link>
+                    <div className="text-[#84571B]">
+                      <small>{formatDate(item.createdAt)}</small>
+                    </div>
+                  </li>
+                ))
+              )}
             </ul>
           </div>
         </div>
-        <div className="flex gap-4">
-          <Link className="w-2/5 overflow-hidden" href={`/tin-tuc/${data[data.length - 1].slug}`}>
-            <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[data.length - 1].imageUrl}`} alt={data[data.length - 1].title} width={440} height={276} className="w-full" />
-          </Link>
-          <div className="w-3/5">
-            <div>
-              <Link href={`/tin-tuc/${data[data.length - 1].slug}`} className="text-[#84571B] font-bold text-lg">{data[data.length - 1].title}</Link>
+        {data.length > 0 && (
+          <div className="flex gap-4">
+            <Link className="w-2/5 overflow-hidden" href={`/tin-tuc/${data[data.length - 1].slug}`}>
+              <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[data.length - 1].imageUrl}`} alt={data[data.length - 1].title} width={440} height={276} className="w-full" />
+            </Link>
+            <div className="w-3/5">
+              <div>
+                <Link href={`/tin-tuc/${data[data.length - 1].slug}`} className="text-[#84571B] font-bold text-lg">{data[data.length - 1].title}</Link>
+              </div>
+              <small className="text-[#9f9e9a]">{`Ngày đăng: ${formatDate(data[data.length - 1].createdAt)}`}</small>
+              <div className="my-3 text-justify text-sm line-clamp-4" dangerouslySetInnerHTML={{ __html: data[0].content }} />
             </div>
-            <small className="text-[#9f9e9a]">{`Ngày đăng: ${formatDate(data[data.length - 1].createdAt)}`}</small>
-            <div className="my-3 text-justify text-sm line-clamp-4" dangerouslySetInnerHTML={{ __html: data[0].content }} />
           </div>
-        </div>
+        )}
       </div>
     </section>
   )
