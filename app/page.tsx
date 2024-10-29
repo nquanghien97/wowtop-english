@@ -15,9 +15,9 @@ export default async function Home() {
     <main>
       {/* <Banner /> */}
       <section className="md:h-[760px] h-[240px] bg-[url('/banner.png')] bg-[length:100%_100%]">
-        <div className="max-w-6xl m-auto px-6 flex items-center h-full relative">
-          <div className="max-w-[200px] md:max-w-[600px]">
-            <p className="bg-text-blue uppercase py-4 font-bold md:text-5xl text-base mb-2">
+        <div className="max-w-7xl m-auto px-6 flex items-center h-full relative">
+          <div className="max-w-[200px] md:max-w-[700px]">
+            <p className="bg-text-blue uppercase py-4 font-bold md:text-5xl text-base mb-2 tracking-wider">
               Giúp tăng chiều cao từ cấp độ nguyên bào
             </p>
             <Link href="/" className="header-bg px-6 py-2 md:text-2xl rounded-full uppercase text-white">
@@ -26,10 +26,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-8 bg-[url('/nen-ct.webp')] bg-[length:100%_100%]">
-        <div className="max-w-6xl m-auto relative">
-          <Image src="/pt1.webp" alt="" width={230} height={200} className="absolute top-[-10%] left-[40px] max-md:hidden" />
-          <Image src="/pt2.webp" alt="" width={120} height={120} className="absolute top-[20%] left-0 max-md:hidden" />
+      <section className="mb-8 bg-[url('/nen-ct.webp')] md:bg-[url('/artboard12.jpg')] md:h-[1080px] bg-[length:100%_100%]">
+        <div className="max-w-6xl m-auto relative h-full">
           <Image src="/PT.webp" alt="" width={150} height={150} className="absolute bottom-0 right-0 max-md:hidden" />
           <div className="flex flex-col items-center justify-center text-2xl md:text-[40px] uppercase text-center py-4">
             <div>
@@ -42,30 +40,29 @@ export default async function Home() {
               </p>
             </div>
           </div>
-          <div className="relative text-xs max-md:hidden">
-            <Image src="/tach.png" alt="hop-sua" width={1200} height={900} />
+          <div className="relative text-xs max-md:hidden h-full">
             <div className="text-[#84571B]">
-              <p className="w-[240px] absolute xl:top-[60px] xl:left-[140px] md:top-[100px] md:left-12 top-[96px] left-11">
+              <p className="w-[240px] absolute xl:top-[80px] xl:left-0 md:top-[100px] md:left-[200px] top-[96px] left-11">
                 Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP & CPP</strong> tăng cường hoạt động của nguyên bào xương, Hàm lượng Canxi cao hàng đầu (1200mg), tỷ lệ vàng Canxi : Photo = 1,4:1 kết hợp với D3K2 & khoáng chất·giúp hấp thu Canxi tối đa.
               </p>
-              <p className="w-[190px] absolute xl:top-[60px] xl:right-[120px] sm:top-[30px] sm:right-[20px] lg:top-[72px] lg:right-[60px]">
+              <p className="w-[190px] absolute xl:top-[40px] xl:right-[120px] md:top-[40px] md:right-[240px]">
                 <strong>DHA và ARA </strong>
                 giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt</p>
-              <p className="lg:w-[204px] w-[160px] absolute xl:top-[320px] xl:right-16 md:top-[254px] md:right-[12px] top-[200px] right-[12px]">
+              <p className="lg:w-[204px] w-[160px] absolute xl:top-[360px] xl:right-4 md:top-[360px] md:right-[160px] top-[200px] right-[12px]">
                 <strong>Lactoferrin & IgG </strong>
                 tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
               </p>
-              <p className="w-[190px] absolute xl:bottom-[200px] xl:left-24 bottom-[180px] left-[80px]">
+              <p className="w-[190px] absolute xl:bottom-[440px] xl:left-[-40px] bottom-[440px] left-[160px]">
                 <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
               </p>
-              <p className="w-[190px] absolute xl:bottom-[180px] xl:right-32 bottom-[200px] right-0">
+              <p className="w-[190px] absolute xl:bottom-[400px] xl:right-32 bottom-[400px] right-[200px]">
                 Cung cấp <strong>chất béo</strong> và <strong>năng lượng</strong> bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. <strong>Protein từ Đạm Whey thủy phân</strong> với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
               </p>
             </div>
           </div>
           <div className="md:hidden text-xs">
             <div className="flex flex-col justify-center items-center mt-2 ">
-              <Image src="/lonsua.webp" alt="bg-hop-sua" width={300} height={290} />
+              <Image src="/Artboard 13.png" alt="bg-hop-sua" width={300} height={290} />
               <div className="flex flex-col px-2">
                 <div className="flex">
                   <div className="w-1/3 relative flex justify-center items-center">
