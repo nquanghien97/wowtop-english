@@ -93,7 +93,7 @@ async function Experience() {
                 <Link href={`/tin-tuc/${data[data.length - 1].slug}`} className="text-[#84571B] font-bold text-lg">{data[data.length - 1].title}</Link>
               </div>
               <small className="text-[#9f9e9a]">{`Ngày đăng: ${formatDate(data[data.length - 1].createdAt)}`}</small>
-              <div className="my-3 text-justify text-sm line-clamp-4" dangerouslySetInnerHTML={{ __html: data[0].content }} />
+              <div className="my-3 text-justify line-clamp-4" dangerouslySetInnerHTML={{ __html: data[0].content }} />
             </div>
           </div>
         )}
