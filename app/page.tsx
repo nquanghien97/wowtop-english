@@ -14,9 +14,10 @@ export default async function Home() {
   return (
     <main>
       {/* <Banner /> */}
-      <section className="md:h-[760px] h-[240px] bg-[url('/banner.png')] bg-[length:100%_100%]">
-        <div className="max-w-7xl m-auto px-6 flex items-center h-full relative">
-          <div className="max-w-[200px] md:max-w-[700px]">
+      <section className="relative">
+        <Image src="/banner.png" alt='' width={2398} height={1104} />
+        <div className="pl-6 flex items-center h-full absolute top-0 right-1/2 z-10">
+          <div className="max-w-[320px] md:max-w-[700px]">
             <p className="bg-text-blue uppercase py-4 font-bold md:text-5xl text-base mb-2 tracking-wider">
               Giúp tăng chiều cao từ cấp độ nguyên bào
             </p>

@@ -36,7 +36,7 @@ function Header() {
           </ul>
         </div>
         <header className="md:h-[80px] header-bg h-[60px] shadow-sm shadow-black/20 header-bottom">
-          <div className="h-full flex md:justify-center justify-between max-w-6xl m-auto md:relative">
+          <div className="h-full flex md:justify-center justify-between max-w-6xl m-auto md:relative z-[99]">
             <Link href="/" className={`flex justify-start md:justify-center items-center max-md:w-full ${isScrolled ? 'md:absolute md:left-[-20%] md:top-[-100%]' : 'md:absolute md:left-[-20%] md:top-[-80%]'}`}>
               <Image src="/logo.png" alt="logo" width={320} height={320} className={`max-md:hidden duration-300 ${isScrolled ? 'scale-50' : ''}`} />
               <Image src="/logo.png" alt="logo" width={100} height={100} className="md:hidden" />
