@@ -6,7 +6,7 @@ import { NewsEntity } from "@/entities/news";
 import { truncateText } from "@/utils/truncateText";
 
 async function Experience() {
-  const { data } = await getNews({ page: 1, pageSize: 4 }) as { data: NewsEntity[] }
+  const { data } = await getNews({ page: 1, pageSize: 5 }) as { data: NewsEntity[] }
   const dataWithoutFirstItem = data.slice(1, -1)
   return (
     <section className="mb-20">
@@ -44,10 +44,10 @@ async function Experience() {
                 </div>
                 <div className="w-full md:w-3/5">
                   {dataWithoutFirstItem.map(item => (
-                    <div key={item.id} className="flex gap-6">
-                      <div className="w-[100px] flex">
+                    <div key={item.id} className="flex gap-6 mb-4">
+                      <div className="w-[200px] flex">
                         <Link href={`/tin-tuc/${item.slug}`} className="w-full">
-                          <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item.imageUrl}`} alt={item.title} width={150} height={100} className="w-full" />
+                          <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item.imageUrl}`} alt={item.title} width={240} height={200} className="w-full" />
                         </Link>
                       </div>
                       <div className="flex flex-col flex-1">
