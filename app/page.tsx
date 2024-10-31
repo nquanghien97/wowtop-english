@@ -1,11 +1,7 @@
-import Banner from '@/components/HomePage/Banner'
-import Certificate from '@/components/HomePage/Certificate'
 import Feedback from '@/components/HomePage/Feedback';
 import FormOrder from '@/components/HomePage/FormOrder';
-import { getNews } from '@/services/news';
 import Image from 'next/image'
 import Link from 'next/link';
-import { NewsEntity } from '@/entities/news';
 // import Experience from '@/components/HomePage/Experience';
 import dynamic from "next/dynamic";
 const Experience = dynamic(() => import('@/components/HomePage/Experience'), { ssr: false })
