@@ -195,7 +195,7 @@ function Form() {
                 <div className="w-full">
                   <input
                     placeholder="Họ và tên phụ huynh *"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("parentName", { required: true })}
                   />
                   {errors.parentName && <span className="text-[red] text-xs p-2">{errors.parentName.message}</span>}
@@ -203,7 +203,7 @@ function Form() {
                 <div className="w-full">
                   <input
                     placeholder="Số điện thoại phụ huynh *"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("phoneNumber", { required: true })}
                   />
                   {errors.phoneNumber && <span className="text-[red] text-xs p-2">{errors.phoneNumber.message}</span>}
@@ -213,7 +213,7 @@ function Form() {
                 <div className="w-full">
                   <input
                     placeholder="Chiều cao hiện tại của bố (cm) *"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("fatherHeight", { required: true })}
                   />
                   {errors.fatherHeight && <span className="text-[red] text-xs p-2">{errors.fatherHeight.message}</span>}
@@ -221,7 +221,7 @@ function Form() {
                 <div className="w-full">
                   <input
                     placeholder="Chiều cao hiện tại của mẹ (cm) *"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("motherHeight", { required: true, valueAsNumber: true })}
                   />
                   {errors.motherHeight && <span className="text-[red] text-xs p-2">Vui lòng nhập chiều cao hiện tại của mẹ</span>}
@@ -318,7 +318,7 @@ function Form() {
                 <div className="md:w-1/2">
                   <input
                     placeholder="Địa chỉ (Số nhà, tên đường)*"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("address", { required: true })}
                   />
                   {errors.address && <span className="text-[red] text-xs p-2">{errors.address.message}</span>}
@@ -333,7 +333,7 @@ function Form() {
                 <div className="md:w-1/2">
                   <input
                     placeholder="Họ và tên con *"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("fullName", { required: true })}
                   />
                   {errors.fullName && <span className="text-[red] text-xs p-2">Vui lòng nhập họ tên con</span>}
@@ -372,7 +372,7 @@ function Form() {
                       <DatePicker
                         {...field}
                         locale={vi}
-                        className="w-full rounded-full px-4 py-3 outline-none"
+                        className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                         selected={field.value ? new Date(field.value) : null}
                         onChange={(date: Date | null) => field.onChange(date)}
                         dateFormat="dd/MM/yyyy"
@@ -384,7 +384,7 @@ function Form() {
                 <div className="w-full">
                   <input
                     placeholder="Nhập chiều cao hiện tại của con (50-200cm) *"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("currentHeight", { required: true })}
                   />
                   <div className="flex max-md:justify-center">
@@ -409,7 +409,7 @@ function Form() {
                 <div className="md:w-1/2">
                   <input
                     placeholder="Nhập cân nặng hiện tại của con (1-150kg) *"
-                    className="w-full rounded-full px-4 py-3 outline-none"
+                    className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("currentWeight", { required: true, valueAsNumber: true })}
                   />
                   <div className="flex max-md:justify-center">
