@@ -37,20 +37,20 @@ export default async function Home() {
         </div>
         <Image src="/artboard12.jpg" alt="" width={1920} height={1080} className="max-lg:hidden w-full" />
         <Image src="/PT.webp" alt="" width={150} height={150} className="absolute bottom-0 right-0 max-lg:hidden" />
-        <p className="text-xs max-lg:hidden text-[#84571B] w-[240px] absolute top-[20%] left-[22%]">
+        <p className="max-lg:hidden text-[#84571B] w-[19%] text-[0.9vw] absolute top-[18%] left-[21%]">
           Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP & CPP</strong> tăng cường hoạt động của nguyên bào xương, Hàm lượng Canxi cao hàng đầu (1200mg), tỷ lệ vàng Canxi : Photo = 1,4:1 kết hợp với D3K2 & khoáng chất·giúp hấp thu Canxi tối đa.
         </p>
-        <p className="text-xs max-lg:hidden text-[#84571B] w-[190px] absolute top-[16%] 2xl:right-[26%] right-[20%]">
+        <p className="max-lg:hidden text-[#84571B] w-[16%] text-[0.9vw] absolute top-[15%] right-[22%]">
           <strong>DHA và ARA </strong>
           giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt</p>
-        <p className="text-xs max-lg:hidden text-[#84571B] w-[204px] absolute top-[46%] 2xl:right-[21%] right-[15%]">
+        <p className="max-lg:hidden text-[#84571B] w-[16%] text-[0.9vw] absolute top-[46%] right-[19%]">
           <strong>Lactoferrin & IgG </strong>
           tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
         </p>
-        <p className="text-xs max-lg:hidden text-[#84571B] w-[190px] absolute bottom-[28%] left-[16%] 2xl:left-[20%]">
+        <p className="max-lg:hidden text-[#84571B] w-[14%] text-[0.9vw] absolute bottom-[25%] left-[17%]">
           <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
         </p>
-        <p className="text-xs max-lg:hidden text-[#84571B] w-[190px] absolute bottom-[24%] 2xl:bottom-[26%] 2xl:right-[22%] right-[18%]">
+        <p className="max-lg:hidden text-[#84571B] w-[16%] text-[0.9vw] absolute bottom-[24%] right-[22%]">
           Cung cấp <strong>chất béo</strong> và <strong>năng lượng</strong> bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. <strong>Protein từ Đạm Whey thủy phân</strong> với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
         </p>
         <div className="lg:hidden text-xs">
