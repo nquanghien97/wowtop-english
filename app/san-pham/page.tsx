@@ -273,7 +273,7 @@ function Product() {
                 <strong>Lactoferrin & IgG </strong>
                 tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
               </p>
-              <p className="w-[190px] absolute 2xl:bottom-[440px] 2xl:left-[20px] xl:bottom-[420px] xl:left-[80px] lg:bottom-[440px] lg:left-[140px]">
+              <p className="w-[190px] absolute 2xl:bottom-[440px] 2xl:left-[-40px] xl:bottom-[420px] xl:left-[80px] lg:bottom-[440px] lg:left-[140px]">
                 <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
               </p>
               <p className="w-[190px] absolute 2xl:bottom-[400px] 2xl:right-[100px] xl:bottom-[400px] xl:right-[160px] lg:bottom-[400px] lg:right-[200px]">
