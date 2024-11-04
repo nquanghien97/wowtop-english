@@ -24,7 +24,7 @@ export default async function Home() {
         </div>
       </section>
       <section className="mb-8 bg-[url('/nen-ct.webp')] relative">
-        <div className="flex flex-col items-center justify-center text-[28px] lg:text-[1.5vw] uppercase text-center py-4 lg:absolute lg:top-0 lg:left-1/2 lg:transform lg:-translate-x-1/2">
+        <div className="flex flex-col items-center justify-center text-[28px] lg:text-[2vw] uppercase text-center py-4 lg:absolute lg:top-0 lg:left-1/2 lg:transform lg:-translate-x-1/2">
           <div>
             <p className="bg-text bg-clip-text text-transparent font-bold">Công thức tối ưu</p>
           </div>
