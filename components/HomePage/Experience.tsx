@@ -9,7 +9,7 @@ async function Experience() {
   const { data } = await getNews({ page: 1, pageSize: 5 }) as { data: NewsEntity[] }
   const dataWithoutFirstItem = data.slice(1, -1)
   return (
-    <section className="mb-20">
+    <section className="pb-20">
       <div className="max-w-6xl m-auto px-4">
         <div className="bg-text font-bold text-4xl uppercase text-center mb-4">
           <p className="py-2">Kinh nghiệm</p>
@@ -27,10 +27,10 @@ async function Experience() {
               <div className="flex gap-4 flex-col md:flex-row">
                 <div className="w-full md:w-2/5 flex flex-col">
                   <Link href={`/tin-tuc/${data[0].slug}`}>
-                    <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[0].imageUrl}`} alt={data[0].title} width={350} height={220} className="m-auto" />
+                    <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[0].imageUrl}`} alt={data[0].title} width={350} height={220} />
                   </Link>
                   <Link href={`/tin-tuc/${data[0].slug}`} className="mt-2">
-                    <p className="text-[#84571B] font-semibold text-lg max-md:text-center">{data[0].title}</p>
+                    <p className="text-[#84571B] font-semibold text-lg">{data[0].title}</p>
                   </Link>
                   <div className="my-3 text-justify" dangerouslySetInnerHTML={{ __html: truncateText(data[0].content, 200) }} />
                   <div className="text-[#84571B]">
@@ -84,11 +84,11 @@ async function Experience() {
           </div>
         </div>
         {data.length > 0 && (
-          <div className="flex gap-4">
-            <Link className="w-2/5 overflow-hidden" href={`/tin-tuc/${data[data.length - 1].slug}`}>
+          <div className="flex gap-4 max-md:flex-col">
+            <Link className="md:w-2/5 overflow-hidden" href={`/tin-tuc/${data[data.length - 1].slug}`}>
               <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[data.length - 1].imageUrl}`} alt={data[data.length - 1].title} width={440} height={276} className="w-full" />
             </Link>
-            <div className="w-3/5">
+            <div className="md:w-3/5">
               <div>
                 <Link href={`/tin-tuc/${data[data.length - 1].slug}`} className="text-[#84571B] font-bold text-lg">{data[data.length - 1].title}</Link>
               </div>

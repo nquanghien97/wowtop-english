@@ -42,7 +42,7 @@ export default async function Home() {
               <p className="w-[240px] absolute 2xl:top-[80px] 2xl:left-[60px] xl:top-[100px] xl:left-[160px] lg:top-[80px] lg:left-[220px]">
                 Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP & CPP</strong> tăng cường hoạt động của nguyên bào xương, Hàm lượng Canxi cao hàng đầu (1200mg), tỷ lệ vàng Canxi : Photo = 1,4:1 kết hợp với D3K2 & khoáng chất·giúp hấp thu Canxi tối đa.
               </p>
-              <p className="w-[190px] absolute 2xl:top-[40px] 2xl:right-[160px] xl:top-[40px] xl:right-[200px] lg:top-[40px] lg:right-[220px]">
+              <p className="w-[190px] absolute 2xl:top-[40px] 2xl:right-[100px] xl:top-[40px] xl:right-[200px] lg:top-[40px] lg:right-[220px]">
                 <strong>DHA và ARA </strong>
                 giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt</p>
               <p className="w-[204px] absolute 2xl:top-[220px] 2xl:right-[60px] xl:top-[220px] xl:right-[140px] lg:top-[220px] lg:right-[200px]">

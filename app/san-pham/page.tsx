@@ -26,8 +26,8 @@ export const metadata: Metadata = {
 
 function Product() {
   return (
-    <main>
-      <section className="bg-[url('/bgr-sua.webp')] bg-cover bg-center md:bg-[length:100%_100%] pb-8">
+    <main className="bg-custom-yellow">
+      <section className="bg-[url('/bgr-sua.webp')] bg-cover bg-center md:bg-[length:100%_100%] mb-8">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex pb-[100px] flex-col md:flex-row">
             <div className="md:w-2/5 flex items-center">
@@ -80,7 +80,7 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="bg-custom-yellow">
+      <section className="bg-custom-yellow mb-8">
         <div className="max-w-6xl m-auto px-4 pb-8">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 w-full flex flex-col justify-center max-md:mb-4">
@@ -130,7 +130,7 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="bg-custom-yellow">
+      <section className="bg-custom-yellow mb-4">
         <div className="md:max-w-4xl w-full m-auto px-4 relative">
           <div className="flex justify-center relative w-full">
             <Image src="/bgr-giot.webp" alt="bgr-giot" width={896} height={1000} />
@@ -156,7 +156,7 @@ function Product() {
               <p className="md:text-[48px] text-4xl font-bold text-center mt-4 py-2 text-[#002A9E]">4g CBP</p>
             </div>
           </div>
-          <div className="absolute bottom-[-20%] right-[-20%] rotate-[-90deg] max-md:hidden">
+          <div className="absolute bottom-[-20%] right-0 rotate-[-90deg] max-lg:hidden">
             <Image src="/PT.webp" alt="pt" width={400} height={400} />
           </div>
         </div>
@@ -164,10 +164,10 @@ function Product() {
       <section className="bg-custom-yellow">
         <div className="max-w-4xl m-auto px-4">
           <div className="mb-8">
-            <p className="text-[#84571B] font-bold text-2xl md:text-4xl mb-2 uppercase">Tác dụng của <span className="text-4xl">CBP</span> với</p>
+            <p className="text-[#84571B] font-bold text-2xl md:text-5xl mb-2 uppercase">Tác dụng của <span className="text-5xl">CBP</span> với</p>
             <div className="relative">
-              <Image src="/bgr-tp-2.png" alt="bgr-tp-2" width={480} height={60} />
-              <span className="absolute md:top-2 top-4 md:left-16 left-20 text-[#84571B] font-bold text-2xl md:text-4xl uppercase">Nguyên bào xương</span>
+              <Image src="/bgr-tp-2.png" alt="bgr-tp-2" width={640} height={60} />
+              <span className="absolute md:top-4 top-4 md:left-12 left-20 text-[#84571B] font-bold text-2xl md:text-5xl uppercase">Nguyên bào xương</span>
             </div>
           </div>
           <div className="flex flex-col gap-8 mb-8">
@@ -236,10 +236,10 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="bg-[url('/artboard17.png')] bg-[length:100%_100%] h-[800px] max-w-4xl m-auto">
-        <div className="flex justify-end relative">
+      <section className="bg-[url('/artboard17.png')] bg-[length:100%_100%] h-[800px] max-w-4xl m-auto mb-8">
+        <div className="flex justify-end relative max-md:flex-col">
           <p className="text-[#002A9E] font-black text-8xl">OPO</p>
-          <div className="mt-[-24px]">
+          <div className="md:mt-[-24px]">
             <p className="bg-[url('/bgr-tp-2.png')] bg-[length:100%_100%] text-[#84571B] text-6xl font-bold px-16 py-4">HỮU CƠ</p>
           </div>
         </div>
@@ -253,7 +253,7 @@ function Product() {
           <Image src="/pt2.webp" alt="" width={120} height={120} className="absolute top-[10%] left-[-10%] max-md:hidden" />
           <Image src="/PT.webp" alt="" width={150} height={150} className="absolute bottom-0 right-0 max-md:hidden" />
           <div className="flex flex-col items-center justify-center text-2xl md:text-[40px] uppercase text-center py-4">
-            <div>
+            <div className="mt-8">
               <p className="bg-text bg-clip-text text-transparent font-bold md:pt-4 pt-1">Công thức tối ưu</p>
             </div>
             <div>
@@ -263,33 +263,33 @@ function Product() {
               </p>
             </div>
           </div>
-          <div className="relative text-xs max-md:hidden">
+          <div className="relative text-xs max-lg:hidden">
             <Image src="/tach.png" alt="hop-sua" width={1200} height={900} />
             <div className="text-[#002A9E]">
-              <p className="w-[240px] absolute xl:top-[80px] xl:left-[100px] md:top-[100px] md:left-12 top-[96px] left-11">
+              <p className="w-[240px] absolute xl:top-[80px] xl:left-[100px] md:top-[100px] md:left-20 top-[96px] left-11">
                 Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP & CPP</strong> tăng cường hoạt động của nguyên bào xương, Hàm lượng Canxi cao hàng đầu (1200mg), tỷ lệ vàng Canxi : Photo = 1,4:1 kết hợp với D3K2 & khoáng chất·giúp hấp thu Canxi tối đa.
               </p>
               <p className="w-[190px] absolute xl:top-[60px] xl:right-[120px] sm:top-[30px] sm:right-[20px] lg:top-[72px] lg:right-[60px]">
                 <strong>DHA và ARA </strong>
                 giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt</p>
-              <p className="lg:w-[204px] w-[160px] absolute xl:top-[320px] xl:right-12 md:top-[254px] md:right-[12px] top-[200px] right-[12px]">
+              <p className="lg:w-[204px] w-[160px] absolute xl:top-[320px] xl:right-12 md:top-[310px] md:right-[12px] sm:top-[310px] sm:right-[12px] top-[200px] right-[12px]">
                 <strong>Lactoferrin & IgG </strong>
                 tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
               </p>
-              <p className="w-[190px] absolute xl:bottom-[220px] xl:left-24 bottom-[180px] left-[80px]">
+              <p className="w-[190px] absolute xl:bottom-[220px] xl:left-24 bottom-[220px] left-[80px]">
                 <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
               </p>
-              <p className="w-[190px] absolute xl:bottom-[180px] xl:right-32 bottom-[200px] right-0">
+              <p className="w-[190px] absolute xl:bottom-[180px] xl:right-32 bottom-[200px] right-24">
                 Cung cấp <strong>chất béo</strong> và <strong>năng lượng</strong> bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. <strong>Protein từ Đạm Whey thủy phân</strong> với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
               </p>
             </div>
           </div>
-          <div className="md:hidden text-xs">
+          <div className="lg:hidden text-xs">
             <div className="flex flex-col justify-center items-center mt-2 ">
               <Image src="/lonsua.webp" alt="bg-hop-sua" width={300} height={290} />
-              <div className="flex flex-col px-2">
-                <div className="flex">
-                  <div className="w-1/3 relative flex justify-center items-center">
+              <div className="flex flex-col px-2 mb-4">
+                <div className="flex justify-center">
+                  <div className="relative flex justify-center items-center">
                     <Image src="/bong.webp" alt="bong" width={120} height={120} />
                     <span className="text-[#84571B] text-center text-shadow font-bold absolute max-w-[100px]">Cao hơn, chắc khỏe hơn từ cấp nguyên bào xương</span>
                   </div>
@@ -299,8 +299,8 @@ function Product() {
                     </span>
                   </div>
                 </div>
-                <div className="flex">
-                  <div className="w-1/3 relative flex justify-center items-center">
+                <div className="flex justify-center">
+                  <div className="relative flex justify-center items-center">
                     <Image src="/bong.webp" alt="bong" width={120} height={120} />
                     <span className="text-[#84571B] text-center text-shadow font-bold absolute max-w-[100px]">Tiêu hoá Tốt</span>
                   </div>
@@ -310,8 +310,8 @@ function Product() {
                     </span>
                   </div>
                 </div>
-                <div className="flex">
-                  <div className="w-1/3 relative flex justify-center items-center">
+                <div className="flex justify-center">
+                  <div className="relative flex justify-center items-center">
                     <Image src="/bong.webp" alt="bong" width={120} height={120} />
                     <span className="text-[#84571B] text-center text-shadow font-bold absolute max-w-[100px]">Cung cấp dinh dưỡng toàn diện</span>
                   </div>
@@ -321,8 +321,8 @@ function Product() {
                     </span>
                   </div>
                 </div>
-                <div className="flex">
-                  <div className="w-1/3 relative flex justify-center items-center">
+                <div className="flex justify-center">
+                  <div className="relative flex justify-center items-center">
                     <Image src="/bong.webp" alt="bong" width={120} height={120} />
                     <span className="text-[#84571B] text-center text-shadow font-bold absolute max-w-[100px]">Phát triển trí não & sáng mắt</span>
                   </div>
@@ -333,8 +333,8 @@ function Product() {
                     </span>
                   </div>
                 </div>
-                <div className="flex">
-                  <div className="w-1/3 relative flex justify-center items-center">
+                <div className="flex justify-center">
+                  <div className="relative flex justify-center items-center">
                     <Image src="/bong.webp" alt="bong" width={120} height={120} />
                     <span className="text-[#84571B] text-center text-shadow font-bold absolute max-w-[100px]">Tăng sức đề kháng</span>
                   </div>
