@@ -6,6 +6,8 @@ import Link from 'next/link';
 import dynamic from "next/dynamic";
 const Experience = dynamic(() => import('@/components/HomePage/Experience'), { ssr: false })
 
+// export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   return (
     <main>
@@ -125,7 +127,7 @@ export default async function Home() {
               <p className="bg-[#002A9E] bg-clip-text text-transparent pt-2">Tăng chiều cao từ cấp độ nguyên bào xương*</p>
             </div>
             <div>
-              <p className="bg-[#002A9E] bg-clip-text font-bold text-transparent pt-2">Cao hơn cả về chất lượng</p>
+              <p className="bg-[#002A9E] bg-clip-text font-bold text-transparent pt-2">Cao hơn không chỉ về lượng mà còn về chất</p>
             </div>
           </div>
           <div className="mt-4 mb-14 px-4">

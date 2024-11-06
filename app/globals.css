@@ -118,6 +118,10 @@
   background: linear-gradient(to right, #89601B, #F0D284, #F2CD77, #92651C, #EAC775);
 }
 
+.header-bg-1 {
+  background: linear-gradient(to right, #F0D284, #89601B, #92651C, #92651C, #ac9152, #EAC775);
+}
+
 .footer-bg {
   background: linear-gradient(to right, #be8d48, #f2d58d, #be833d);
 }

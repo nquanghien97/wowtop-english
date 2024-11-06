@@ -30,9 +30,9 @@ async function Experience() {
                     <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[0].imageUrl}`} alt={data[0].title} width={350} height={220} />
                   </Link>
                   <Link href={`/tin-tuc/${data[0].slug}`} className="mt-2">
-                    <p className="text-[#84571B] font-semibold text-lg">{data[0].title}</p>
+                    <p className="text-[#84571B] font-semibold mb-2">{data[0].title}</p>
                   </Link>
-                  <div className="my-3 text-justify" dangerouslySetInnerHTML={{ __html: truncateText(data[0].content, 200) }} />
+                  <div className="text-justify text-sm line-clamp-4" dangerouslySetInnerHTML={{ __html: data[0].content }} />
                   <div className="text-[#84571B]">
                     <small>{formatDate(data[0].createdAt)}</small>
                   </div>
@@ -51,10 +51,8 @@ async function Experience() {
                         </Link>
                       </div>
                       <div className="flex flex-col flex-1">
-                        <Link href={`/tin-tuc/${item.slug}`} className="text-[#84571B] font-semibold text-lg">{item.title}</Link>
-                        <div className="text-[#84571B]">
-                          <small>{formatDate(item.createdAt)}</small>
-                        </div>
+                        <Link href={`/tin-tuc/${item.slug}`} className="text-[#84571B] font-semibold mb-2">{item.title}</Link>
+                        <div className="text-justify line-clamp-3 mr-4 text-sm" dangerouslySetInnerHTML={{ __html: item.content }} />
                       </div>
                     </div>
                   ))}
@@ -73,10 +71,8 @@ async function Experience() {
               ) : (
                 data.map(item => (
                   <li key={item.id} className="mb-4">
-                    <Link href={`/tin-tuc/${item.slug}`} className="text-[#84571B] font-semibold text-lg line-clamp-2">{item.title}</Link>
-                    <div className="text-[#84571B]">
-                      <small>{formatDate(item.createdAt)}</small>
-                    </div>
+                    <Link href={`/tin-tuc/${item.slug}`} className="text-[#84571B] font-semibold mb-2 line-clamp-2">{item.title}</Link>
+                    <div className="text-justify text-sm line-clamp-2" dangerouslySetInnerHTML={{ __html: item.content }} />
                   </li>
                 ))
               )}
@@ -90,10 +86,10 @@ async function Experience() {
             </Link>
             <div className="md:w-3/5">
               <div>
-                <Link href={`/tin-tuc/${data[data.length - 1].slug}`} className="text-[#84571B] font-bold text-lg">{data[data.length - 1].title}</Link>
+                <Link href={`/tin-tuc/${data[data.length - 1].slug}`} className="text-[#84571B] font-bold">{data[data.length - 1].title}</Link>
               </div>
               <small className="text-[#9f9e9a]">{`Ngày đăng: ${formatDate(data[data.length - 1].createdAt)}`}</small>
-              <div className="my-3 text-justify line-clamp-4" dangerouslySetInnerHTML={{ __html: data[data.length - 1].content }} />
+              <div className="text-justify line-clamp-4 text-sm" dangerouslySetInnerHTML={{ __html: data[data.length - 1].content }} />
             </div>
           </div>
         )}
