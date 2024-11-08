@@ -49,25 +49,25 @@ export default async function Home() {
         <div className="absolute top-[14%] left-[54%] cursor-pointer w-[10%] hover:scale-110 duration-300 group max-lg:hidden">
           <Image src="/circle2.png" alt="circle1" width={200} height={200} className="w-full h-full" />
           <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[0%] left-[100%] w-[100%] opacity-0 group-hover:opacity-100 duration-300">
-            DHA và ARA giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt
+            <strong>DHA và ARA</strong> giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt
           </div>
         </div>
         <div className="absolute top-[40%] left-[57%] w-[10%] cursor-pointer hover:scale-110 duration-300 group max-lg:hidden">
           <Image src="/circle3.png" alt="circle1" width={200} height={200} className="w-full h-full" />
           <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[10%] left-[100%] w-[120%] opacity-0 group-hover:opacity-100 duration-300">
-            Lactoferrin & IgG tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
+            <strong>Lactoferrin & IgG</strong> tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
           </div>
         </div>
         <div className="absolute bottom-[24%] left-[30%] w-[10%] cursor-pointer hover:scale-110 duration-300 group max-lg:hidden">
           <Image src="/circle4.png" alt="circle1" width={200} height={200} className="w-full h-full" />
           <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[0%] left-[-160%] w-[160%] opacity-0 group-hover:opacity-100 duration-300">
-            OPO giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
+            <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
           </div>
         </div>
         <div className="absolute bottom-[12%] left-[50%] w-[10%] cursor-pointer hover:scale-110 duration-300 group max-lg:hidden">
           <Image src="/circle5.png" alt="circle1" width={200} height={200} className="w-full h-full" />
           <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[10%] left-[100%] w-[160%] opacity-0 group-hover:opacity-100 duration-300">
-            Cung cấp chất béo và năng lượng bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. Protein từ Đạm Whey thủy phân với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
+            Cung cấp <strong>chất béo</strong> và <strong>năng lượng</strong> bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. <strong>Protein từ Đạm Whey thủy phân</strong> với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
           </div>
         </div>
         <div className="lg:hidden text-xs">

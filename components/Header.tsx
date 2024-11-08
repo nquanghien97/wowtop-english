@@ -58,7 +58,7 @@ function Header() {
                         <ul className="bg-white flex flex-col min-w-[15rem] border border-[#ffffff12] rounded-md text-black">
                           {item.children.map(childItem => (
                             <li key={childItem.id} className="border-b-[1px]">
-                              <Link className={`cursor-pointer hover:text-[blue] p-4 w-full flex items-center duration-300`} href={childItem.path}>
+                              <Link className={`cursor-pointer hover:text-[yellow] p-4 w-full flex items-center duration-300`} href={childItem.path}>
                                 {childItem.title}
                               </Link>
                             </li>
@@ -66,7 +66,7 @@ function Header() {
                         </ul>
                       </MenuDropdown>
                     ) : (
-                      <Link key={item.id} href={item.path} className={`hover:text-[blue] duration-300 `}>
+                      <Link key={item.id} href={item.path} className={`hover:text-[yellow] duration-300 `}>
                         {item.title}
                       </Link>
                     )}
