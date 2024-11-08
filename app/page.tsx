@@ -39,22 +39,37 @@ export default async function Home() {
         </div>
         <Image src="/artboard12.jpg" alt="" width={1920} height={1080} className="max-lg:hidden w-full" />
         <Image src="/PT.webp" alt="" width={150} height={150} className="absolute bottom-0 right-0 max-lg:hidden" />
-        <p className="max-lg:hidden text-[#84571B] w-[19%] text-[0.9vw] absolute top-[18%] left-[21%]">
-          Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP & CPP</strong> tăng cường hoạt động của nguyên bào xương, Hàm lượng Canxi cao hàng đầu (1200mg), tỷ lệ vàng Canxi : Photo = 1,4:1 kết hợp với D3K2 & khoáng chất·giúp hấp thu Canxi tối đa.
-        </p>
-        <p className="max-lg:hidden text-[#84571B] w-[16%] text-[0.9vw] absolute top-[15%] right-[22%]">
-          <strong>DHA và ARA </strong>
-          giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt</p>
-        <p className="max-lg:hidden text-[#84571B] w-[16%] text-[0.9vw] absolute top-[46%] right-[19%]">
-          <strong>Lactoferrin & IgG </strong>
-          tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
-        </p>
-        <p className="max-lg:hidden text-[#84571B] w-[14%] text-[0.9vw] absolute bottom-[25%] left-[17%]">
-          <strong>OPO</strong> giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
-        </p>
-        <p className="max-lg:hidden text-[#84571B] w-[16%] text-[0.9vw] absolute bottom-[24%] right-[22%]">
-          Cung cấp <strong>chất béo</strong> và <strong>năng lượng</strong> bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. <strong>Protein từ Đạm Whey thủy phân</strong> với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
-        </p>
+        {/* circle */}
+        <div className="absolute top-[32%] left-[27%] cursor-pointer w-[12%] hover:scale-110 duration-300 group max-lg:hidden">
+          <Image src="/circle1.png" alt="circle1" width={240} height={240} className="w-full h-full" />
+          <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-0 left-[-120%] w-[120%] opacity-0 group-hover:opacity-100 duration-300">
+            Phát triển khung xương chắc khỏe & tăng chiều cao vượt trội với <strong>CBP</strong> (125 mg/100g) & <strong>CPP</strong> (571 mg/100g) tăng cường hoạt động của nguyên bào xương. Hàm lượng <strong>Canxi</strong> cao hàng đầu (1475 mg/100g), tỷ lệ vàng <strong>Canxi : Phospho</strong> = 1,8:1 kết hợp với D3K1 & khoáng chất·giúp hấp thu Canxi tối đa.
+          </div>
+        </div>
+        <div className="absolute top-[14%] left-[54%] cursor-pointer w-[10%] hover:scale-110 duration-300 group max-lg:hidden">
+          <Image src="/circle2.png" alt="circle1" width={200} height={200} className="w-full h-full" />
+          <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[0%] left-[100%] w-[100%] opacity-0 group-hover:opacity-100 duration-300">
+            DHA và ARA giúp tăng chỉ số trí tuệ, phát triển trí não & hệ thần kinh, phát triển thị lực & sáng mắt
+          </div>
+        </div>
+        <div className="absolute top-[40%] left-[57%] w-[10%] cursor-pointer hover:scale-110 duration-300 group max-lg:hidden">
+          <Image src="/circle3.png" alt="circle1" width={200} height={200} className="w-full h-full" />
+          <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[10%] left-[100%] w-[120%] opacity-0 group-hover:opacity-100 duration-300">
+            Lactoferrin & IgG tăng cường điều hòa miễn dịch, Giúp kháng khuẩn, kháng virus, bảo vệ cơ thể khỏi các tác nhân gây hại.
+          </div>
+        </div>
+        <div className="absolute bottom-[24%] left-[30%] w-[10%] cursor-pointer hover:scale-110 duration-300 group max-lg:hidden">
+          <Image src="/circle4.png" alt="circle1" width={200} height={200} className="w-full h-full" />
+          <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[0%] left-[-160%] w-[160%] opacity-0 group-hover:opacity-100 duration-300">
+            OPO giúp hệ tiêu hóa vận hành tốt hơn, nhờ những tác động tích cực đến hệ sinh thái 100.000 tỷ vi khuẩn đường ruột. Đồng thời được bổ sung đặc biệt với lợi khuẩn Bifido-bacterium BB-12 và chất xơ (FOS+GOS).
+          </div>
+        </div>
+        <div className="absolute bottom-[12%] left-[50%] w-[10%] cursor-pointer hover:scale-110 duration-300 group max-lg:hidden">
+          <Image src="/circle5.png" alt="circle1" width={200} height={200} className="w-full h-full" />
+          <div className="bg-white shadow-[0px_0px_20px_16px_rgb(0_0_0/_0.05)] p-4 rounded-2xl text-[#84571B] absolute text-[0.9vw] top-[10%] left-[100%] w-[160%] opacity-0 group-hover:opacity-100 duration-300">
+            Cung cấp chất béo và năng lượng bền bỉ như 1 bữa ăn đầy đủ dinh dưỡng. Protein từ Đạm Whey thủy phân với kích thước siêu nhỏ dễ hấp thu & giảm tỉ lệ dị ứng sữa.
+          </div>
+        </div>
         <div className="lg:hidden text-xs">
           <div className="flex flex-col justify-center items-center mt-2 ">
             <Image src="/Artboard 13.png" alt="bg-hop-sua" width={300} height={290} />
@@ -308,7 +323,7 @@ export default async function Home() {
         </div>
       </section>
       <section className="mb-8 h-[450px] md:h-[1200px] bg-[length:100%_100%] pt-16 relative">
-        <Image src="/nha-may@2x-100.jpg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
+        <Image src="/nha-may.jpeg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
         <div className="px-4 relative z-10">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
             <h2 className="uppercase md:text-4xl text-[#002A9E] font-bold pb-1">Nhà máy sản xuất WOWTOP tại NewZealand</h2>
