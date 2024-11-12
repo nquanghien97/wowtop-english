@@ -18,15 +18,15 @@ const ListFeedbacks = [
     id: 2,
     src: '/feedbacks/f2.jpg',
     path: '#',
-    title: 'Chị Nga Thu Dương',
-    content: 'Abbey nhà mình dùng sữa Oz Farm được vài tháng thì thấy chiều cao tăng đáng kể luôn, ít bệnh vặt, ăn ngon, ngủ ngoan ..  nên phải chia sẻ cho các ba mẹ liềnnnn'
+    title: 'Chị Nga Phương',
+    content: 'Hải Minh nhà mình dùng sữa Wowtop được vài tháng thì con cao vọt lên, con ít ốm vặt, ăn ngon, ngủ ngon,...nên phải chia sẻ cho các mẹ liền.'
   },
   {
     id: 3,
     src: '/feedbacks/f3.jpg',
     path: '#',
-    title: 'Chị Nguyễn Thị Phượng',
-    content: 'Con trai chị đã cao thêm 4cm sau 6 tháng uống đều đặn mỗi ngày 2 ly Oz Farm Wowtop, ưng lắm'
+    title: 'Chị Dương Linh',
+    content: 'Con mình uống Wowtop tăng thêm 5cm trong 3 tháng đấy, quá bất ngờ luôn. Giờ con thuộc top cao trong lớp và mới tham gia vào đội bóng rổ của trường.  '
   }
 ]
 function Feedback() {
