@@ -10,23 +10,23 @@ const ListFeedbacks = [
   {
     id: 1,
     src: '/feedbacks/f1.jpg',
-    path: 'https://www.tiktok.com/@giadinhmeommay/video/7385541212461174024',
-    title: 'Gia đình mèo máy',
-    content: 'Bé nhà mình trộm vía dạo này đi đâu cũng được mọi ng khen con cao lớn hơn, có da có thịt hơn, con ăn ngon ngủ ngon, ít khi ốm vặt mà mừng quá các mẹ ạ.'
+    path: '#',
+    title: 'Chị Hà Vy',
+    content: 'Con gái mình trộm vía dạo này đi đâu cũng được mọi người khen cao lớn hơn, có da có thịt hơn, con tràn đầy năng lượng tham gia nhiều hoạt động ở trường.'
   },
   {
     id: 2,
-    src: '/feedbacks/f3.jpg',
-    path: 'https://www.tiktok.com/@ngathuduong204/video/7385551513113906450?_r=1&_t=8nZxWoUVKZU',
+    src: '/feedbacks/f2.jpg',
+    path: '#',
     title: 'Chị Nga Thu Dương',
     content: 'Abbey nhà mình dùng sữa Oz Farm được vài tháng thì thấy chiều cao tăng đáng kể luôn, ít bệnh vặt, ăn ngon, ngủ ngoan ..  nên phải chia sẻ cho các ba mẹ liềnnnn'
   },
   {
     id: 3,
-    src: '/feedbacks/f4.jpg',
+    src: '/feedbacks/f3.jpg',
     path: '#',
     title: 'Chị Nguyễn Thị Phượng',
-    content: 'Con gái chị đã cao thêm 4cm sau 6 tháng uống đều đặn mỗi ngày 2 ly Oz Farm Wowtop, ưng lắm'
+    content: 'Con trai chị đã cao thêm 4cm sau 6 tháng uống đều đặn mỗi ngày 2 ly Oz Farm Wowtop, ưng lắm'
   }
 ]
 function Feedback() {
