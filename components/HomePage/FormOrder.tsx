@@ -94,7 +94,7 @@ function FormOrder() {
 
   return (
     <section className="mb-8 bg-[bg-[#69dbe1]">
-      <div className="px-4 py-8 max-w-6xl m-auto bg-[url('/dki3.webp')] bg-[length:100%_100%]  bg-center rounded-[50px]">
+      <div className="px-4 py-8 max-w-6xl m-auto bg-[url('/dki3.webp')] md:bg-[length:100%_100%]  bg-center rounded-[50px]">
         <div className="mb-8">
           <h2 className="text-[#002A9E] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
         </div>
