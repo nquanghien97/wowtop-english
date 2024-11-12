@@ -320,9 +320,9 @@ export default async function Home() {
         <div className="flex justify-center w-full flex-col">
           <div className="mb-12 mx-12">
             <div className="flex justify-between w-full mb-4">
-              <Image src="/conbo_img_1.png" alt="conbo_img_1" width={75} height={45} />
-              <Image src="/conbo_img_2.png" alt="conbo_img_2" width={75} height={45} />
-              <Image src="/conbo_img_3.png" alt="conbo_img_3" width={75} height={45} />
+              <Image src="/conbo_img_1.png" alt="conbo_img_1" width={150} height={90} />
+              <Image src="/conbo_img_2.png" alt="conbo_img_2" width={150} height={90} />
+              <Image src="/conbo_img_3.png" alt="conbo_img_3" width={150} height={90} />
             </div>
           </div>
           <div className="flex justify-center">
