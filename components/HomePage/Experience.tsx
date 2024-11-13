@@ -11,7 +11,7 @@ async function Experience() {
   const dataWithoutLastItem = data.slice(0, -1);
 
   return (
-    <section className="pb-20">
+    <section className="pb-8">
       <div className="max-w-6xl m-auto px-4">
         <div className="bg-text font-bold text-4xl uppercase text-center mb-4">
           <p className="py-2">Kinh nghiệm</p>
@@ -46,13 +46,13 @@ async function Experience() {
                 </div>
                 <div className="w-full md:w-3/5">
                   {dataWithoutFirstLastItem.map(item => (
-                    <div key={item.id} className="flex gap-6 mb-4">
-                      <div className="flex-1 w-[200px] flex">
+                    <div key={item.id} className="flex mb-4">
+                      <div className="flex w-1/2 pr-4">
                         <Link href={`/tin-tuc/${item.slug}`} className="w-full">
                           <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item.imageUrl}`} alt={item.title} width={240} height={200} className="w-full" />
                         </Link>
                       </div>
-                      <div className="flex flex-col flex-1">
+                      <div className="flex flex-col w-1/2">
                         <Link href={`/tin-tuc/${item.slug}`} className="text-[#84571B] font-semibold mb-2">{item.title}</Link>
                         <div className="text-justify line-clamp-3 mr-4 text-sm font-semibold text-[#3f3c3c] pr-2 italic tracking-wide" dangerouslySetInnerHTML={{ __html: item.content }} />
                       </div>
@@ -82,7 +82,7 @@ async function Experience() {
           </div>
         </div>
         {data.length > 0 && (
-          <div className="flex gap-4 max-md:flex-col">
+          <div className="flex gap-4 max-md:flex-col max-lg:hidden">
             <Link className="md:w-2/5 overflow-hidden" href={`/tin-tuc/${data[data.length - 1].slug}`}>
               <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[data.length - 1].imageUrl}`} alt={data[data.length - 1].title} width={440} height={276} className="w-full" />
             </Link>
