@@ -81,7 +81,7 @@ async function Experience() {
             </ul>
           </div>
         </div>
-        {data.length > 0 && (
+        {/* {data.length > 0 && (
           <div className="flex gap-4 max-md:flex-col max-lg:hidden">
             <Link className="md:w-2/5 overflow-hidden" href={`/tin-tuc/${data[data.length - 1].slug}`}>
               <Image src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${data[data.length - 1].imageUrl}`} alt={data[data.length - 1].title} width={440} height={276} className="w-full" />
@@ -92,7 +92,7 @@ async function Experience() {
                   <Link href={`/tin-tuc/${data[data.length - 1].slug}`} className="text-[#84571B] font-bold">{data[data.length - 1].title}</Link>
                 </div>
                 <small className="text-[#9f9e9a]">{`Ngày đăng: ${formatDate(data[data.length - 1].createdAt)}`}</small>
-                <div className="text-justify line-clamp-[8] text-sm font-semibold text-[#3f3c3c] italic" dangerouslySetInnerHTML={{ __html: data[data.length - 1].content }} />
+                <div className="text-justify line-clamp-5 text-sm font-semibold text-[#3f3c3c] italic" dangerouslySetInnerHTML={{ __html: data[data.length - 1].content }} />
               </div>
               <div className="flex">
                 <Link className="mt-3 text-[#84571B] px-4 py-2 rounded-md border-[1px] border-[#065691] inline-block" href={`/tin-tuc`} >
@@ -101,7 +101,7 @@ async function Experience() {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   )

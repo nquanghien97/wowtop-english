@@ -185,7 +185,7 @@ export default async function Home() {
       <section className="mb-8 md:mb-20">
         <div className="max-w-6xl m-auto px-4">
           <div>
-            <p className="bg-text text-center text-xl md:text-3xl uppercase">Chuyên gia new zealand <br /><strong>chia sẻ nguyên lý tăng chiều cao</strong><br /> từ cấp độ nguyên bào</p>
+            <p className="bg-text text-center text-2xl md:text-3xl uppercase">Chuyên gia new zealand <br /><strong>chia sẻ nguyên lý tăng chiều cao</strong><br /> từ cấp độ nguyên bào</p>
           </div>
           <div className="mt-4 flex flex-col md:flex-row gap-10">
             <div className="md:w-1/2 w-full">
@@ -203,7 +203,7 @@ export default async function Home() {
       <section className="lg:mb-16">
         <div className="max-w-6xl m-auto md:px-4">
           <div className="mb-4">
-            <h2 className="text-xl md:text-5xl bg-text py-4 font-bold uppercase text-center">Những sai lầm trong tăng chiều cao</h2>
+            <h2 className="text-3xl md:text-5xl bg-text py-4 font-bold uppercase text-center">Những sai lầm trong tăng chiều cao</h2>
           </div>
           <div className="p-3 bg-[#f6f0de] border-2 border-[#fcf2d9] rounded-2xl flex flex-wrap justify-center relative">
             <Image src="/PT.webp" alt="" width={175} height={175} className="absolute bottom-[-10%] left-[-10%] max-md:hidden" />
@@ -362,7 +362,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="py-[80%] bg-[length:100%_100%] pt-[120px] lg:pt-40 relative z-20 top-[-150px] mb-8">
+      <section className="lg:pb-[40%] pb-[80%] bg-[length:100%_100%] pt-[120px] lg:pt-40 relative z-20 top-[-150px] mb-8">
         <Image src="/nha-may.jpeg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
         <div className="px-4 relative z-10">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
