@@ -1,44 +1,46 @@
 import prisma from "@/lib/db";
 import { createToken } from "@/lib/token";
 import bcrypt from 'bcrypt';
-import { jwtVerify, SignJWT } from "jose";
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
-  const { username, password } = await req.json();
+  const { username, password, full_name, location, phone_number } = await req.json();
 
-  if (!username || !password) {
+  if (!username || !password || !full_name || !location || !phone_number) {
     return NextResponse.json({
       success: false,
-      message: "Missing email or password"
+      message: "Vui lòng nhập đầy đủ thông tin"
     }, { status: 400 });
   }
 
   try {
-    const user = await prisma.user.findUnique({
+    const user_exist = await prisma.user.findUnique({
       where: { username }
     });
 
-    if (!user) {
+    if (user_exist) {
       return NextResponse.json({
         success: false,
-        message: "Thông tin đăng nhập không chính xác"
+        message: "Tài khoản đã tồn tại!"
       }, { status: 400 });
     }
 
-    const passwordValidated = await bcrypt.compare(password, user.password);
-    if (!passwordValidated) {
-      return NextResponse.json({
-        success: false,
-        message: "Tài khoản hoặc mật khẩu không chính xác"
-      }, { status: 400 });
-    }
+    const hashPassword = await bcrypt.hash(password, 12)
+    const user = await prisma.user.create({
+      data: {
+        username,
+        password: hashPassword,
+        full_name,
+        location,
+        phone_number,
+      }
+    })
 
     const accessToken = await createToken(user.id, user.role);
 
     return NextResponse.json({
       success: true,
-      message: "Đăng nhập thành công",
+      message: "Đăng ký thành công",
       accessToken
     }, { status: 200 });
 

@@ -3,9 +3,9 @@ import { jwtVerify, SignJWT } from "jose";
 const secretKey = process.env.NEXT_PUBLIC_ACCESS_TOKEN_SECRET
 const encodedKey = new TextEncoder().encode(secretKey)
 
-export async function createToken(userId: number) {
+export async function createToken(user_id: number, user_role: string) {
   const expiresIn = Math.floor(Date.now() / 1000) + (24 * 60 * 60); // 1 days expiration
-  return new SignJWT({ userId: userId.toString(), expires: expiresIn })
+  return new SignJWT({ user_id: user_id.toString(), user_role, expires: expiresIn })
     .setProtectedHeader({ alg: 'HS256' })
     .setIssuedAt()
     .setExpirationTime('7d')

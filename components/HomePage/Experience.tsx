@@ -6,7 +6,7 @@ import { NewsEntity } from "@/entities/news";
 import { truncateText } from "@/utils/truncateText";
 
 async function Experience() {
-  const { data } = await getNews({ page: 1, pageSize: 5 }) as { data: NewsEntity[] }
+  const { data } = await getNews({ page: 1, page_size: 5 }) as { data: NewsEntity[] }
   const dataWithoutFirstLastItem = data.slice(1, -1)
   const dataWithoutLastItem = data.slice(0, -1);
 

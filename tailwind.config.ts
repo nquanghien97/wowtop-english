@@ -7,9 +7,7 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   safelist: [
-    {
-      pattern: /^line-clamp-(\d+)$/,
-    },
+    'line-clamp-3', 'line-clamp-2', 'line-clamp-1', 'line-clamp-4', 'line-clamp-5'
   ],
   theme: {
     extend: {

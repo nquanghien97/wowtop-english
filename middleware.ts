@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { jwtVerify, type JWTPayload } from 'jose'; // Import JwtPayload from 'jose'
 interface AuthJwt extends JWTPayload {
-  userId: string;
+  user_id: string;
 }
 
 const publicRoutes = ['/api/auth/login', '/api/auth/register'];
@@ -66,7 +66,7 @@ export async function middleware(req: NextRequest) {
 
     // In Next.js middleware, we can't modify the request object directly.
     // Instead, we can add custom headers to pass information to the API route.
-    res.headers.set('X-User-ID', payload.userId);
+    res.headers.set('X-User-ID', payload.user_id);
   } catch (error) {
     console.error(error);
     return new NextResponse(
