@@ -50,7 +50,8 @@ interface Option {
   value: string;
 }
 
-function FormOrder() {
+function FormOrder(props: { isProductTest?: boolean }) {
+  const { isProductTest = false } = props;
   const { register, handleSubmit, control, setValue, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
   });
@@ -95,9 +96,16 @@ function FormOrder() {
   return (
     <section className="mb-8 bg-[bg-[#69dbe1]">
       <div className="px-4 py-8 max-w-6xl m-auto bg-[url('/dki3.webp')] md:bg-[length:100%_100%]  bg-center rounded-[50px]">
-        <div className="mb-8">
-          <h2 className="text-[#002A9E] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
-        </div>
+        {!isProductTest ? (
+          <div className="mb-8">
+            <h2 className="text-[#002A9E] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
+          </div>
+        ) : (
+          <div className="mb-8">
+            <h2 className="text-[#002A9E] text-4xl uppercase text-center font-bold">Đăng ký dùng thử tại đây</h2>
+          </div>
+        )
+        }
         <div className="flex">
           <div className="w-full px-4">
             <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
@@ -161,7 +169,7 @@ function FormOrder() {
                             selectWardRef.current?.clearValue();
                             setValue('provinceLabel', selectedOption ? selectedOption.label : "")
                             if (provinceId) {
-                              setOptionsDistricts(data.flatMap(item => item.District.filter(item1 => item1.ProvinceCode === provinceId)).map(item3 => ({ label: item3.FullName, value: item3.Code})));
+                              setOptionsDistricts(data.flatMap(item => item.District.filter(item1 => item1.ProvinceCode === provinceId)).map(item3 => ({ label: item3.FullName, value: item3.Code })));
                             }
                           }
                           }
