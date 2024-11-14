@@ -49,7 +49,6 @@ export async function POST(req: NextRequest) {
         }
       })
     ])
-    return NextResponse.json({ success: true, message: 'Tích điểm thành công', points_accumulation: user?.points_accumulation + increment_points }, { status: 200 });
   } catch (err: any) {
     return NextResponse.json({ success: false, message: err.message }, { status: 500 });
   }
