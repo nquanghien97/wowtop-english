@@ -46,9 +46,9 @@ function Header() {
               </Link>
             </div>
             <div className="max-lg:hidden flex items-center">
-              <ul className="flex items-center gap-4 text-white">
+              <ul className="flex items-center gap-4 text-white mr-4">
                 {ListHeader.map(item => (
-                  <li key={item.id} className={`px-3 py-1 font-bold ${pathname === item.path ? 'text-[yellow]' : ''}`}>
+                  <li key={item.id} className={`py-1 font-bold ${pathname === item.path ? 'text-[yellow]' : ''}`}>
                     {item.children ? (
                       <MenuDropdown
                         title={item.title}
@@ -74,6 +74,9 @@ function Header() {
                 )
                 )}
               </ul>
+              <div className="cursor-pointer">
+                <Link href="/dang-ky-dung-thu" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Đăng ký dùng thử</Link>
+              </div>
             </div>
             <div className="flex items-center mr-8 lg:hidden">
               <div className="cursor-pointer p-1 hover:bg-[#e0e0e0] rounded-full duration-300" onClick={() => setIsOpenSidebar(true)}>

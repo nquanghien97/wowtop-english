@@ -194,3 +194,22 @@
 .bg-custom-yellow {
   background: linear-gradient(to right, #fdf9ed, #f6f0de);
 }
+
+.dk-dung-thu {
+  padding: 6px 8px !important;
+  background: linear-gradient(to right, #BD9840, #FEF0AD, #EABD54, #EABD54);
+  color: #996E30 !important;
+  border-radius: 50px;
+}
+
+.bg-text-1 {
+  background: linear-gradient(to right, #6E490A, #C7831B, #C5821A, #6E490A);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.bg-number {
+  background: linear-gradient(to right, #895500, #F0C964, #A16f16, #925E08, #EABD54);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

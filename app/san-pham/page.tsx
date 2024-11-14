@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 function Product() {
   return (
     <main className="bg-custom-yellow">
-      {/* <section className="bg-[url('/bgr-sua.webp')] bg-cover bg-center md:bg-[length:100%_100%] mb-8">
+      <section className="bg-[url('/bgr-sua.webp')] bg-cover bg-center md:bg-[length:100%_100%] mb-8">
         <div className="max-w-6xl m-auto px-4">
           <div className="flex pb-[100px] flex-col md:flex-row">
             <div className="md:w-2/5 flex items-center">
@@ -80,7 +80,7 @@ function Product() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section className="py-8">
         <div className="max-w-4xl m-auto px-4">
           <h2 className="text-center text-4xl mb-4 text-[#065691] font-bold">Thành phần</h2>
