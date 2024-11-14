@@ -213,3 +213,15 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+.dkdt {
+  background: linear-gradient(to right, #BD9840, #FEF0AD, #EABD54, #EABD54);
+  color: #84571B !important;
+  border-radius: 50px;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #FEF0AD;
+  font-weight: 700;
+  width: 50%;
+  margin: 0 auto;
+}
