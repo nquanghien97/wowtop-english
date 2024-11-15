@@ -82,10 +82,12 @@ function Product() {
         </div>
       </section>
       <section className="py-8">
-        <div className="max-w-4xl m-auto px-4">
-          <h2 className="text-center text-4xl mb-4 text-[#065691] font-bold">Thành phần</h2>
+        <div className="max-w-4xl m-auto px-4 relative">
+          <div className="flex absolute top-[-24%] md:top-[-40%] left-[50%] transform -translate-x-1/2">
+            <h2 className="text-center text-[calc(1rem+0.9vw)] md:text-4xl mb-4 text-white uppercase font-bold bg-[url('/gfh.png')] px-16 py-12 bg-[length:100%_100%]">Thành phần</h2>
+          </div>
           <div className="bg-white border border-[yellow] shadow-md rounded-2xl">
-            <p className="p-8 text-center text-[#065691] font-semibold">
+            <p className="p-8 pt-12 text-center text-[#065691] font-semibold">
               Sữa bột [sữa tách béo, bột whey khử khoáng (từ sữa), lactose (từ sữa), đạm whey cô đặc (từ sữa)]. Sản phẩm chứa Calci 1475 mg/100g, Đạm Sữa non chuẩn hóa (CBP) 125mg/100g, Casein Phosphopeptide (CPP) 571mg/100g, Bifidobaterium animalis Probiotic DHA từ tảo, ARA, 1,3-Dioleoyl-2-Palmitoyl Triglyceride (OPO), Lactoferrin, Immunoglobulin G (IgG), và hơn 30 loại vitamin khoáng chất và dưỡng chất thiết yếu.
             </p>
           </div>
@@ -162,21 +164,21 @@ function Product() {
       <section className="mb-8">
         <div className="max-w-4xl m-auto">
           <div className="px-4">
-            <div className="bg-[url('/artboard_26.png')] bg-[length:100%_100%] h-[70px] flex justify-center items-center">
-              <span className="text-[#065691] font-bold text-lg md:text-4xl uppercase">
+            <div className="bg-[url('/gfh_1.png')] bg-[length:100%_100%] h-[70px] flex justify-center items-center">
+              <span className="text-white font-bold text-lg md:text-4xl uppercase">
                 Hướng dẫn truy xuất nguồn gốc
               </span>
             </div>
-            <div className="bg-[url('/artboard_27.webp')] bg-[length:100%_100%] h-[800px] max-md:hidden relative">
-              <div className="flex items-center gap-4 absolute top-20">
+            <div className="bg-[url('/artboard_27.png')] bg-[length:100%_100%] h-[800px] max-md:hidden relative">
+              <div className="flex items-center gap-4 absolute top-20 left-[-4%]">
                 <Image src="/default.jpg" alt="default" width={160} height={160} className="border-[#065691] border-[1px] rounded-full" />
-                <p className="text-[#065691] font-semibold">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
-              </div>
-              <div className="flex items-center gap-4 absolute top-[40%] right-20">
                 <p className="text-[#065691] font-semibold mt-[12%]">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
+              </div>
+              <div className="flex items-center gap-4 absolute top-[40%] right-[-6%]">
+                <p className="text-[#065691] font-semibold mt-[22%]">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
                 <Image src="/default.jpg" alt="default" width={160} height={160} className="border-[#065691] border-[1px] rounded-full" />
               </div>
-              <div className="flex items-center gap-4 absolute bottom-20">
+              <div className="flex items-center gap-4 absolute bottom-[4%] left-[-4%]">
                 <Image src="/default.jpg" alt="default" width={160} height={160} className="border-[#065691] border-[1px] rounded-full" />
                 <p className="text-[#065691] font-semibold mt-[20%]">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
               </div>
@@ -209,63 +211,64 @@ function Product() {
       </section>
       <section className="mb-8">
         <div className="max-w-4xl m-auto">
-          <div className="bg-[url('/concaovut.png')] bg-[length:100%_100%] flex justify-center items-center">
-            <div className="text-[#065691] font-semibold text-center py-4">
-              <p className="text-4xl font-bold uppercase">Hướng dẫn sử dụng</p>
-            </div>
+          <div className="font-semibold text-center py-4 bg-[url('/hdgh.png')] bg-[length:100%_100%] w-full md:w-2/3 m-auto">
+            <p className="text-[calc(1.5rem+1vw)] md:text-4xl font-bold uppercase bg-text">Hướng dẫn sử dụng</p>
           </div>
           <div className="max-md:px-4">
-            <div className="flex mt-4 flex-col md:flex-row items-center">
+            <div className="flex max-md:flex-col">
               <Image src="/be.webp" alt="be" width={305} height={468} />
-              <div className="w-full">
-                <div>
-                  <div className="flex justify-between">
-                    <div className="flex items-center w-1/2">
-                      <Image src="/b1.png" alt="b1" width={305} height={137} />
+              <ul>
+                <li className="flex gap-2">
+                  <div className="flex w-[120px] relative">
+                    <div className="">
+                      <Image src="/gfh_2.png" alt="gfh_2" width={240} height={240} className="w-full" />
                     </div>
-                    <div className="flex items-center w-1/2 justify-center">
-                      <Image src="/icon_giot.png" alt="icon_giot" width={200} height={200} className="max-md:w-[100px] max-md:h-[100px]" />
-                    </div>
-                  </div>
-                  <p className="text-[#065691] font-bold text-lg md:text-xl">Chuẩn bị 180ml nước ấm (35-45 độ C)</p>
-                </div>
-                <div className="flex justify-center">
-                  <Image src="/mui_ten.png" alt="mui-ten" width={30} height={73} />
-                </div>
-                <div>
-                  <div className="flex justify-between">
-                    <div className="flex items-center w-1/2">
-                      <Image src="/b2.png" alt="b2" width={305} height={137} />
-                    </div>
-                    <div className="flex items-center w-1/2 justify-center">
-                      <Image src="/icon_muong.png" alt="icon_muong" width={200} height={200} className="max-md:w-[100px] max-md:h-[59px]" />
+                    <div className="flex items-end w-[30px] absolute bottom-[-20%] right-[0%]">
+                      <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
                     </div>
                   </div>
-                  <p className="text-[#065691] font-bold text-lg md:text-xl">Pha 4 muỗng (40g) sữa WOWTOP vào nước ấm</p>
-                </div>
-                <div className="flex justify-center">
-                  <Image src="/mui_ten.png" alt="mui-ten" width={30} height={73} />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="flex items-center max-md:hidden">
-                <div className="flex items-center w-full">
-                  <Image src="/b3.png" alt="b3" width={305} height={137} />
-                </div>
-                <p className="text-[#065691] font-bold text-xl w-full">Khuấy đều để có được một ly 220ml sữa tăng chiều cao WOWTOP đầy đủ dưỡng chất</p>
-                <div className="flex items-center w-1/2 justify-center">
-                  <Image src="/icon_coc.png" alt="icon_coc" width={200} height={200} />
-                </div>
-              </div>
-              <div className="flex justify-between md:hidden">
-                <div className="flex items-center w-1/2">
-                  <Image src="/b3.png" alt="b3" width={305} height={137} />
-                </div>
-                <div className="flex items-center w-1/2 justify-center">
-                  <Image src="/icon_coc.png" alt="icon_coc" width={200} height={200} className="max-md:w-[100px] max-md:h-[131px]" />
-                </div>
-              </div>
+                  <p className="flex-1 ml-4 flex items-center">Rửa sạch tay trước khi pha sữa. Vệ sinh và tiệt trùng tất cả dụng cụ bằng cách đun sôi trong 5 phút hoặc sử dụng máy tiệt trùng đã được kiểm duyệt.</p>
+                </li>
+                <li className="flex gap-2">
+                  <div className="flex w-[120px] relative">
+                    <div className="">
+                      <Image src="/gfh_3.png" alt="gfh_3" width={120} height={240} className="w-full" />
+                    </div>
+                    <div className="flex items-end w-[30px] absolute bottom-[-20%] right-[0%]">
+                      <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
+                    </div>
+                  </div>
+                  <p className="flex-1 ml-4 flex items-center">Đun sôi nước sạch và để nguội xuống 45&#8451; trước khi pha sữa.</p>
+                </li>
+                <li className="flex gap-2">
+                  <div className="flex w-[120px] relative">
+                    <div className="">
+                      <Image src="/gfh_4.png" alt="gfh_4" width={240} height={240} className="w-full" />
+                    </div>
+                    <div className="flex items-end w-[30px] absolute bottom-[-20%] right-[0%]">
+                      <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
+                    </div>
+                  </div>
+                  <p className="flex-1 ml-4 flex items-center">Sau khi nước đã nguội, đo lượng nước cần thiết và đổ vào bình sữa đã được tiệt trùng.</p>
+                </li>
+                <li className="flex gap-2">
+                  <div className="flex w-[120px] relative">
+                    <div className="">
+                      <Image src="/dh.png" alt="dh" width={240} height={240} className="w-full" />
+                    </div>
+                    <div className="flex items-end w-[30px] absolute bottom-[-20%] right-[0%]">
+                      <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
+                    </div>
+                  </div>
+                  <p className="flex-1 ml-4 flex items-center">Sử dụng muỗng kèm theo. Pha 1 muỗng gạt sữa bột với mỗi 25.7mL nước, theo hướng dẫn pha sữa. Lắc nhanh để sữa tan hoàn toàn. Mỗi bình nên được pha riêng.</p>
+                </li>
+                <li className="flex gap-2">
+                  <div className="flex w-[120px] justify-center">
+                    <Image src="/dghd.png" alt="dghd" width={240} height={240} className="w-[80px]" />
+                  </div>
+                  <p className="flex-1 ml-4 flex items-center">Kiểm tra nhiệt độ sữa trên cổ tay trước khi cho bé uống. Sử dụng ngay sau khi pha. Loại bỏ sữa thừa không dùng hết.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
