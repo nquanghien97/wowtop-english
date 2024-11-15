@@ -80,7 +80,7 @@ async function Successfully({ params }: { params: { code: string } }) {
               <div className="mt-8 flex flex-col md:flex-row gap-10">
                 <div className="md:w-1/2 w-full">
                   <div className="mb-8">
-                    <iframe className="rounded-2xl w-full h-[315px]" src="https://www.youtube.com/embed/6IrJ8Q4Fg6k?si=kqutl4M6KCgvW9DV" />
+                    <iframe loading='lazy' className="rounded-2xl w-full h-[315px]" src="https://www.youtube.com/embed/6IrJ8Q4Fg6k?si=kqutl4M6KCgvW9DV" />
                   </div>
                   <p className="uppercase text-[#135689] font-bold text-center mx-8">Chuyên gia chia sẽ nguyên lý tăng chiều cao từ cấp độ nguyên bào</p>
                 </div>
