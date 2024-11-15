@@ -5,6 +5,7 @@ import Link from 'next/link';
 // import Experience from '@/components/HomePage/Experience';
 import dynamic from "next/dynamic";
 import CongThuc from '@/components/CongThuc';
+import LazyYouTubeEmbed from '@/components/YoutubeEmbed';
 const Experience = dynamic(() => import('@/components/HomePage/Experience'), { ssr: false })
 
 // export const dynamic = 'force-dynamic'
@@ -81,7 +82,7 @@ export default async function Home() {
           </div>
           <div className="mt-4 flex flex-col md:flex-row gap-10">
             <div className="md:w-1/2 w-full">
-              <iframe loading='lazy' className="rounded-2xl w-full h-[315px]" src="https://www.youtube.com/embed/y9vlAFDEr7I?rel=0&showinfo=0" />
+              <LazyYouTubeEmbed videoId='y9vlAFDEr7I' />
             </div>
             <div className="md:w-1/2 w-full">
               <p className="text-[#84571B] text-justify">Xương dài ra do quá trình <strong>cốt hóa</strong> sụn tăng trưởng thành xương. Hầu hết quá trình này do <strong>nguyên bào xương</strong> chịu trách nhiệm. Nguyên bào xương tạo ra ma tr ận xương (Khung nền xương) đồng thời tăng cường chuyển hóa, lắng đọng Canxi, Phospho để lấp đầy và làm cứng ma trận xương, giúp xương dài ra ở 2 đầu. <strong>Wowtop</strong> vừa bổ sung <strong>Canxi, Phospho, D3, K2</strong> làm nguyên liệu cho quá trình tạo xương, vừa chứa thành phần <strong>CBP</strong> kích thích nguyên bào xương phát triển, nhờ đó thúc đẩy mạnh mẽ quá trình cốt hóa ở 2 đầu xương, giúp <strong>tăng chiều cao cả về lượng và về chất.</strong></p>

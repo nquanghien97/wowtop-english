@@ -4,6 +4,7 @@ import Image from 'next/image'
 import CongThuc from '@/components/CongThuc'
 import FormOrder from '@/components/HomePage/FormOrder'
 import Link from 'next/link'
+import LazyYouTubeEmbed from '@/components/YoutubeEmbed'
 
 function page() {
   return (
@@ -223,7 +224,7 @@ function page() {
               <p className="bg-text text-[calc(1rem+0.5vw)] md:text-2xl max-md:text-center">XEM VIDEO ĐỂ HIỂU RÕ VỀ SẢN PHẨM WOWTOP MÀ BỐ MẸ LỰA CHỌN CHO CON YÊU</p>
             </div>
             <div className="flex-1 px-2">
-              <iframe loading='lazy' src="https://www.youtube.com/embed/y9vlAFDEr7I?si=zDi8B9unDuWxPVnw" height={315} className="w-full rounded-md" />
+              <LazyYouTubeEmbed videoId='y9vlAFDEr7I' />
             </div>
           </div>
           <div className="flex max-md:flex-col gap-4 mb-4">

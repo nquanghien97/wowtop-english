@@ -4,6 +4,7 @@ import { getInformations } from '@/services/heightCalculator'
 import { ageCalculator } from '@/utils/ageCalculator'
 import { Gender, heightCalculator } from '@/utils/heightCalculator'
 import { InformationEntity } from '@/entities/information'
+import LazyYouTubeEmbed from '@/components/YoutubeEmbed'
 
 export const dynamic = 'force-dynamic'
 
@@ -80,7 +81,7 @@ async function Successfully({ params }: { params: { code: string } }) {
               <div className="mt-8 flex flex-col md:flex-row gap-10">
                 <div className="md:w-1/2 w-full">
                   <div className="mb-8">
-                    <iframe loading='lazy' className="rounded-2xl w-full h-[315px]" src="https://www.youtube.com/embed/6IrJ8Q4Fg6k?si=kqutl4M6KCgvW9DV" />
+                    <LazyYouTubeEmbed videoId='6IrJ8Q4Fg6k' />
                   </div>
                   <p className="uppercase text-[#135689] font-bold text-center mx-8">Chuyên gia chia sẽ nguyên lý tăng chiều cao từ cấp độ nguyên bào</p>
                 </div>
