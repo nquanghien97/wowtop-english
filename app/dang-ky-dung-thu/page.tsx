@@ -350,7 +350,7 @@ function page() {
           <div>
             <p className="buoc table m-auto md:text-3xl text-[calc(1.25rem+0.5vw)] mb-4">Bước 6</p>
             <p className="bg-text text-[calc(1.5rem+1vw)] md:text-3xl font-semibold text-center m-auto mb-4">Bố mẹ gửi ảnh con chụp cùng WowTop</p>
-            <Slide />
+            {/* <Slide /> */}
           </div>
         </div>
       </section>

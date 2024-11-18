@@ -93,7 +93,7 @@ function Header() {
           exit="-24rem"
         >
           <div className="py-7">
-            <ul className="flex max-lg:flex-col text-black">
+            <ul className="flex max-lg:flex-col text-black mb-4">
               {ListHeader.map(item => (
                 <li key={item.path} className="px-3 lg:py-1 py-4 max-lg:border-b-2" onClick={() => setIsOpenSidebar(false)}>
                   {item.children ? (
@@ -119,6 +119,9 @@ function Header() {
                 </li>
               ))}
             </ul>
+            <div className="cursor-pointer flex justify-center">
+                <Link href="/dang-ky-dung-thu" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Đăng ký dùng thử</Link>
+              </div>
           </div>
         </AppSidebar>
         {/* <div className="lg:h-[80px] h-[60px]" /> */}
