@@ -8,6 +8,17 @@ import Question from "./Question"
 import CongThuc from "@/components/CongThuc"
 const Experience = dynamic(() => import('@/components/HomePage/Experience'), { ssr: false })
 
+const data = [
+  {
+    id: 1,
+    muc: 'Năng lượng',
+    don_vi: 'kJ',
+    moi_khau_phan: '663',
+    tren_100g: '1902',
+    tren_100kJ: '100'
+  }
+]
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://wowtop.com.vn'),
   title: 'Oz Farm Wowtop 800g',
@@ -386,67 +397,28 @@ function Product() {
       <section className="mb-8">
         <div className="max-w-6xl m-auto rounded-2xl p-1 shadow-2xl">
           <div className="bg-[#fefaee] rounded-t-2xl">
-            <div className="bg-[#fefaee] p-8 text-center text-[#065691] text-4xl font-bold rounded-t-2xl">Dinh dưỡng trong 1 ly sữa Oz 220ml</div>
+            <div className="bg-[#fefaee] p-8 text-center text-[#065691] text-4xl font-bold rounded-t-2xl">Thông tin dinh dưỡng</div>
           </div>
           <table className="w-full text-center rounded-b-2xl">
             <thead className="">
               <tr className="bg-[#f4ddb1]">
-                <th className="text-xl text-[#065691] p-3">Thành phần</th>
-                <th className="text-xl text-[#065691] p-3">Trong 1 ly sữa</th>
+                <th className="text-xl text-[#065691] p-3">Mục</th>
                 <th className="text-xl text-[#065691] p-3">Đơn vị</th>
+                <th className="text-xl text-[#065691] p-3">Lượng trung bình trên mỗi khẩu phần</th>
+                <th className="text-xl text-[#065691] p-3">Lượng trung bình trên mỗi khẩu phần</th>
+                <th className="text-xl text-[#065691] p-3">Lượng trung bình trên mỗi khẩu phần</th>
               </tr>
             </thead>
             <tbody>
-              <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300">
-                <td className="text-left pl-[15%] p-1">Năng lượng</td>
-                <td>727.58</td>
-                <td>Kj</td>
-              </tr>
-              <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300">
-                <td className="text-left pl-[15%] p-1">Chất đạm</td>
-                <td>7.63</td>
-                <td>g</td>
-              </tr>
-              <tr className="text-[#065691] bg-[#f7ecd0] cursor-pointer hover:bg-[#f7ecd0] duration-300">
-                <td className="text-left pl-[15%] p-1">Chất béo</td>
-                <td>8.62</td>
-                <td>g</td>
-              </tr>
-              <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300">
-                <td className="text-left pl-[15%] p-1">Chất béo bão hòa</td>
-                <td>5.68</td>
-                <td>g</td>
-              </tr>
-              <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300">
-                <td className="text-left pl-[15%] p-1">Trans Fat</td>
-                <td>0.40</td>
-                <td>g</td>
-              </tr>
-              <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300">
-                <td className="text-left pl-[15%] p-1">Monounsaturated</td>
-                <td>1.72</td>
-                <td>g</td>
-              </tr>
-              <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300">
-                <td className="text-left pl-[15%] p-1">Polyunsaturated</td>
-                <td>0.11</td>
-                <td>g</td>
-              </tr>
-              <tr className="bg-[#f7ecd0] border-b-[5px] border-white text-[#065691] cursor-pointer">
-                <td className="text-left pl-[15%] p-1"><strong>Lactoferrin</strong></td>
-                <td><strong>25.74</strong></td>
-                <td><strong>mg</strong></td>
-              </tr>
-              <tr className="bg-[#f7ecd0] border-b-[5px] border-white text-[#065691] cursor-pointer">
-                <td className="text-left pl-[15%] p-1"><strong>CBP</strong></td>
-                <td><strong>125</strong></td>
-                <td><strong>mg</strong></td>
-              </tr>
-              <tr className="bg-[#f7ecd0] border-b-[5px] border-white text-[#065691] cursor-pointer">
-                <td className="text-left pl-[15%] p-1"><strong>CPP</strong></td>
-                <td><strong>140</strong></td>
-                <td><strong>mg</strong></td>
-              </tr>
+              {data.map(item => (
+                <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300" key={item.id}>
+                  <td>{item.muc}</td>
+                  <td>{item.don_vi}</td>
+                  <td>{item.moi_khau_phan}</td>
+                  <td>{item.tren_100g}</td>
+                  <td>{item.tren_100kJ}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
