@@ -22,9 +22,9 @@ function page() {
           <p className="text-[#84571B] text-justify mb-4">
             WowTop là sữa hàng đầu tại New Zealand về tăng chiều cao, WowTop mới có mặt tại Việt Nam và chuẩn bị ra mắt. Hiện tại chưa có nhiều người tại Việt Nam có cơ hội trải nghiệm sản phẩm, nên chúng tôi mang đến chương trình đặc biệt này để tạo cơ hội cho các mẹ cùng bé được trải nghiệm dòng sản phẩm tuyệt vời, từ đó cùng chúng tôi lan toả về WowTop - sữa tăng chiều cao thật sự hiệu quả để nhiều người cùng biết tới.
           </p>
-          {/* <div className="flex justify-center mb-4">
+          <div className="flex justify-center mb-4">
             <Image src="/asset_18.png" alt="asset_18" width={588} height={490} />
-          </div> */}
+          </div>
           <div className="flex flex-col w-full gap-8 relative mb-8 max-md:flex-col items-center justify-center">
             <div className="flex max-md:flex-col gap-4">
               <div className="flex-1 bg-[url('/asset_23.png')] bg-[length:100%_100%] w-full">
@@ -350,7 +350,7 @@ function page() {
           <div>
             <p className="buoc table m-auto md:text-3xl text-[calc(1.25rem+0.5vw)] mb-4">Bước 6</p>
             <p className="bg-text text-[calc(1.5rem+1vw)] md:text-3xl font-semibold text-center m-auto mb-4">Bố mẹ gửi ảnh con chụp cùng WowTop</p>
-            <Slide />
+            {/* <Slide /> */}
           </div>
         </div>
       </section>
