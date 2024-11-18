@@ -54,9 +54,7 @@ export async function GET(req: NextRequest) {
 
     // Sử dụng $transaction để thực hiện cả hai truy vấn đồng thời
     const [total, codes] = await prisma.$transaction([
-      prisma.accumulation_code.count({
-        where: whereCondition
-      }),
+      prisma.accumulation_code.count(),
       prisma.accumulation_code.findMany({
         skip,
         take,
