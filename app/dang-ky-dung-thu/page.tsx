@@ -179,14 +179,14 @@ function page() {
         <div className="max-w-5xl m-auto">
           <h2 className="text-[28px] text-[#84571B] text-center uppercase mb-16">{'>'}{'>'} Tìm hiểu thêm về sản phẩm</h2>
           <div className="flex max-md:flex-col gap-4 mb-8">
-            <div className="bg-[url('/asset_46.png')] bg-[length:100%_100%] min-h-[120px] flex-1 flex justify-center items-center relative">
+            <div className="bg-[url('/asset_46.png')] bg-[length:100%_100%] min-h-[160px] flex-1 flex justify-center items-center relative">
               <div className="absolute left-[25%] text-[#84571B] text-xl">
-                <p >Thời gian tham gia từ ngày ... đến ngày ...</p>
+                <p>Thời gian tham gia từ ngày ... đến ngày ...</p>
                 <p>Thời gian công bố kết quả ...</p>
                 <p>Thời gian gửi quà sau 1 tuần kể từ ngày thông báo.</p>
               </div>
             </div>
-            <div className="bg-[url('/asset_47.png')] bg-[length:100%_100%] min-h-[120px] flex-1 flex justify-center items-center relative">
+            <div className="bg-[url('/asset_47.png')] bg-[length:100%_100%] min-h-[160px] flex-1 flex justify-center items-center relative">
               <p className="absolute left-[25%] text-[#84571B] text-xl">Đối tượng tham gia chương trình là các bé trong độ tuổi <strong>từ 1-16 tham gia nhảy</strong> cùng bố mẹ hoặc anh chị cô</p>
             </div>
           </div>
