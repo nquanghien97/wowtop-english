@@ -244,3 +244,13 @@
   width: 100%;
   padding: 40px;
 }
+
+.text-banner {
+  background: linear-gradient(to right, #F0D284, #ce932d, #b38234, #c98d2d, #ac9152, #EAC775);
+  color: white !important;
+  border-radius: 12px;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid #FEF0AD;
+  font-weight: 700;
+}

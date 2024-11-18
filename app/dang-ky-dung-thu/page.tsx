@@ -2,10 +2,10 @@ import React from 'react'
 import Banner from './Banner'
 import Image from 'next/image'
 import CongThuc from '@/components/CongThuc'
-import FormOrder from '@/components/HomePage/FormOrder'
 import Link from 'next/link'
 import LazyYouTubeEmbed from '@/components/YoutubeEmbed'
 import Slide from './Slide'
+import FormOrder from './FormOrder'
 
 function page() {
   return (
@@ -17,7 +17,7 @@ function page() {
           <h3 className="bg-text-1 text-center text-[4vw] md:text-3xl uppercase font-bold py-1">Sữa cao wowtop</h3>
           <p className="bg-text-1 text-center text-[3vw] md:text-2xl uppercase py-1">Nhập khẩu nguyên lon từ Newzealand</p>
           <div className="bg-[url('/asset_15.png')] bg-[length:100%_100%] h-[70px] flex justify-center items-center mb-2">
-            <p className="flex items-center text-white text-2xl">lên đến <span className="text-white text-[5vw] md:text-4xl font-bold uppercase ml-4 py-2">11,250,000 VNĐ/ Suất</span></p>
+            <p className="flex items-center text-white text-2xl">lên đến <span className="text-white text-[5vw] md:text-4xl font-bold uppercase ml-4 py-2">1.200.000 VNĐ/ Suất</span></p>
           </div>
           <p className="text-[#84571B] text-justify mb-4">
             WowTop là sữa hàng đầu tại New Zealand về tăng chiều cao, WowTop mới có mặt tại Việt Nam và chuẩn bị ra mắt. Hiện tại chưa có nhiều người tại Việt Nam có cơ hội trải nghiệm sản phẩm, nên chúng tôi mang đến chương trình đặc biệt này để tạo cơ hội cho các mẹ cùng bé được trải nghiệm dòng sản phẩm tuyệt vời, từ đó cùng chúng tôi lan toả về WowTop - sữa tăng chiều cao thật sự hiệu quả để nhiều người cùng biết tới.
@@ -179,13 +179,14 @@ function page() {
         <div className="max-w-5xl m-auto">
           <h2 className="text-[28px] text-[#84571B] text-center uppercase mb-16">{'>'}{'>'} Tìm hiểu thêm về sản phẩm</h2>
           <div className="flex max-md:flex-col gap-4 mb-8">
-            <div className="bg-[url('/asset_46.png')] bg-[length:100%_100%] min-h-[100px] flex-1 flex justify-center items-center relative">
+            <div className="bg-[url('/asset_46.png')] bg-[length:100%_100%] min-h-[120px] flex-1 flex justify-center items-center relative">
               <div className="absolute left-[25%] text-[#84571B] text-xl">
-                <p className="font-bold">Thời gian công bố kết quả...</p>
+                <p >Thời gian tham gia từ ngày ... đến ngày ...</p>
+                <p>Thời gian công bố kết quả ...</p>
                 <p>Thời gian gửi quà sau 1 tuần kể từ ngày thông báo.</p>
               </div>
             </div>
-            <div className="bg-[url('/asset_47.png')] bg-[length:100%_100%] min-h-[100px] flex-1 flex justify-center items-center relative">
+            <div className="bg-[url('/asset_47.png')] bg-[length:100%_100%] min-h-[120px] flex-1 flex justify-center items-center relative">
               <p className="absolute left-[25%] text-[#84571B] text-xl">Đối tượng tham gia chương trình là các bé trong độ tuổi <strong>từ 1-16 tham gia nhảy</strong> cùng bố mẹ hoặc anh chị cô</p>
             </div>
           </div>
@@ -236,7 +237,7 @@ function page() {
             </div>
           </div>
           <h3 className="bg-text-blue text-[calc(1.25rem+0.5vw)] md:text-5xl text-center font-bold py-2">Tham gia siêu sao wow cao chất</h3>
-          <div className="bg-[url('/asset_24.png')] bg-[length:100%_100%] min-h-[120px] flex items-center justify-center">
+          <div className="bg-[url('/asset_24.png')] bg-[length:100%_100%] min-h-[120px] flex items-center justify-center mb-4">
             <span className="uppercase font-semibold bg-text text-[calc(1.5rem+1vw)] md:text-5xl py-2 mt-2">Nhận quà</span>
           </div>
           <div className="flex max-md:flex-col gap-4 mb-4">
@@ -264,40 +265,6 @@ function page() {
               <p className="bg-text text-[calc(1.5rem+1vw)] md:text-2xl text-center">Đăng tải video lên Tiktok kèm hastag: <span className="!text-[calc(1rem+1vw)] md:!text-2xl">#sieusaowowcaochat #wowtop #tangchieucaotucapdonguyenbao</span></p>
             </div>
             <div className="flex-1">
-              {/* <ul className="h-[400px] overflow-y-scroll shadow-custom p-4 rounded-2xl">
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-                <li className="mb-4">
-                  <div className="text-[#84571B] font-bold">Câu hỏi 1</div>
-                  <div className="bg-[#F0DCAF] text-[#84571B] rounded-2xl py-1 px-3">Bố mẹ trả lời</div>
-                </li>
-              </ul> */}
               <Image src="/asset_48.png" alt="asset_48" width={256} height={158} className="w-full" />
             </div>
             <div className="flex-1 max-md:hidden">
@@ -312,7 +279,7 @@ function page() {
           <div>
             <p className="buoc table m-auto md:text-3xl text-[calc(1.25rem+0.5vw)] mb-4">Bước 3</p>
             <p className="bg-text text-[calc(1.5rem+1vw)] md:text-3xl font-semibold text-center w-full md:w-1/2 m-auto mb-4">BỐ MẸ ĐIỀN FORM ĐĂNG KÝ DÙNG THỬ SỮA WOWTOP CHO CON YÊU</p>
-            <FormOrder isProductTest />
+            <FormOrder />
           </div>
           <div className="flex max-md:flex-col gap-4 mb-4">
             <div className="flex-1">
@@ -321,7 +288,7 @@ function page() {
                 <p className="max-md:hidden absolute bg-[#202B93] w-4 h-4 rounded-full after:absolute after:content-[''] top-1/2 -right-full transform -translate-y-1/2"></p>
                 <p className="max-md:hidden absolute bg-[#202B93] w-full h-[1px] rounded-full after:absolute after:content-[''] top-1/2 -right-full transform -translate-y-1/2"></p>
               </div>
-              <p className="bg-text text-[calc(1.5rem+1vw)] md:text-3xl font-semibold max-md:text-center">Bố mẹ theo dõi Fanpage Wowtop hoặc truy cập website <Link href="/#">wowtop.com.vn/sieu-sao-wow-cao-chat</Link> để cập nhật kết quả chương trình</p>
+              <p className="bg-text text-[calc(1.5rem+1vw)] md:text-3xl font-semibold max-md:text-center">Bố mẹ theo dõi Fanpage Wowtop hoặc truy cập website <Link href="/#" className="bg-text-blue">wowtop.com.vn/sieu-sao-wow-cao-chat</Link> để cập nhật kết quả chương trình</p>
             </div>
             <div className="flex-1 relative">
               <Image src="/3.jpg" alt="3" width={469} height={257} className="w-full" />
@@ -382,20 +349,17 @@ function page() {
                 <tr>
                   <td className="text-center py-4 border-b border-black border-x">1</td>
                   <td className="text-center py-4 border-b border-black border-x">Nam Thị Ly</td>
-                  <td className="text-center py-4 border-b border-black border-x">0987654321</td>
+                  <td className="text-center py-4 border-b border-black border-x">0987654***</td>
                 </tr>
                 <tr>
                   <td className="text-center py-4 border-b border-black border-x">2</td>
                   <td className="text-center py-4 border-b border-black border-x">Nguyễn Thị An</td>
-                  <td className="text-center py-4 border-b border-black border-x">0912345678</td>
+                  <td className="text-center py-4 border-b border-black border-x">0912345***</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-      </section>
-      <section>
-        <Image src="/bg13.jpg" alt="bg13" width={3597} height={1358} />
       </section>
     </main>
   )

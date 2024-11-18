@@ -21,10 +21,22 @@ function Banner() {
         }}
       >
         <SwiperSlide>
-          <Image src="/bg12.jpg" alt="banner-nho-02-2048x841" width={1920} height={400} className="w-full max-h-[620px]" />
+          <div className="relative">
+            <Image src="/banner.jpg" alt="banner-dang-ky-dung-thu" width={1920} height={400} className="w-full max-h-[620px]" />
+            <div className="absolute top-[10%] left-[20%] text-[50%] md:text-[calc(1vw+1rem)] uppercase">
+              <h1 className="bg-text bg-clip-text text-transparent font-bold md:mb-4">Cuộc thi dance challenge</h1>
+              <p className="text-banner">Siêu sao wow cao chất</p>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/bg12.jpg" alt="banner-nho-02-2048x841" width={1920} height={400} className="w-full max-h-[620px]" />
+          <div className="relative">
+            <Image src="/banner.jpg" alt="banner-dang-ky-dung-thu" width={1920} height={400} className="w-full max-h-[620px]" />
+            <div className="absolute top-[10%] left-[20%] text-[50%] md:text-[calc(1vw+1rem)] uppercase">
+              <h1 className="bg-text bg-clip-text text-transparent font-bold md:mb-4">Cuộc thi dance challenge</h1>
+              <p className="text-banner">Siêu sao wow cao chất</p>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </section>
