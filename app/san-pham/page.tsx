@@ -132,7 +132,7 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="bg-custom-yellow mb-4">
+      <section className="mb-4">
         <div className="md:max-w-4xl w-full m-auto px-4 relative">
           <div className="flex justify-center relative w-full">
             <Image src="/bgr-giot.webp" alt="bgr-giot" width={896} height={1000} />
@@ -163,7 +163,7 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="bg-custom-yellow">
+      <section className="">
         <div className="max-w-4xl m-auto px-4">
           <div className="mb-8">
             <p className="text-[#84571B] font-bold text-2xl md:text-5xl mb-2 uppercase">Tác dụng của <span className="text-5xl">CBP</span> với</p>
@@ -172,7 +172,7 @@ function Product() {
               <span className="absolute md:top-4 top-4 md:left-12 left-20 text-[#84571B] font-bold text-2xl md:text-5xl uppercase">Nguyên bào xương</span>
             </div>
           </div>
-          <div className="flex flex-col gap-8 mb-8">
+          <div className="flex flex-col gap-8">
             <div className="flex items-center gap-4 md:gap-8">
               <Image src="/artboard16.png" alt="a2" width={140} height={184} className="w-20 md:w-[140px]" />
               <div>
@@ -201,12 +201,12 @@ function Product() {
               </div>
             </div>
           </div>
-          <div className="bg-[url('/artboard12.png')] bg-[length:100%_100%] p-4 md:px-[100px] rounded-2xl">
+          <div className="bg-[url('/artboard12.png')] bg-[length:100%_100%] p-8 md:px-[100px] rounded-2xl">
             <p className="font-bold text-center py-8 text-[#002A9E]">Tại sao nói CBP là bữa tiệc thịnh soạn dành cho nguyên bào xương Khi hình thành nguyên bào xương, cần tiêu tổn rất nhiều dinh dưỡng và axit amin. CBP cung cấp dồi dào các dưỡng chất này, cho nguyên bào xương &quot;ăn ngon&quot;, &quot;ăn no&quot;, từ đó nó sẽ sinh ra 1 mạng lưới xương vững chắc</p>
           </div>
         </div>
       </section>
-      <section className="py-8">
+      <section className="">
         <div className="max-w-4xl m-auto px-4">
           <div className="flex justify-center flex-col items-center mb-8">
             <h2 className="uppercase bg-text pt-4 text-6xl font-bold mb-8">3 bước</h2>
