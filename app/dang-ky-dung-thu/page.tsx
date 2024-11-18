@@ -261,7 +261,7 @@ function page() {
               <div className="buoc table m-auto md:text-3xl text-[calc(1.25rem+0.5vw)] mb-4">
                 Bước 2
               </div>
-              <p className="bg-text text-[calc(1.5rem+1vw)] md:text-2xl text-center">Đăng tải video lên Tiktok kèm hastag: #sieusaowowcaochat #wowtop #tangchieucaotucapdonguyenbao</p>
+              <p className="bg-text text-[calc(1.5rem+1vw)] md:text-2xl text-center">Đăng tải video lên Tiktok kèm hastag: <span className="!text-[calc(1rem+1vw)] md:!text-2xl">#sieusaowowcaochat #wowtop #tangchieucaotucapdonguyenbao</span></p>
             </div>
             <div className="flex-1">
               {/* <ul className="h-[400px] overflow-y-scroll shadow-custom p-4 rounded-2xl">
