@@ -761,23 +761,23 @@ function Product() {
       <section className="mb-8">
         <div className="max-w-6xl m-auto rounded-2xl p-1 shadow-2xl">
           <div className="bg-[#fefaee] rounded-t-2xl">
-            <div className="bg-[#fefaee] p-8 text-center bg-text text-4xl font-bold rounded-t-2xl">Thông tin dinh dưỡng</div>
+            <div className="bg-[#fefaee] text-center bg-text text-[calc(1.5rem+1vw)] py-8 md:text-5xl font-bold rounded-t-2xl uppercase">Thông tin dinh dưỡng</div>
           </div>
           <table className="w-full text-center rounded-b-2xl">
             <thead className="block">
-              <tr className="bg-[#f4ddb1]">
-                <th className="text-lg text-[#84571B] p-3 w-1/5">Mục</th>
-                <th className="text-lg text-[#84571B] p-3 w-1/5">Đơn vị</th>
-                <th className="text-lg text-[#84571B] p-3 w-1/5">Lượng trung bình trên mỗi khẩu phần</th>
-                <th className="text-lg text-[#84571B] p-3 w-1/5">Lượng trung bình trên mỗi khẩu phần</th>
-                <th className="text-lg text-[#84571B] p-3 w-1/5">Lượng trung bình trên mỗi khẩu phần</th>
+              <tr className="bg-[#f4ddb1] w-full block">
+                <th className="text-lg text-[#84571B] p-3 inline-block w-[30%]">Mục</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-[10%]">Đơn vị</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">TB trên mỗi khẩu phần</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">TB trên 100g</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">TB trên 100kJ</th>
               </tr>
             </thead>
             <tbody className="block w-full h-[400px] overflow-auto">
               {data.map(item => (
                 <tr className={`text-[#065691] my-[1px] cursor-pointer ${item.is_bold ? 'bg-[#f7ecd0]' : 'hover:bg-[#f7ecd0]'} duration-300 h-[40px] w-full block`} key={item.id}>
-                  <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.muc}</td>
-                  <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.don_vi}</td>
+                  <td className="text-[#84571B] py-2 w-[30%] inline-block">{item.muc}</td>
+                  <td className="text-[#84571B] py-2 w-[10%] inline-block">{item.don_vi}</td>
                   <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.moi_khau_phan}</td>
                   <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.tren_100g}</td>
                   <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.tren_100kJ}</td>
