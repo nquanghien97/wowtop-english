@@ -638,26 +638,26 @@ function Product() {
       <section className="mb-8">
         <div className="max-w-6xl m-auto rounded-2xl p-1 shadow-2xl">
           <div className="bg-[#fefaee] rounded-t-2xl">
-            <div className="bg-[#fefaee] p-8 text-center text-[#065691] text-4xl font-bold rounded-t-2xl">Thông tin dinh dưỡng</div>
+            <div className="bg-[#fefaee] p-8 text-center bg-text text-4xl font-bold rounded-t-2xl">Thông tin dinh dưỡng</div>
           </div>
           <table className="w-full text-center rounded-b-2xl">
-            <thead className="">
+            <thead className="block">
               <tr className="bg-[#f4ddb1]">
-                <th className="text-xl text-[#065691] p-3">Mục</th>
-                <th className="text-xl text-[#065691] p-3">Đơn vị</th>
-                <th className="text-xl text-[#065691] p-3">Lượng trung bình trên mỗi khẩu phần</th>
-                <th className="text-xl text-[#065691] p-3">Lượng trung bình trên mỗi khẩu phần</th>
-                <th className="text-xl text-[#065691] p-3">Lượng trung bình trên mỗi khẩu phần</th>
+                <th className="text-lg text-[#84571B] p-3 w-1/5">Mục</th>
+                <th className="text-lg text-[#84571B] p-3 w-1/5">Đơn vị</th>
+                <th className="text-lg text-[#84571B] p-3 w-1/5">Lượng trung bình trên mỗi khẩu phần</th>
+                <th className="text-lg text-[#84571B] p-3 w-1/5">Lượng trung bình trên mỗi khẩu phần</th>
+                <th className="text-lg text-[#84571B] p-3 w-1/5">Lượng trung bình trên mỗi khẩu phần</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="block w-full h-[400px] overflow-auto">
               {data.map(item => (
-                <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300" key={item.id}>
-                  <td>{item.muc}</td>
-                  <td>{item.don_vi}</td>
-                  <td>{item.moi_khau_phan}</td>
-                  <td>{item.tren_100g}</td>
-                  <td>{item.tren_100kJ}</td>
+                <tr className="text-[#065691] cursor-pointer hover:bg-[#f7ecd0] duration-300 h-[40px] w-full block" key={item.id}>
+                  <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.muc}</td>
+                  <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.don_vi}</td>
+                  <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.moi_khau_phan}</td>
+                  <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.tren_100g}</td>
+                  <td className="text-[#84571B] py-2 w-1/5 inline-block">{item.tren_100kJ}</td>
                 </tr>
               ))}
             </tbody>
