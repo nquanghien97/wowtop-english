@@ -510,9 +510,7 @@ function Product() {
       <section className="bg-[url('/artboard17.png')] bg-[length:100%_100%] h-[800px] max-w-4xl m-auto mb-8">
         <div className="flex justify-end relative max-md:flex-col">
           <p className="text-[#002A9E] font-black text-8xl">OPO</p>
-          <div className="md:mt-[-24px]">
-            <p className="bg-[url('/bgr-tp-2.png')] bg-[length:100%_100%] text-[#84571B] text-6xl font-bold px-16 py-4">HỮU CƠ</p>
-          </div>
+          <p className="bg-[url('/bgr-tp-2.png')] bg-[length:100%_100%] text-[#84571B] text-6xl font-bold px-16 py-4">HỮU CƠ</p>
         </div>
         <div className="flex justify-end">
           <p className="w-2/3 text-xl text-[#002A9E]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam harum officia cupiditate doloremque fugit assumenda, sint necessitatibus reprehenderit.</p>
@@ -625,22 +623,7 @@ function Product() {
           </div>
         </div>
       </section>
-      <section className="mt-[-120px] mb-8">
-        <div className="max-w-4xl m-auto">
-          <div className="flex max-md:flex-col">
-            <div className="md:hidden">
-              <h3 className="bg-text text-3xl text-center mb-4">WOWTOP đạt tiêu chuẩn <br /><strong>Quốc gia NewZealand</strong></h3>
-              <p className="text-[#84571B] uppercase font-bold text-center">Đủ tiêu chuẩn xuất khẩu toàn thế giới và đạt tiêu chuẩn của cục an toàn thực phẩm việt nam</p>
-            </div>
-            <Image src="/nghien_cuu.png" alt="nghien_cuu" width={400} height={600} />
-            <div className="max-md:hidden">
-              <h3 className="bg-text text-3xl text-center mb-4">WOWTOP đạt tiêu chuẩn <br /><strong>Quốc gia NewZealand</strong></h3>
-              <p className="text-[#84571B] uppercase font-bold text-center">Đủ tiêu chuẩn xuất khẩu toàn thế giới và đạt tiêu chuẩn của cục an toàn thực phẩm việt nam</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="py-8">
+      <section className="py-8 mt-[-120px]">
         <div className="max-w-4xl m-auto px-4 relative">
           <div className="flex absolute top-[-24%] md:top-[-40%] left-[50%] transform -translate-x-1/2">
             <h2 className="text-center text-[calc(1rem+0.9vw)] md:text-4xl mb-4 text-white uppercase font-bold bg-[url('/gfh.png')] px-16 py-12 bg-[length:100%_100%]">Thành phần</h2>
