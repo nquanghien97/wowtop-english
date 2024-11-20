@@ -254,3 +254,7 @@
   border: 2px solid #FEF0AD;
   font-weight: 700;
 }
+
+.bg-gioi-thieu {
+  background: linear-gradient(to right, #ffffff, #fff9e7);
+}
