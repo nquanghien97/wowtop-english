@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -9,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from '@/components/Header'
 import Footer from '@/components/Footer';
 import { Montserrat } from 'next/font/google';
+import Script from 'next/script';
 
 const montserrat = Montserrat({
   weight: '500',
@@ -48,6 +48,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Ads Conversion Script */}
+        <Script
+          id="google-ads-script"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16773984613"
+        />
+        <Script id="google-ads-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16773984613');
+          `}
+        </Script>
+      </head>
       <body className={montserrat.className}>
         <Header />
         {children}
