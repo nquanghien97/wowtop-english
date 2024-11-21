@@ -19,10 +19,10 @@ export default async function Home() {
           <div className=" flex justify-between items-center">
             <div className="w-1/2">
               <p className="bg-text-blue uppercase font-bold text-xs md:text-5xl lg:mb-4 py-2 lg:!leading-[64px]">
-                Giúp tăng chiều cao từ cấp độ nguyên bào
+                Support height growth at the osteoblast level
               </p>
               <Link href="/" className="header-bg px-6 py-2 text-xs md:text-2xl rounded-full uppercase text-white">
-                Tìm hiểu thêm
+                Learn more
               </Link>
             </div>
             <div className="w-1/2">

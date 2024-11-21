@@ -36,7 +36,7 @@ function Header() {
           </ul>
         </div>
         <header className="lg:h-[80px] header-bg-1 h-[60px] shadow-sm shadow-black/20 header-bottom">
-          <div className="h-full flex lg:justify-center justify-between max-w-6xl m-auto lg:relative z-[99]">
+          <div className="h-full flex lg:justify-center justify-between max-w-7xl m-auto lg:relative z-[99]">
             <Link href="/" className={`flex justify-start lg:justify-center items-center max-lg:w-full max-lg:hidden ${isScrolled ? 'mt-4' : 'mt-6'}`}>
               <Image src="/logo.png" alt="logo" width={280} height={280} className={`max-lg:hidden duration-300 ${isScrolled ? 'scale-50' : ''}`} />
             </Link>
@@ -75,7 +75,7 @@ function Header() {
                 )}
               </ul>
               <div className="cursor-pointer">
-                <Link href="/dang-ky-dung-thu" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Đăng ký dùng thử</Link>
+                <Link href="/sign-up-for-free-trial" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Sign Up for Free Trial</Link>
               </div>
             </div>
             <div className="flex items-center mr-8 lg:hidden">
@@ -120,7 +120,7 @@ function Header() {
               ))}
             </ul>
             <div className="cursor-pointer flex justify-center">
-                <Link href="/dang-ky-dung-thu" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Đăng ký dùng thử</Link>
+                <Link href="/sign-up-for-free-trial" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Sign Up for Free Trial</Link>
               </div>
           </div>
         </AppSidebar>

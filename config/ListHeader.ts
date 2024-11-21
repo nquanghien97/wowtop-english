@@ -8,44 +8,45 @@ interface ListHeaderType {
 export const ListHeader: ListHeaderType[] = [
   {
     id: 1,
-    title: 'Trang chủ',
+    title: 'Home',
     path: '/'
   },
   {
     id: 2,
-    title: 'Giới thiệu',
-    path: '/gioi-thieu',
+    title: 'Introduce',
+    path: '/introduce',
   },
   {
     id: 3,
-    title: 'Sản phẩm',
-    path: '/san-pham'
+    title: 'Wowtop Height Growth Milk',
+    path: '/wowtop-height-growth-milk'
   },
   {
     id: 4,
-    title: 'Bản tin',
-    path: '/tin-tuc',
+    title: 'Wow News',
+    path: '/wow-news',
     children: [
       {
         id: 41,
-        title: 'Cách tăng chiều cao',
+        title: 'How to increase height',
         path: '#'
       },
       {
         id: 42,
-        title: 'Bài tập tăng chiều cao',
+        title: 'Exercises to increase height',
         path: '#'
       },
       {
         id: 43,
-        title: 'Sữa tăng chiều cao',
+        title: 'Milk increases height',
         path: '#'
       }
     ]
   },
   {
     id: 5,
-    title: 'Dự đoán chiều cao của con',
-    path: '/du-doan-chieu-cao'
+    title: 'Predict Your Child\'s Height',
+    path: '/predict-your-child-height'
   },
+
 ]

@@ -788,54 +788,6 @@ function Product() {
         </div>
       </section>
       <section className="mb-8">
-        <div className="max-w-4xl m-auto">
-          <div className="px-4">
-            <div className="bg-[url('/gfh_1.png')] bg-[length:100%_100%] h-[70px] flex justify-center items-center">
-              <span className="text-white font-bold text-lg md:text-4xl uppercase">
-                Hướng dẫn truy xuất nguồn gốc
-              </span>
-            </div>
-            <div className="bg-[url('/artboard_27.png')] bg-[length:100%_100%] h-[800px] max-md:hidden relative">
-              <div className="flex items-center gap-4 absolute top-20 left-[-4%]">
-                <Image src="/anh_b1.png" alt="anh_b1" width={160} height={160} className="border-[#065691] border-[1px] rounded-full" />
-                <p className="text-[#065691] font-semibold mt-[12%]">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
-              </div>
-              <div className="flex items-center gap-4 absolute top-[40%] right-[-6%]">
-                <p className="text-[#065691] font-semibold mt-[22%]">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
-                <Image src="/anh_b2.png" alt="anh_b2" width={160} height={160} className="border-[#065691] border-[1px] rounded-full" />
-              </div>
-              <div className="flex items-center gap-4 absolute bottom-[4%] left-[-4%]">
-                <Image src="/anh_b3.png" alt="anh_b3" width={160} height={160} className="border-[#065691] border-[1px] rounded-full" />
-                <p className="text-[#065691] font-semibold mt-[20%]">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
-              </div>
-            </div>
-            <div className="md:hidden flex flex-col gap-4 mt-8">
-              <div className="flex gap-4">
-                <Image src="/anh_b1.png" alt="anh_b1" width={75} height={75} className="border-[#065691] border-[1px] rounded-full" />
-                <div className="flex flex-col">
-                  <Image src="/b1.png" alt="buoc-1" width={100} height={45} />
-                  <p className="text-[#065691] font-semibold">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <Image src="/anh_b2.png" alt="anh_b2" width={75} height={75} className="border-[#065691] border-[1px] rounded-full" />
-                <div className="flex flex-col">
-                  <Image src="/b2.png" alt="buoc-2" width={100} height={45} />
-                  <p className="text-[#065691] font-semibold">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <Image src="/anh_b3.png" alt="anh_b3" width={75} height={75} className="border-[#065691] border-[1px] rounded-full" />
-                <div className="flex flex-col">
-                  <Image src="/b3.png" alt="buoc-3" width={100} height={45} />
-                  <p className="text-[#065691] font-semibold">Lật lon sữa sẽ có 1 mã QR đặc biệt in dưới đáy lon</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="mb-8">
         <div className="max-w-6xl m-auto">
           <div className="font-semibold text-center py-4 bg-[url('/hdgh.png')] bg-[length:100%_100%] w-full md:w-2/3 m-auto">
             <p className="text-[calc(1.5rem+1vw)] md:text-4xl font-bold uppercase bg-text">Hướng dẫn sử dụng</p>
