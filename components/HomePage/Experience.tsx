@@ -14,17 +14,17 @@ async function Experience() {
     <section className="pb-8">
       <div className="max-w-6xl m-auto px-4">
         <div className="bg-text font-bold text-4xl uppercase text-center mb-4">
-          <p className="py-2">Kinh nghiệm</p>
-          <p className="mb-2">TĂNG CHIỀU CAO VƯỢT TRỘI CHO BÉ</p>
+          <p className="py-2">EXPERT TIPS</p>
+          <p className="mb-2">FOR OPTIMAL HEIGHT GROWTH IN CHILDREN</p>
         </div>
         <div className="flex gap-4 max-md:flex-col">
           <div className="w-full md:w-3/4">
             <div className="mb-4">
-              <h2 className="text-3xl font-bold">Bí kíp tăng chiều cao</h2>
+              <h2 className="text-3xl font-bold">Height Growth Secrets</h2>
             </div>
             <div className="flex mb-7 h-[2px] bg-[#ccc] w-4/5" />
             {data.length === 0 ? (
-              <div>Không có dữ liệu</div>
+              <div>No data</div>
             ) : (
               <div className="flex gap-4 flex-col md:flex-row">
                 <div className="w-full md:w-2/5 flex flex-col">
@@ -40,7 +40,7 @@ async function Experience() {
                   </div>
                   <div>
                     <Link className="mt-3 text-[#84571B] px-4 py-2 rounded-md border-[1px] border-[#065691] inline-block" href={`/tin-tuc`} >
-                      Tất cả bài viết
+                      All articles
                     </Link>
                   </div>
                 </div>
@@ -64,12 +64,12 @@ async function Experience() {
           </div>
           <div className="w-full md:w-1/4">
             <div className="mb-4">
-              <h2 className="text-3xl font-bold">Tin mới</h2>
+              <h2 className="text-3xl font-bold">Wow News Updates</h2>
             </div>
             <div className="flex mb-7 h-[2px] bg-[#ccc] w-4/5" />
             <ul className="list-decimal max-md:px-4 pl-4">
               {data.length === 0 ? (
-                <p>Không có dữ liệu</p>
+                <p>No data</p>
               ) : (
                 dataWithoutLastItem.map(item => (
                   <li key={item.id} className="mb-4">

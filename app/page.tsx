@@ -36,15 +36,15 @@ export default async function Home() {
         <div className="max-w-4xl m-auto">
           <div className="flex flex-col items-center justify-center text-2xl md:text-3xl uppercase mb-8 text-center">
             <div>
-              <p className="bg-[#002A9E] bg-clip-text text-transparent pt-2">Tăng chiều cao từ cấp độ nguyên bào xương*</p>
+              <p className="bg-[#002A9E] bg-clip-text text-transparent pt-2">Boosting Height at the Osteoblast Level*</p>
             </div>
             <div>
-              <p className="bg-[#002A9E] bg-clip-text font-bold text-transparent pt-2">Cao hơn không chỉ về lượng mà còn về chất</p>
+              <p className="bg-[#002A9E] bg-clip-text font-bold text-transparent pt-2">Grow Taller in Both Quantity and Quality</p>
             </div>
           </div>
           <div className="mt-4 mb-14 px-4">
             <div className="border-[1px] border-[#84571B] rounded-full px-2">
-              <span className="relative top-[-15px] bg-[#e9fafb] text-xs md:text-base rounded-full text-[#84571B] font-semibold inline-block px-3 py-2 text-center">(*) Nguyên bào xương xây dựng cấu trúc ma trận xương, dẫn các hạt Canxi và khoáng chất vào xương, từ đó tác động trực tiếp tới chất lượng xương và chiều cao tối đa của cơ thể.</span>
+              <span className="relative top-[-15px] bg-[#e9fafb] text-xs md:text-base rounded-full text-[#84571B] font-semibold inline-block px-3 py-2 text-center">(*) Osteoblasts build the bone matrix, guiding calcium and minerals into the bones. This process directly impacts bone quality and the body’s maximum height potential.</span>
             </div>
           </div>
           <div className="flex flex-col">
@@ -52,14 +52,13 @@ export default async function Home() {
               <div className="md:w-1/2 bg-[url('/bg2f.png')] bg-cover bg-center rounded-2xl px-8 py-5 shadow-2xl">
                 <Image src="/cbp.webp" alt="bg-sua" width={160} height={175} className="m-auto" />
                 <span className="text-[#135689]">
-                  <strong>CBP </strong>
-                  trong Wowtop có kích thước phân tử siêu nhỏ, <strong>30 Kilodalton (≈ 1/50 tỷ hạt Nano),</strong> dễ dàng len lỏi và kích thích Nguyên bào xương hoạt động hiệu quả hơn*
+                  <strong>The CBP</strong> in WOWTOP features an exceptionally small molecular size of <strong>30 kilodaltons (roughly 1/50 billionth the size of a nano particle)</strong>, enabling it to penetrate deeply and effectively stimulate osteoblast activity.
                 </span>
               </div>
               <div className="md:w-1/2 bg-10-lit bg-cover bg-center rounded-2xl px-8 py-5 shadow-2xl">
                 <Image src="/10l.webp" alt="bg-sua" width={320} height={175} />
                 <span className="text-[#135689]">
-                  <strong>CBP</strong> là thành phần quý hiếm bậc nhất ngành sữa. <strong>10 lít sữa non</strong> từ Bò ăn cỏ tự nhiên chỉ chiết xuất được <strong>4 gam CBP</strong>.
+                  <strong>CBP</strong> is one of the rarest ingredients in the dairy industry. It takes <strong>10 liters of natural</strong> grass-fed colostrum to extract just <strong>4 grams of CBP</strong>.
                 </span>
               </div>
             </div>
@@ -67,7 +66,7 @@ export default async function Home() {
               <div className="bg-[url('/bg2f.png')] bg-cover bg-center rounded-2xl px-8 py-5 shadow-2xl relative">
                 <Image src="/xuong.webp" alt="bg-sua" width={215} height={290} className="mx-auto md:hidden" />
                 <span className="w-full md:w-3/5 inline-block text-[#135689]">
-                  <strong>CBP</strong> thúc đẩy <strong>nguyên bào xương</strong> sản sinh và hoạt động hiệu quả, hình thành ma trận xương, kích thích xương dài ra nhanh hơn. Ngoài ra, <strong>CBP</strong> còn giúp tăng mật độ xương, hấp thu <strong>Canxi</strong> cùng các dưỡng chất quan trọng như Sắt, Kẽm... tốt hơn, từ đó <strong>tăng chiều cao cả về lượng & chất.</strong>
+                  <strong>CBP</strong> enhances osteoblast production and activity, forming the bone matrix and accelerating bone elongation. Additionally, <strong>CBP</strong> increases bone density and improves absorption of critical nutrients like calcium, iron, and zinc, promoting height <strong>growth in both quantity and quality</strong>.
                 </span>
                 <Image src="/xuong.webp" alt="bg-sua" width={276} height={276} className="mx-auto max-md:hidden absolute top-[-40px] right-4" />
               </div>
@@ -78,17 +77,17 @@ export default async function Home() {
       <section className="mb-8 md:mb-20">
         <div className="max-w-6xl m-auto px-4">
           <div>
-            <p className="bg-text text-center text-2xl md:text-3xl uppercase">Chuyên gia new zealand <br /><strong>chia sẻ nguyên lý tăng chiều cao</strong><br /> từ cấp độ nguyên bào</p>
+            <p className="bg-text text-center text-2xl md:text-3xl uppercase">New Zealand Experts <br /><strong>Reveal the Science of Height Growth</strong><br /> at the Osteoblast Level</p>
           </div>
           <div className="mt-4 flex flex-col md:flex-row gap-10">
             <div className="md:w-1/2 w-full">
               <LazyYouTubeEmbed videoId='y9vlAFDEr7I' />
             </div>
             <div className="md:w-1/2 w-full">
-              <p className="text-[#84571B] text-justify">Xương dài ra do quá trình <strong>cốt hóa</strong> sụn tăng trưởng thành xương. Hầu hết quá trình này do <strong>nguyên bào xương</strong> chịu trách nhiệm. Nguyên bào xương tạo ra ma tr ận xương (Khung nền xương) đồng thời tăng cường chuyển hóa, lắng đọng Canxi, Phospho để lấp đầy và làm cứng ma trận xương, giúp xương dài ra ở 2 đầu. <strong>Wowtop</strong> vừa bổ sung <strong>Canxi, Phospho, D3, K2</strong> làm nguyên liệu cho quá trình tạo xương, vừa chứa thành phần <strong>CBP</strong> kích thích nguyên bào xương phát triển, nhờ đó thúc đẩy mạnh mẽ quá trình cốt hóa ở 2 đầu xương, giúp <strong>tăng chiều cao cả về lượng và về chất.</strong></p>
+              <p className="text-[#84571B] text-justify">Bone lengthening occurs through the ossification of growth cartilage into bone tissue, a process primarily driven by osteoblasts. These cells create the bone matrix (the structural framework of bones) while enhancing metabolism and depositing calcium and phosphorus to fill and harden the matrix. This activity results in bone lengthening at both ends.<br /><strong>WOWTOP</strong> not only provides essential nutrients like <strong>Calcium, Phosphorus, Vitamin D3, and K2</strong> as building blocks for bone formation but also contains <strong>CBP</strong>, a unique ingredient that stimulates osteoblast activity. This combination accelerates the ossification process, promoting height growth in both quantity and quality.</p>
               <Image src="/asset_11.png" alt='asset_11' width={400} height={1} className="mx-auto my-4" />
-              <p className="text-[#84571B] mb-4"><strong>Chuyên gia tăng chiều cao David - viện dinh dưỡng New Zealand.</strong></p>
-              <Link href="#" className="text-[#84571B] underline">Tìm hiểu ngay</Link>
+              <p className="text-[#84571B] mb-4"><strong>David, Height Growth Specialist – New Zealand Nutrition Institute</strong></p>
+              <Link href="#" className="text-[#84571B] underline">Learn More Today!</Link>
             </div>
           </div>
         </div>
@@ -96,7 +95,7 @@ export default async function Home() {
       <section className="lg:mb-16">
         <div className="max-w-6xl m-auto md:px-4">
           <div className="mb-4">
-            <h2 className="text-3xl md:text-5xl bg-text py-4 font-bold uppercase text-center">Những sai lầm trong tăng chiều cao</h2>
+            <h2 className="text-3xl md:text-5xl bg-text py-4 font-bold uppercase text-center">Common Mistakes in Increasing Height</h2>
           </div>
           <div className="p-3 bg-[#f6f0de] border-2 border-[#fcf2d9] rounded-2xl flex flex-wrap justify-center relative">
             <Image src="/PT.webp" alt="" width={175} height={175} className="absolute bottom-[-10%] left-[-10%] max-md:hidden" />
@@ -105,9 +104,9 @@ export default async function Home() {
                 <Image src="/h4.png" alt="h4" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Chỉ quan tâm cao về lượng</h4>
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Focusing Only on Centimeters</h4>
                 <p className="text-[#002A9E]">
-                  Chiều cao về centimet rất quan trọng, nhưng nếu Chất lượng xương không được đảm bảo, trẻ sẽ dễ bị loãng xương và các bệnh về xương khác. Wowtop giúp cao hơn từ nguyên bào xương, cải thiện chiều cao cả về lượng và chất.
+                  Height in centimeters is important, but if bone quality isn’t ensured, children can easily face issues like osteoporosis and weak bones. WOWTOP helps improve height by supporting osteoblast activity, ensuring growth in both quantity and quality.
                 </p>
               </div>
             </div>
@@ -116,9 +115,9 @@ export default async function Home() {
                 <Image src="/h5.png" alt="h5" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Canxi, Khoáng chất là đủ</h4>
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Thinking Calcium and Minerals Are Enough</h4>
                 <p className="text-[#002A9E]">
-                  Chiều cao do khung xương quyết định. Canxi & khoáng chất chỉ là nguyên liệu cho xương hình thành. Cần có CBP, CPP thúc đẩy nguyên bào xương hoạt động, thu hút và hấp thụ tốt Canxi & khoáng chất thì khung xương mới dài hơn, chắc khỏe hơn.
+                  Bones determine height, but calcium and minerals alone are just the building materials. CBP and CPP are needed to activate osteoblasts, helping bones absorb calcium better, grow longer, and become stronger.
                 </p>
               </div>
             </div>
@@ -127,9 +126,9 @@ export default async function Home() {
                 <Image src="/h1.png" alt="h1" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Uống sữa là đủ để cao</h4>
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Believing Milk Alone Is Enough</h4>
                 <p className="text-[#002A9E]">
-                  Sữa là giải pháp dinh dưỡng tối ưu. Tuy nhiên vẫn cần kết hợp luyện tập & sinh hoạt để tăng chiều cao. Wowtop có đội ngũ Healthcoach đồng hành cùng con từ chế độ dinh dưỡng tới vận động để con đạt chiều cao tối đa.
+                  Milk is an excellent source of nutrition, but it needs to be paired with exercise and proper routines to maximize growth. WOWTOP’s Health Coaches will guide your child with customized nutrition and activity plans to reach their full height potential.
                 </p>
               </div>
             </div>
@@ -138,9 +137,9 @@ export default async function Home() {
                 <Image src="/h3.png" alt="h3" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Tin rằng GEN quyết định chiều cao</h4>
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Thinking Genetics Are Everything</h4>
                 <p className="text-[#002A9E]">
-                  GEN chỉ quyết định 23% Dinh dưỡng, luyện tập và chế độ sinh hoạt mới thực sự giúp con cao vượt trội.
+                  Genetics only account for 23% of a child’s height. The real key lies in nutrition, exercise, and a healthy lifestyle, which make a significant difference.
                 </p>
               </div>
             </div>
@@ -149,9 +148,9 @@ export default async function Home() {
                 <Image src="/h2.png" alt="h2" width={136} height={136} />
               </div>
               <div>
-                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Bỏ qua giai đoạn vàng</h4>
+                <h4 className="text-[#002A9E] font-semibold text-center text-xl mb-4">Ignoring Critical Growth Phases</h4>
                 <p className="text-[#002A9E]">
-                  Giai đoạn 0 – 5 tuổi và giai đoạn trước dậy thì là các mốc tăng chiều cao quan trọng ở trẻ, cần được đặc biệt lưu ý và bổ sung dinh dưỡng tối đa.
+                  The golden periods for growth—from 0 to 5 years old and pre-puberty—are vital for a child’s height. During these times, proper nutrition and care are essential to unlock their maximum growth potential.
                 </p>
               </div>
             </div>
@@ -162,11 +161,11 @@ export default async function Home() {
         <div className="max-w-6xl m-auto px-4">
           <div className="flex justify-center py-4">
             <div className="bg-text2 flex px-12 py-4 text-4xl rounded-full">
-              <h3 className="text-[#84571B] font-bold">Đăng kí dùng thử</h3>
+              <h3 className="text-[#84571B] font-bold">Sign Up for Free Trial</h3>
             </div>
           </div>
           <div className="mb-8">
-            <h2 className="text-xl md:text-5xl text-[#002A9E] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
+            <h2 className="text-xl md:text-5xl text-[#002A9E] uppercase text-center !leading-tight">Milk from the Happiest Cows <br /><span><strong>in the World</strong></span></h2>
           </div>
           <div className="flex flex-col">
             <div className="flex justify-between w-full mb-8">
@@ -205,15 +204,15 @@ export default async function Home() {
                 <div className="flex flex-col items-center relative z-20 p-8">
                   <div className="flex justify-center items-center gap-2">
                     <Image src="/chung-nhan-1.png" alt='chung-nhan-1' width={276} height={276} className="w-1/6" />
-                    <p className="text-[#002A9E] font-bold text-xl">Non-GMO: Chứng nhận nguồn nguyên liệu không biến đổi Gen</p>
+                    <p className="text-[#002A9E] font-bold text-xl">Non-GMO: Certified milk from non-genetically modified sources.</p>
                   </div>
                   <div className="flex justify-center items-center gap-2">
                     <Image src="/chung-nhan-2.png" alt='chung-nhan-2' width={276} height={276} className="w-1/6" />
-                    <p className="text-[#002A9E] font-bold text-xl">GRASS FED: Chứng nhận 100% Bò ăn cỏ tự nhiên</p>
+                    <p className="text-[#002A9E] font-bold text-xl">GRASS FED: Certified 100% natural grass-fed cows.</p>
                   </div>
                   <div className="flex justify-center items-center gap-2">
                     <Image src="/chung-nhan-3.png" alt='chung-nhan-3' width={276} height={276} className="w-1/6" />
-                    <p className="text-[#002A9E] font-bold text-xl">NATURAL INGREDIENTS: Sử dụng nguồn nguyên liệu từ thiên nhiên</p>
+                    <p className="text-[#002A9E] font-bold text-xl">NATURAL INGREDIENTS: Using natural resources.</p>
                   </div>
                 </div>
               </div>
@@ -226,7 +225,7 @@ export default async function Home() {
       </section>
       <section className="bg-[url('/bg-co-m.png')] bg-center bg-[length:100%_100%] relative lg:hidden py-8 z-[30]">
         <div className="mb-8">
-          <h2 className="text-[5vw] text-[#002A9E] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
+          <h2 className="text-[5vw] text-[#002A9E] uppercase text-center !leading-tight">Milk from the Happiest Cows <br /><span><strong>in the World</strong></span></h2>
         </div>
         <div className="flex justify-center w-full flex-col">
           <div className="mx-auto w-2/3">
@@ -259,8 +258,8 @@ export default async function Home() {
         <Image src="/nha-may.jpeg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
         <div className="px-4 relative z-10">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
-            <h2 className="uppercase md:text-4xl text-[#002A9E] font-bold pb-1">Nhà máy sản xuất WOWTOP tại NewZealand</h2>
-            <p className="md:text-4xl text-[#002A9E] uppercase">Dẫn đầu về công nghệ sản xuất sữa</p>
+            <h2 className="uppercase md:text-4xl text-[#002A9E] font-bold pb-1">WOWTOP&apos;S MANUFACTURING FACILITY IN NEW ZEALAND</h2>
+            <p className="md:text-4xl text-[#002A9E] uppercase">SETTING THE STANDARD IN MILK INNOVATION!</p>
           </div>
         </div>
       </section>

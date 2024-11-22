@@ -398,8 +398,6 @@ const data = [
   },
 ];
 
-
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://wowtop.com.vn'),
   title: 'Oz Farm Wowtop 800g',
@@ -431,42 +429,48 @@ function Product() {
               <div className="md:h-[565px] md:overflow-y-scroll md:px-8 py-8">
                 <Image src="/logo-ngang.png" alt="logo2" width={500} height={132} />
                 <div className="mb-4">
-                  <h2 className="text-[#002A9E] font-bold text-3xl">CAO TỪ CẤP NGUYÊN BÀO XƯƠNG</h2>
+                  <h2 className="text-[#002A9E] font-bold text-3xl">Boost Growth at the Osteoblast Level</h2>
                 </div>
-                <p className="text-[#845618] text-xl mb-4">Sữa bột 700G</p>
-                <p className="text-justify">WOWTOP là thực phẩm dinh dưỡng công thức dành cho trẻ em từ 1 tuổi trở lên. Sản phẩm chứa Calci, Đạm, Sữa non (CBP), Casein Phosphopeptide (CPP), DHA từ tảo. ARA, 1,3-Dioleoy1-2-Palmitoy Tri-glyceride (OPO), Lactoferrin, Immunoglobulin G (IgG), và hơn 30 loại vitamin, khoáng chất và dưỡng chất thiết yếu cho sự phát triển thể chất ở trẻ. Sử dụng WowTop không chỉ giúp trẻ tăng chiều cao lành mạnh mà còn kích thích sự phát triển ở cấp nguyên bào Xương từ sâu bên trong, giúp tăng khả năng hấp thụ canxi, cho xương dài hơn và chắc khỏe hơn. Cùng WowTop tăng cường chiều cao cho trẻ không chỉ ở lượng mà còn ở chất. Tiêu chuẩn và cam kết của sản phẩm</p>
+                <p className="text-[#845618] text-xl mb-4">Powdered Milk 700G</p>
+                <p className="text-justify">
+                  WOWTOP is a specially formulated nutritional product designed for children aged 1 and above. It is enriched with Calcium, Colostrum Basic Protein (CBP), Casein Phosphopeptide (CPP), algae-sourced DHA, ARA, 1,3-Dioleoyl-2-Palmitoyl Triglyceride (OPO), Lactoferrin, Immunoglobulin G (IgG), and over 30 essential vitamins, minerals, and nutrients critical for your child’s physical development.
+                  <br />
+                  By using WOWTOP, your child not only achieves healthy height growth but also stimulates bone formation at the osteoblasr level. It enhances calcium absorption, resulting in longer, stronger, and healthier bones.
+                  <br />
+                  With WOWTOP, you’re ensuring quality height growth—not just in quantity but in overall strength and health. Trusted quality, guaranteed standards.
+                </p>
                 <Image src="/cn.png" alt="cn" width={496} height={66} />
                 <ul className="mt-8 font-semibold">
                   <li className="text-[#D9A834] flex gap-2 items-center mb-2">
                     <Image src="/tich2.png" alt="tich" width={20} height={10} />
-                    <p>NON - GMO VERIFIED: Chứng nhận nguồn sữa không biến đổi Gen</p>
+                    <p>NON - GMO VERIFIED: Certified non-GMO milk source</p>
                   </li>
                   <li className="text-[#D9A834] flex gap-2 items-center mb-2">
                     <Image src="/tich2.png" alt="tich" width={20} height={10} />
-                    <p>ALL NATURAL: 100% nguyên liệu tự nhiên</p>
+                    <p>ALL NATURAL: 100% natural ingredients</p>
                   </li>
                   <li className="text-[#D9A834] flex gap-2 items-center mb-2">
                     <Image src="/tich2.png" alt="tich" width={20} height={10} />
-                    <p>GRASS FED: Chứng nhận 100% Bò ăn cỏ tự nhiên</p>
+                    <p>GRASS FED: Certified 100% grass-fed cows</p>
                   </li>
                   <li className="text-[#D9A834] flex gap-2 items-center mb-2">
                     <Image src="/tich2.png" alt="tich" width={20} height={10} />
-                    <p>NEW ZEALAND MADE: Nhập khẩu nguyên lon từ New Zealand</p>
+                    <p>NEW ZEALAND MADE: Imported as whole cans from New Zealand</p>
                   </li>
                   <li className="text-[#D9A834] flex gap-2 items-center mb-2">
                     <Image src="/tich2.png" alt="tich" width={20} height={10} />
-                    <p>HACCP from NZ MPI: Chứng nhận An toàn vệ sinh thực phẩm từ Bộ Kế hoạch & Đầu tư New Zealand</p>
+                    <p>HACCP from NZ MPI: Certified food safety by the New Zealand Ministry for Primary Industries</p>
                   </li>
                   <li className="text-[#D9A834] flex gap-2 items-center mb-2">
                     <Image src="/tich2.png" alt="tich" width={20} height={10} />
-                    <p>GMP: Chứng nhận đạt tiêu chuẩn sản xuất Châu Âu</p>
+                    <p>GMP: Certified European manufacturing standards</p>
                   </li>
                 </ul>
               </div>
               <div className="w-[220px] h-[60px] mt-4 ml-8">
                 <Link href="/" className="bg-blue rounded-md w-full h-full flex items-center justify-center">
                   <span className="text-white text-3xl font-bold uppercase">
-                    Mua ngay
+                    Order Now
                   </span>
                 </Link>
               </div>
@@ -491,7 +495,11 @@ function Product() {
             <div className="md:w-1/2 w-full bg-[url('/artboard_12.png')] bg-[length:100%_100%] px-4 py-8">
               <div>
                 <h2 className="font-semibold text-4xl uppercase text-center mb-4">NON - GMO VERIFIED</h2>
-                <p className="text-lg font-semibold">Một trong số công ty hiếm hoi ở New Zealand có đầy đủ chứng nhận về sữa công thức dành cho trẻ sơ sinh.WowTop chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP 125mg, Canxi 1200mg cùng 29 loại vitamin và khoáng chất thiết yếu cho sự phát triển thể chất ở trẻ. Sử dụng WowTop không chỉ giúptrẻ tăng chiều cao lành mạnh mà còn kích thích sự phát triển ở cấp nguyên bào Xương từ sâu bên trong,giúp tăng khả năng hấp thụ canxi, cho xương dài hơn và chắc khỏe hơn. Cùng WowTop tăng trưởng chiều caocho trẻ không chỉ ở lượng mà còn ở chất.</p>
+                <p className="text-lg font-semibold">
+                  Among the rare companies in New Zealand certified for infant formula, WOWTOP stands out with its superior nutritional blend. Packed with premium ingredients such as 125mg CBP, 1200mg Calcium, and 29 essential vitamins and minerals, it ensures optimal physical development for children.
+                  <br />
+                  WOWTOP not only supports healthy height growth but also stimulates bone cell formation from within, enhancing calcium absorption for longer, stronger, and healthier bones. WOWTOP delivers height growth for children, focusing not just on quantity but also on quality.
+                </p>
               </div>
             </div>
           </div>
@@ -500,25 +508,25 @@ function Product() {
       <section className="pb-8 bg-custom-yellow">
         <div className="max-w-4xl m-auto px-4">
           <div>
-            <div className="flex flex-col items-center justify-center text-xl md:text-[40px] uppercase text-center mb-8">
+            <div className="flex flex-col items-center justify-center text-xl md:text-[36px] uppercase text-center mb-8">
               <div>
-                <p className="bg-text bg-clip-text text-transparent font-bold md:py-4">CON VỤT CAO, XƯƠNG CHẮC KHỎE</p>
+                <p className="bg-text bg-clip-text text-transparent font-bold md:py-4">Grow taller, build stronger bones</p>
               </div>
-              <div className="md:pt-4 pt-1">
-                <span className="bg-text bg-clip-text text-transparent md:pt-4 pt-1 font-semibold">PHÁT TRIỂN TOÀN DIỆN</span>
+              <div className="pt-1">
+                <span className="bg-text bg-clip-text text-transparent md:pt-4 pt-1 font-semibold leading-10">achieve comprehensive development</span>
               </div>
               <div>
                 <p className="md:pt-8 pt-1 font-semibold">
-                  <span className="bg-[#895501] bg-clip-text text-transparent">Nhờ công thức </span>
-                  <span className="py-2 px-4 bg-blue rounded-md text-white">Vượt trội</span>
+                  <span className="py-2 px-4 bg-blue rounded-md text-white">with WOWTOP’s </span>
+                  <span className="bg-[#895501] bg-clip-text text-transparent">superior formula</span>
                 </p>
               </div>
             </div>
             <div className="bg-[url('/con-cao-vut.png')] bg-[length:100%_100%] flex justify-center items-center">
               <div className="text-[#002A9E] font-bold text-center py-4 italic">
-                <p className="py-1 text-xs md:text-lg">Các mẹ có biết, cao không chỉ về lượng mà còn về chất?</p>
-                <p className="py-1 text-xs md:text-lg">Các mẹ có biết xương con đang khóc lóc mỗi ngày?</p>
-                <p className="py-1 text-xs md:text-lg">Mẹ hãy tìm hiểu ngay <span className="text-[#002A9E]">cách tăng chiều cao từ cấp độ nguyên bào</span></p>
+                <p className="py-1 text-xs md:text-lg">Did you know that height growth is about more than just numbers?</p>
+                <p className="py-1 text-xs md:text-lg">Did you know your child’s bones may be struggling every day?</p>
+                <p className="py-1 text-xs md:text-lg">Discover the secret to height growth at the cellular level with WOWTOP today.</p>
               </div>
             </div>
           </div>
@@ -529,13 +537,13 @@ function Product() {
           <div className="flex justify-center relative w-full">
             <Image src="/bgr-giot.webp" alt="bgr-giot" width={896} height={1000} />
             <div className="uppercase absolute top-4 md:top-12 left-[16%] md:text-2xl text-xs font-semibold text-[#84571B]">
-              <span className="text-[#002A9E]"><strong>Có thành phần CBP</strong></span>
+              <span className="text-[#002A9E]"><strong>Contains CBP</strong></span>
               <br />
-              <span>giúp kích thích</span>
+              <span>which helps</span>
               <br />
-              <span><strong>quá trình tạo xương</strong></span>
+              <span><strong>stimulate bone formation</strong></span>
               <br />
-              <span>từ cấp độ nguyên bào</span>
+              <span>at the osteoblast level</span>
             </div>
             <div className="uppercase absolute top-[25%] left-[10%] text-2xl md:text-[48px] font-bold py-4">
               <span className="text-[#002A9E]">CBP ≈ 1/50 tỷ Nano</span>

@@ -11,22 +11,22 @@ const ListFeedbacks = [
     id: 1,
     src: '/feedbacks/f1.jpg',
     path: '#',
-    title: 'Chị Hà Vy',
-    content: 'Con gái mình trộm vía dạo này đi đâu cũng được mọi người khen cao lớn hơn, có da có thịt hơn, con tràn đầy năng lượng tham gia nhiều hoạt động ở trường.'
+    title: 'Mrs. Ha Vy',
+    content: 'My daughter, luckily, has been getting compliments everywhere we go lately for being taller, healthier, and more vibrant. She\'s full of energy and actively participates in many school activities.'
   },
   {
     id: 2,
     src: '/feedbacks/f2.jpg',
     path: '#',
-    title: 'Chị Nga Phương',
-    content: 'Hải Minh nhà mình dùng sữa Wowtop được vài tháng thì con cao vọt lên, con ít ốm vặt, ăn ngon, ngủ ngon,...nên phải chia sẻ cho các mẹ liền.'
+    title: 'Mrs. Nga Phuong',
+    content: 'My Hai Minh has been drinking Wowtop milk for a few months, and he\'s had a growth spurt, gets sick less often, eats well, and sleeps soundly. I just had to share this with other moms!'
   },
   {
     id: 3,
     src: '/feedbacks/f3.jpg',
     path: '#',
-    title: 'Chị Dương Linh',
-    content: 'Con mình uống Wowtop tăng thêm 5cm trong 3 tháng đấy, quá bất ngờ luôn. Giờ con thuộc top cao trong lớp và mới tham gia vào đội bóng rổ của trường.  '
+    title: 'Mrs. Duong Linh',
+    content: 'My child grew an extra 5cm in just 3 months after drinking Wowtop—such a surprise! Now, they\'re among the tallest in their class and have just joined the school basketball team.'
   }
 ]
 function Feedback() {
@@ -36,10 +36,10 @@ function Feedback() {
         <div className="flex justify-center relative mb-8">
           <Image src="/asset_11_2.png" alt="/bg4.png" width={758} height={200} />
           <div className="absolute top-1 md:top-3">
-            <p className="text-center uppercase text-lg md:text-3xl text-white font-bold">Bé uống WOWTOP</p>
+            <p className="text-center uppercase text-lg md:text-3xl text-white font-bold">YOUR CHILD WITH WOWTOP</p>
           </div>
           <div className="absolute bottom-2 md:bottom-4">
-            <p className="text-center uppercase text-2xl md:text-3xl bg-text font-bold">Cao lớn vượt trội</p>
+            <p className="text-center uppercase text-2xl md:text-3xl bg-text font-bold">GROW TALLER AND STRONGER</p>
           </div>
         </div>
         <Swiper

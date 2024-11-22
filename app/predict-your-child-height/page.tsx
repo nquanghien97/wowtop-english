@@ -25,11 +25,9 @@ function DuDoanChieuCao() {
       <section className="mb-8">
         <div className="my-12 text-[#7f4807]">
           <div className="max-w-4xl m-auto max-md:px-4">
-            <h1 className="text-4xl font-bold text-center my-4 uppercase">Phác đồ dự đoán chiều cao tương lai</h1>
-            <p className="text-center">Phát triển chiều cao luôn là mong muốn không chỉ của các phụ huynh mà còn của chính các con. Chiều
-              cao không chỉ phụ thuộc vào gen mà còn phụ thuộc nhiều vào chế độ dinh dưỡng, sinh hoạt và tập luyện.</p>
-            <p className="text-center"><strong>Hãy cùng WOWTOP lập nên phác đồ dự đoán chiều cao tương lai để có thể xác định được giai đoạn
-              vàng phù hợp</strong> cho lộ trình phát triển chiều cao tối đa của trẻ nhé</p>
+            <h1 className="text-4xl font-bold text-center my-4 uppercase">FUTURE HEIGHT PREDICTION PLAN</h1>
+            <p className="text-center">Developing height is not only a desire of parents but also of the children themselves. Height is influenced not only by genetics but also significantly by nutrition, lifestyle, and exercise.</p>
+            <p className="text-center">Join WOWTOP in creating a future height prediction plan to identify the golden stages for maximizing your child&apos;s height development journey!</p>
           </div>
         </div>
         <Form />

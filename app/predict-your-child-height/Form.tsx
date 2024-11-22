@@ -43,67 +43,68 @@ interface FormValues {
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const schema = yup.object().shape({
-  parentName: yup.string().required('Vui lòng nhập họ và tên mẹ'),
+  parentName: yup.string().required('Please enter the mother\'s full name'),
   fatherHeight: yup
     .number()
-    .typeError('Vui lòng nhập chiều cao hiện tại của bố')
-    .min(50, 'Chiều cao bố phải lớn hơn 50cm')
-    .max(200, 'Chiều cao bố không được vượt quá 200cm')
-    .required('Vui lòng nhập chiều cao của bố'),
+    .typeError('Please enter the father\'s current height')
+    .min(50, 'The father\'s height must be greater than 50cm')
+    .max(200, 'The father\'s height must not exceed 200cm')
+    .required('Please enter the father\'s height'),
   motherHeight: yup
     .number()
-    .typeError('Vui lòng nhập chiều cao hiện tại của mẹ')
-    .min(50, 'Chiều cao mẹ phải lớn hơn 50cm')
-    .max(200, 'Chiều cao mẹ không được vượt quá 200cm')
-    .required('Vui lòng nhập chiều cao của mẹ'),
+    .typeError('Please enter the mother\'s current height')
+    .min(50, 'The mother\'s height must be greater than 50cm')
+    .max(200, 'The mother\'s height must not exceed 200cm')
+    .required('Please enter the mother\'s height'),
   phoneNumber: yup
     .string()
-    .required('Vui lòng nhập số điện thoại phụ huynh')
-    .matches(phoneRegExp, 'Vui lòng nhập số điện thoại hợp lệ'),
-  fullName: yup.string().required('Vui lòng nhập họ và tên con'),
+    .required('Please enter the parent\'s phone number')
+    .matches(phoneRegExp, 'Please enter a valid phone number'),
+  fullName: yup.string().required('Please enter the child\'s full name'),
   currentHeight: yup
     .number()
-    .typeError('Vui lòng nhập chiều cao hiện tại của con')
-    .min(50, 'Chiều cao hiện tại phải lớn hơn 50cm')
-    .max(200, 'Chiều cao hiện tại không được vượt quá 200cm')
-    .required('Vui lòng nhập chiều cao hiện tại của con'),
+    .typeError('Please enter the child\'s current height')
+    .min(50, 'The current height must be greater than 50cm')
+    .max(200, 'The current height must not exceed 200cm')
+    .required('Please enter the current height'),
   currentWeight: yup
     .number()
-    .typeError('Vui lòng nhập cân nặng hiện tại của con')
-    .min(1, 'Cân nặng hiện tại phải lớn hơn 1kg')
-    .max(150, 'Cân nặng hiện tại không được vượt quá 150kg')
-    .required('Vui lòng nhập cân nặng hiện tại của con'),
+    .typeError('Please enter the child\'s current weight')
+    .min(1, 'The current weight must be greater than 1kg')
+    .max(150, 'The current weight must not exceed 150kg')
+    .required('Please enter the current weight'),
   date_of_birth: yup
     .date()
     .nullable()
-    .required('Vui lòng chọn ngày sinh')
-    .test('age', 'Tuổi của bé không được quá 20 tuổi', (value: Date) => {
+    .required('Please select the date of birth')
+    .test('age', 'The child\'s age must not exceed 20 years', (value: Date) => {
       if (!value) return false;
       const age = new Date().getFullYear() - value.getFullYear();
       return age <= 20;
     })
-    .test('age', 'Tuổi của bé phải lớn hơn 1 tuổi', (value: Date) => {
+    .test('age', 'The child\'s age must be greater than 1 year', (value: Date) => {
       if (!value) return false;
       const age = new Date().getFullYear() - value.getFullYear();
       return age >= 1;
     })
-    .test('dob', 'Ngày sinh không hợp lệ', (value: Date) => {
+    .test('dob', 'Invalid date of birth', (value: Date) => {
       if (!value) return false;
       const today = new Date();
       return value <= today;
     }),
-  gender: yup.string().required('Vui lòng chọn giới tính'),
-  province: yup.string().required('Vui lòng chọn tỉnh thành'),
-  district: yup.string().required('Vui lòng chọn quận/huyện'),
-  ward: yup.string().required('Vui lòng chọn phường/xã'),
-  address: yup.string().required('Vui lòng nhập địa chỉ'),
-  currentProduct: yup.array().required('Trường sản phẩm con sử dụng không được bỏ trống.'),
-  sport: yup.string().required('Vui lòng chọn tần suất vận động'),
-  timeSleep: yup.string().required('Vui lòng chọn thời gian ngủ'),
+  gender: yup.string().required('Please select a gender'),
+  province: yup.string().required('Please select a province'),
+  district: yup.string().required('Please select a district'),
+  ward: yup.string().required('Please select a ward'),
+  address: yup.string().required('Please enter an address'),
+  currentProduct: yup.array().required('The field for products the child uses cannot be empty.'),
+  sport: yup.string().required('Please select the frequency of exercise'),
+  timeSleep: yup.string().required('Please select sleep duration'),
   provinceLabel: yup.string(),
   districtLabel: yup.string(),
   wardLabel: yup.string(),
 });
+
 
 interface Option {
   label: string;
@@ -170,7 +171,7 @@ function Form() {
       router.push(`/du-doan-chieu-cao/${res.data.code}`)
     } catch (err) {
       if (err instanceof Error) {
-        toast.error("Có lỗi xảy ra, vui lòng thử lại!")
+        toast.error("Something went wrong, please try again")
       }
     } finally {
       setLoading(false);
@@ -185,12 +186,12 @@ function Form() {
       <div className="backgound-form rounded-2xl p-8">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
-            <h2 className="text-center text-3xl mb-4 uppercase font-bold">Thông tin phụ huynh</h2>
+            <h2 className="text-center text-3xl mb-4 uppercase font-bold">Parent&apos;s Information</h2>
             <div className="flex flex-col">
               <div className="flex gap-4 mb-4 max-md:flex-col">
                 <div className="w-full">
                   <input
-                    placeholder="Họ và tên phụ huynh *"
+                    placeholder="Parent's Full Name *"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("parentName", { required: true })}
                   />
@@ -198,7 +199,7 @@ function Form() {
                 </div>
                 <div className="w-full">
                   <input
-                    placeholder="Số điện thoại phụ huynh *"
+                    placeholder="Parent's Phone Number *"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("phoneNumber", { required: true })}
                   />
@@ -208,7 +209,7 @@ function Form() {
               <div className="flex gap-4 mb-4 max-md:flex-col">
                 <div className="w-full">
                   <input
-                    placeholder="Chiều cao hiện tại của bố (cm) *"
+                    placeholder="Father's Current Height (cm) *"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("fatherHeight", { required: true })}
                   />
@@ -216,11 +217,11 @@ function Form() {
                 </div>
                 <div className="w-full">
                   <input
-                    placeholder="Chiều cao hiện tại của mẹ (cm) *"
+                    placeholder="Mother's Current Height (cm) *"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("motherHeight", { required: true, valueAsNumber: true })}
                   />
-                  {errors.motherHeight && <span className="text-[red] text-xs p-2">Vui lòng nhập chiều cao hiện tại của mẹ</span>}
+                  {errors.motherHeight && <span className="text-[red] text-xs p-2">{errors.motherHeight.message}</span>}
                 </div>
               </div>
               <div className="flex gap-4 md:flex-row flex-col">
@@ -233,7 +234,7 @@ function Form() {
                         {...field}
                         options={optionProvinces}
                         instanceId={id}
-                        placeholder="Tỉnh/Thành phố*"
+                        placeholder="City*"
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
@@ -264,7 +265,7 @@ function Form() {
                         ref={selectDistrictRef}
                         options={optionsDistricts}
                         instanceId={id}
-                        placeholder="Quận/Huyện*"
+                        placeholder="District*"
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
@@ -294,7 +295,7 @@ function Form() {
                         ref={selectWardRef}
                         options={optionsWards}
                         instanceId={id}
-                        placeholder="Phường/Xã*"
+                        placeholder="Ward*"
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
@@ -311,7 +312,7 @@ function Form() {
                 </div>
                 <div className="md:w-1/2">
                   <input
-                    placeholder="Địa chỉ (Số nhà, tên đường)*"
+                    placeholder="Address (House Number, Street Name)*"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("address", { required: true })}
                   />
@@ -321,16 +322,16 @@ function Form() {
             </div>
           </div>
           <div className="mb-4">
-            <h2 className="text-center text-3xl mb-4 uppercase font-bold">Thông tin của con</h2>
+            <h2 className="text-center text-3xl mb-4 uppercase font-bold">Child&apos;s Information</h2>
             <div className="flex flex-col">
               <div className="flex gap-4 mb-4 max-md:flex-col">
                 <div className="md:w-1/2">
                   <input
-                    placeholder="Họ và tên con *"
+                    placeholder="Child's Full Name *"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("fullName", { required: true })}
                   />
-                  {errors.fullName && <span className="text-[red] text-xs p-2">Vui lòng nhập họ tên con</span>}
+                  {errors.fullName && <span className="text-[red] text-xs p-2">{errors.fullName.message}</span>}
                 </div>
                 <div className="md:w-1/2">
                   <Controller
@@ -341,7 +342,7 @@ function Form() {
                         {...field}
                         options={optionsGender}
                         instanceId={id}
-                        placeholder="Giới tính"
+                        placeholder="Gender"
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
@@ -377,7 +378,7 @@ function Form() {
                 </div>
                 <div className="w-full">
                   <input
-                    placeholder="Nhập chiều cao hiện tại của con (50-200cm) *"
+                    placeholder="Enter your child's current height (50-200cm) *"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("currentHeight", { required: true })}
                   />
@@ -402,7 +403,7 @@ function Form() {
               <div className="flex gap-4 mb-4 max-md:flex-col">
                 <div className="md:w-1/2">
                   <input
-                    placeholder="Nhập cân nặng hiện tại của con (1-150kg) *"
+                    placeholder="Enter your child's current weight (1-150kg) *"
                     className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                     {...register("currentWeight", { required: true, valueAsNumber: true })}
                   />
@@ -433,7 +434,7 @@ function Form() {
                         options={optionsProduct}
                         instanceId={id}
                         isMulti
-                        placeholder="Hiện tại con đang sử dụng các sản phẩm tăng chiều cao nào *"
+                        placeholder="Which height-increasing products they are currently using? *"
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
@@ -457,7 +458,7 @@ function Form() {
                         {...field}
                         instanceId={id}
                         options={optionsSport}
-                        placeholder="Con thường xuyên chơi thể thao, vận động không? *"
+                        placeholder="Does your child frequently engage in sports or physical activities? *"
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
@@ -479,7 +480,7 @@ function Form() {
                         {...field}
                         instanceId={id}
                         options={optionsTime}
-                        placeholder="Con thường đi ngủ lúc mấy giờ? *"
+                        placeholder="What time does your child usually go to bed? *"
                         className="w-full"
                         getOptionLabel={(option: Option) => option.label}
                         getOptionValue={(option: Option) => option.value}
@@ -497,7 +498,7 @@ function Form() {
           </div>
           <div className="flex justify-center">
             <div className="flex justify-center items-center header-bg rounded-full px-4 py-3 font-bold">
-              <button disabled={loading} className={`${loading ? 'text-[#ccc]' : 'text-white'} text-xl mr-2`} type="submit">Nhận phác đồ chiều cao</button>
+              <button disabled={loading} className={`${loading ? 'text-[#ccc]' : 'text-white'} text-xl mr-2`} type="submit">Retrieve Height Growth Plan</button>
               {loading && <LoadingIcon size="small" />}
             </div>
           </div>

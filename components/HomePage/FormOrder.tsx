@@ -97,7 +97,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
     <section className="mb-8 bg-[bg-[#69dbe1]">
       <div className="px-4 py-8 max-w-6xl m-auto bg-[url('/dki3.webp')] md:bg-[length:100%_100%]  bg-center rounded-[50px]">
         <div className="mb-8">
-          <h2 className="text-[#002A9E] text-4xl uppercase text-center font-bold">Đăng ký mua hàng</h2>
+          <h2 className="text-[#002A9E] text-4xl uppercase text-center font-bold">PLACE YOUR ORDER NOW</h2>
         </div>
         <div className="flex">
           <div className="w-full px-4">
@@ -106,7 +106,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                 <div className="md:w-1/2">
                   <input
                     className="w-full p-4 rounded-full outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
-                    placeholder='Họ và tên*'
+                    placeholder='Full Name*'
                     {...register('fullName')}
                   />
                   {errors.fullName && <span className="text-[red] text-xs p-2">{errors.fullName.message}</span>}
@@ -114,7 +114,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                 <div className="md:w-1/2">
                   <input
                     className="w-full p-4 rounded-full outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
-                    placeholder='Số điện thoại*'
+                    placeholder='Phone Number*'
                     {...register('phoneNumber')}
                   />
                   {errors.phoneNumber && <span className="text-[red] text-xs p-2">{errors.phoneNumber.message}</span>}
@@ -124,7 +124,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                 <div className="md:w-1/2">
                   <input
                     className="w-full p-4 rounded-full outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
-                    placeholder='Sản phẩm đăng ký mua*'
+                    placeholder='Product to Order*'
                     {...register('productName')}
                   />
                   {errors.productName && <span className="text-[red] text-xs p-2">{errors.productName.message}</span>}
@@ -133,7 +133,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                   <input
                     type='number'
                     className="w-full p-4 rounded-full outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
-                    placeholder='Số lượng'
+                    placeholder='Quantity'
                     {...register('quantity')}
                   />
                   {errors.quantity && <span className="text-[red] text-xs p-2">{errors.quantity.message}</span>}
@@ -150,7 +150,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                           {...field}
                           options={optionProvinces}
                           instanceId={id}
-                          placeholder="Tỉnh/Thành phố*"
+                          placeholder="Province / City*"
                           className="w-full"
                           getOptionLabel={(option: Option) => option.label}
                           getOptionValue={(option: Option) => option.value}
@@ -181,7 +181,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                           ref={selectDistrictRef}
                           options={optionsDistricts}
                           instanceId={id}
-                          placeholder="Quận/Huyện*"
+                          placeholder="District*"
                           className="w-full"
                           getOptionLabel={(option: Option) => option.label}
                           getOptionValue={(option: Option) => option.value}
@@ -213,7 +213,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                           ref={selectWardRef}
                           options={optionsWards}
                           instanceId={id}
-                          placeholder="Phường/Xã*"
+                          placeholder="Ward / Commune*"
                           className="w-full"
                           getOptionLabel={(option: Option) => option.label}
                           getOptionValue={(option: Option) => option.value}
@@ -230,7 +230,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
                   </div>
                   <div className="md:w-1/2">
                     <input
-                      placeholder="Địa chỉ (Số nhà, tên đường)*"
+                      placeholder="Address (House number, street name)*"
                       className="w-full rounded-full px-4 py-3 outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold"
                       {...register("address", { required: true })}
                     />
@@ -240,13 +240,13 @@ function FormOrder(props: { isProductTest?: boolean }) {
               </div>
               <div className="flex items-center text-white italic">
                 <input id="checkbox" type="checkbox" {...register('term')} className="w-5 h-5 rounded-full outline-none placeholder-[#002A9E] placeholder:italic placeholder:font-semibold cursor-pointer border-none" />
-                <label htmlFor="checkbox" className="text-[#002A9E] ml-2">Bố mẹ đã đọc và đồng ý <strong>Điều khoản đăng ký</strong></label>
+                <label htmlFor="checkbox" className="text-[#002A9E] ml-2">By proceeding, you confirm that you have read and agreed to our Terms and Conditions.</label>
                 {errors.term && <span className="text-[red] text-xs p-2">{errors.term.message}</span>}
               </div>
-              <p className="text-[#002A9E] italic">Hãy liên hệ chuyên gia dinh dưỡng theo số <strong>028 555 555 555</strong> để được tư vấn thêm</p>
+              <p className="text-[#002A9E] italic">Need Help? Call our Nutrition Experts at <strong>028 555 555 555</strong> for personalized advice and support!</p>
               <div className="flex justify-center">
                 <div className="flex justify-center items-center bg-[#002A9E] rounded-full px-16 py-4">
-                  <button type='submit' className="text-white italic uppercase hover:opacity-85 duration-300 mr-2">Xác nhận</button>
+                  <button type='submit' className="text-white italic uppercase hover:opacity-85 duration-300 mr-2">CONFIRM YOUR ORDER</button>
                   {loading && <LoadingIcon size="small" />}
                 </div>
               </div>
