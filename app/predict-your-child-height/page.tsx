@@ -3,10 +3,10 @@ import Form from './Form';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://wowtop.com.vn'),
-  title: 'Phác đồ dự đoán chiều cao tương lai',
-  description: '',
-  keywords: 'Oz Farm Wowtop',
+  metadataBase: new URL('https://wowtop.co.nz'),
+  title: 'Predict your child height',
+  description: 'Predict your child height',
+  keywords: 'Wowtop',
   robots: {
     follow: true,
     index: true,
@@ -14,9 +14,17 @@ export const metadata: Metadata = {
   openGraph: {
     locale: 'vi_VN',
     title: 'Wowtop',
-    url: 'https://wowtop.com.vn/du-doan-chieu-cao',
+    url: 'https://wowtop.co.nz/predict-your-child-height',
     siteName: 'Wowtop',
-    type: 'website'
+    type: 'website',
+    images: [
+      {
+        url: 'https://wowtop.co.nz/logo.png',
+        width: 380,
+        height: 210,
+        alt: 'Wowtop thumbnail',
+      },
+    ],
   }
 }
 function DuDoanChieuCao() {

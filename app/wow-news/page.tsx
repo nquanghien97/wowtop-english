@@ -9,10 +9,10 @@ import Link from 'next/link';
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://wowtop.vn'),
-  title: 'Tin tức',
+  metadataBase: new URL('https://wowtop.co.nz'),
+  title: 'Wow news',
   description: '',
-  keywords: 'Oz Farm Wowtop',
+  keywords: 'Wowtop',
   robots: {
     follow: true,
     index: true,
@@ -20,20 +20,28 @@ export const metadata: Metadata = {
   openGraph: {
     locale: 'vi_VN',
     title: 'Wowtop',
-    url: 'https://wowtop.vn/tin-tuc',
+    url: 'https://wowtop.co.nz/wow-news',
     siteName: 'wowtop',
-    type: 'website'
+    type: 'website',
+    images: [
+      {
+        url: 'https://wowtop.co.nz/logo.png',
+        width: 380,
+        height: 210,
+        alt: 'Wowtop thumbnail',
+      },
+    ],
   }
 }
 
 async function News() {
   const { data } = await getNews({ page: 1, page_size: 9 }) as { data: NewsEntity[] }
   return (
-    <div className="my-8">
+    <div className="mb-8 mt-16">
       <div className="max-w-6xl m-auto">
         <div className="md:w-2/3 max-md:px-4">
           <div className="my-4">
-            <h2 className="text-[#2c5d6c] font-semibold text-3xl">Tin tức</h2>
+            <h2 className="text-[#2c5d6c] font-semibold text-3xl">News</h2>
           </div>
           <div className="mt-4">
             {data?.map(item => (

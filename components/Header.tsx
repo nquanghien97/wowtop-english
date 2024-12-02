@@ -74,9 +74,9 @@ function Header() {
                 )
                 )}
               </ul>
-              <div className="cursor-pointer">
+              {/* <div className="cursor-pointer">
                 <Link href="/sign-up-for-free-trial" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Sign Up for Free Trial</Link>
-              </div>
+              </div> */}
             </div>
             <div className="flex items-center mr-8 lg:hidden">
               <div className="cursor-pointer p-1 hover:bg-[#e0e0e0] rounded-full duration-300" onClick={() => setIsOpenSidebar(true)}>
@@ -119,9 +119,9 @@ function Header() {
                 </li>
               ))}
             </ul>
-            <div className="cursor-pointer flex justify-center">
+            {/* <div className="cursor-pointer flex justify-center">
                 <Link href="/sign-up-for-free-trial" className="dk-dung-thu font-bold hover:opacity-80 duration-300">Sign Up for Free Trial</Link>
-              </div>
+              </div> */}
           </div>
         </AppSidebar>
         {/* <div className="lg:h-[80px] h-[60px]" /> */}

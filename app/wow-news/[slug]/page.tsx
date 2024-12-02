@@ -9,10 +9,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const { data } = await getNewsBySlug(params.slug) as unknown as { data: NewsEntity };
 
   return {
-    metadataBase: new URL('https://wowtop.com.vn'),
-    title: data.title || 'Tin tức',
+    metadataBase: new URL('https://wowtop.co.nz'),
+    title: data.title || 'Wow news',
     description: data.title || 'Wowtop',
-    keywords: 'Oz Farm Wowtop',
+    keywords: 'Wowtop',
     robots: {
       follow: true,
       index: true,
@@ -20,9 +20,17 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       locale: 'vi_VN',
       title: data.title || 'Wowtop',
-      url: `https://wowtop.com.vn/tin-tuc/${params.slug}`,
+      url: `https://wowtop.co.nz/wow-news/${params.slug}`,
       siteName: 'Wowtop',
       type: 'article',
+      images: [
+        {
+          url: 'https://wowtop.co.nz/logo.png',
+          width: 380,
+          height: 210,
+          alt: 'Wowtop thumbnail',
+        },
+      ],
     },
   };
 }
