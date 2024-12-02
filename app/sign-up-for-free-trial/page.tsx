@@ -10,7 +10,7 @@ import FormOrder from './FormOrder'
 function page() {
   return (
     <main>
-      <Banner />
+      {/* <Banner />
       <section className="mb-8">
         <div className="max-w-5xl m-auto px-4">
           <h2 className="bg-text-1 text-center text-[5vw] md:text-4xl uppercase font-bold py-1">Nhận xuất quà tặng</h2>
@@ -65,7 +65,6 @@ function page() {
                 </div>
               </div>
             </div>
-            {/* <Image src="/PT.webp" alt="PT" width={151} height={145} className="absolute bottom-[-30px] right-0" /> */}
           </div>
           <p className="bg-text-blue text-[calc(1.25rem+1.5vw)] md:text-5xl py-4 font-bold text-center uppercase">Tổng giá trị lên đến 1,3 tỷ VNĐ</p>
           <div className="dkdt md:w-1/2 m-auto">
@@ -319,18 +318,6 @@ function page() {
           </div>
         </div>
       </section>
-      {/* <section className="mb-8">
-        <div className="max-w-3xl m-auto">
-          <div className="bg-[url('/asset_24.png')] bg-[length:100%_100%] min-h-[120px] flex items-center justify-center mb-4">
-            <span className="uppercase font-bold bg-text-blue text-[4vw] md:text-3xl py-2 mt-2">Điều khoản tham gia chương trình</span>
-          </div>
-          <ul className="text-[#84571B] mx-2">
-            <li className="mb-1">* Bố mẹ khi tham gia chương trình đăng ký dùng thử đồng ý với Thể lệ và Điều khoản chương trình</li>
-            <li className="mb-1">* Đồng ý cho Nhãn hàng sử dụng video, hình ảnh cho mục đích truyền thông sản phẩm</li>
-            <li className="mb-1">* Mọi quyết định cuối cùng thuộc về ban tổ chức</li>
-          </ul>
-        </div>
-      </section> */}
       <section className="mb-8">
         <div className="max-w-4xl m-auto">
           <div className="bg-[url('/asset_24.png')] bg-[length:100%_100%] min-h-[120px] flex items-center justify-center mb-4">
@@ -360,7 +347,8 @@ function page() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
+      <p className="py-4 text-center uppercase font-bold text-2xl">Not found</p>
     </main>
   )
 }
