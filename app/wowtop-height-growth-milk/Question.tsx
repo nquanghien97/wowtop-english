@@ -39,14 +39,14 @@ function Question() {
   return (
     <section className="mb-8">
       <div className="max-w-6xl m-auto ">
-        <h2 className="lg:text-4xl text-2xl uppercase text-[#065691] font-bold text-center mb-4">WOW mom hỏi - WOWTOP trả lời</h2>
+        <h2 className="lg:text-4xl text-2xl uppercase text-[#065691] font-bold text-center mb-4">WOW&apos;mom asks - WOWTOP answers</h2>
         <div className="shadow-xl border-2 border-white rounded-xl">
           <div className="flex bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 rounded-t-xl">
             <div className="w-1/2 py-2">
-              <p className="text-white text-2xl text-center font-semibold">Câu hỏi</p>
+              <p className="text-white text-2xl text-center font-semibold">Question</p>
             </div>
             <div className="w-1/2 py-2">
-              <p className="text-white text-2xl text-center font-semibold">Câu trả lời</p>
+              <p className="text-white text-2xl text-center font-semibold">Answer</p>
             </div>
           </div>
           <div className="flex my-2">

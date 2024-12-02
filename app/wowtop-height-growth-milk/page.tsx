@@ -546,16 +546,16 @@ function Product() {
               <span>at the osteoblast level</span>
             </div>
             <div className="uppercase absolute top-[25%] left-[10%] text-2xl md:text-[48px] font-bold py-4">
-              <span className="text-[#002A9E]">CBP ≈ 1/50 tỷ Nano</span>
+              <span className="text-[#002A9E]">CBP ≈ 1/50 billionth Nano</span>
             </div>
-            <div className="uppercase absolute top-[44%] right-[16%] md:text-2xl font-semibold">
-              <span className="bg-text"><strong>10 lít sữa non của bò</strong></span>
+            <div className="uppercase absolute top-[42%] right-[14%] md:text-xl font-semibold max-w-1/2">
+              <span className="bg-text">10 liters of bovine colostrum</span>
               <br />
-              <span className="bg-text">tiết ra trong 24h đầu</span>
+              <span className="bg-text">produced in the first 24 hours</span>
               <br />
-              <span className="bg-text">chiết xuất ra được</span>
+              <span className="bg-text">can be processed <br />to extract approximately</span>
               <br />
-              <p className="md:text-[48px] text-4xl font-bold text-center mt-4 py-2 text-[#002A9E]">4g CBP</p>
+              <p className="md:text-[40px] text-4xl font-bold text-center mt-8 py-2 text-[#002A9E]">4 grams CBP</p>
             </div>
           </div>
           <div className="absolute bottom-[-20%] right-0 rotate-[-90deg] max-lg:hidden">
@@ -566,10 +566,10 @@ function Product() {
       <section className="">
         <div className="max-w-4xl m-auto px-4">
           <div className="mb-8">
-            <p className="text-[#84571B] font-bold text-2xl md:text-5xl mb-2 uppercase">Tác dụng của <span className="text-5xl">CBP</span> với</p>
+            <p className="text-[#84571B] font-bold text-2xl md:text-5xl mb-2 uppercase">The effects of <span className="text-5xl">CBP</span> on</p>
             <div className="relative">
               <Image src="/bgr-tp-2.png" alt="bgr-tp-2" width={640} height={60} />
-              <span className="absolute md:top-4 top-4 md:left-12 left-20 text-[#84571B] font-bold text-2xl md:text-5xl uppercase">Nguyên bào xương</span>
+              <span className="absolute md:top-4 top-4 md:left-12 left-20 text-[#84571B] font-bold text-2xl md:text-5xl uppercase">Osteoblasts</span>
             </div>
           </div>
           <div className="flex flex-col gap-8">
@@ -577,43 +577,43 @@ function Product() {
               <Image src="/artboard16.png" alt="a2" width={140} height={184} className="w-20 md:w-[140px]" />
               <div>
                 <div className="flex mb-4">
-                  <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Nguyên bào xương</div>
+                  <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Osteoblasts</div>
                 </div>
-                <p className="text-[#84571B] text-justify">Là những công nhân đặc biệt với nhiệm vụ xây dựng và sửa chữa xương. Trong quá trình tăng chiều cao, nguyên bào xương sẽ làm việc chăm chỉ để tạo ra các phần xương mới, nối dài xương hơn, giống như cách công nhân xây lên những tòa nhà cao tầng.</p>
+                <p className="text-[#84571B] text-justify">Are special workers tasked with building and repairing bones. During the height growth process, osteoblasts work diligently to create new bone parts, lengthening the bones, much like how construction workers build taller buildings.</p>
               </div>
             </div>
             <div className="flex items-center gap-4 md:gap-8">
               <Image src="/artboard14.png" alt="a3" width={140} height={184} className="w-20 md:w-[140px]" />
               <div>
                 <div className="flex mb-4">
-                  <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Cao về lượng</div>
+                  <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Height in terms of quantity</div>
                 </div>
-                <p className="text-justify text-[#84571B]">Nếu chỉ đo xem con cao lên bao nhiêu centimet giống như xây nhà cao tầng mà chỉ quan tâm xem xây được bao nhiêu tầng vậy. Chiều cao về centimet rất quan trọng, nhưng nếu xương không đủ chất lượng, nguyên bào xương thiếu hụt, con sẽ dễ bị loãng xương và các bệnh về xương khác</p>
+                <p className="text-justify text-[#84571B]">Measuring height solely by how many centimeters a child grows is like focusing only on the number of floors in a tall building. While height in centimeters is essential, if the bones lack quality, or if osteoblasts are insufficient, the child may become prone to osteoporosis and other bone-related diseases.</p>
               </div>
             </div>
             <div className="flex items-center gap-4 md:gap-8">
               <Image src="/artboard15.png" alt="a4" width={140} height={184} className="w-20 md:w-[140px]" />
               <div>
                 <div className="flex mb-4">
-                  <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Cao về chất</div>
+                  <div className="uppercase border-b-[1px] border-[#84571B] text-[#002A9E] font-semibold text-2xl md:text-3xl py-2">Height in terms of quality</div>
                 </div>
-                <p className="text-justify text-[#84571B]">Quan tâm tới chất lượng xương (mật độ nguyên bào xương) có đủ hay không cũng giống như việc kết cấu của 1 tòa nhà có vững chắc hay không. Nếu mật độ nguyên bào xương quá ít, chúng sẽ không thể liên kết với nhau tạo thành 1 lưới xương vững chắc, xương sẽ rất dễ tổn thương, giống như tòa nhà cao tầng không đủ chắc chắn, có thể sụp đổ bất kì lúc nào vậy. ngược lại nếu chất lượng xương tốt (đủ số lượng nguyên bào xương) thì con có thể thoải mái vận động vui chơi với khung xương chắc khỏe.</p>
+                <p className="text-justify text-[#84571B]">Focusing on bone quality (osteoblast density) is like ensuring the structural integrity of a building. If osteoblast density is too low, they can’t connect to form a strong bone matrix, leaving bones fragile, similar to an unstable skyscraper that might collapse at any time. Conversely, if bone quality is good (sufficient osteoblasts), children can enjoy active play with a robust skeletal frame.</p>
               </div>
             </div>
           </div>
           <div className="bg-[url('/artboard12.png')] bg-[length:100%_100%] p-8 md:px-[100px] rounded-2xl">
-            <p className="font-bold text-center py-8 text-[#002A9E]">Tại sao nói CBP là bữa tiệc thịnh soạn dành cho nguyên bào xương Khi hình thành nguyên bào xương, cần tiêu tổn rất nhiều dinh dưỡng và axit amin. CBP cung cấp dồi dào các dưỡng chất này, cho nguyên bào xương &quot;ăn ngon&quot;, &quot;ăn no&quot;, từ đó nó sẽ sinh ra 1 mạng lưới xương vững chắc</p>
+            <p className="font-bold text-center py-8 text-[#002A9E]">Why is CBP considered a grand feast for osteoblasts? Forming osteoblasts requires a significant amount of nutrients and amino acids. CBP provides an abundant supply of these essential nutrients, allowing osteoblasts to &quot;eat well&quot; and &quot;feel satisfied.&quot; This nourishment enables them to produce a robust bone matrix, resulting in a strong skeletal system.</p>
           </div>
         </div>
       </section>
       <section className="">
         <div className="max-w-4xl m-auto px-4">
           <div className="flex justify-center flex-col items-center mb-8">
-            <h2 className="uppercase bg-text pt-4 text-6xl font-bold mb-8">3 bước</h2>
+            <h2 className="uppercase bg-text pt-4 text-6xl font-bold mb-8">3 Steps</h2>
             <div className="bg-[url('/artboard_23.png')] bg-[length:100%_100%] w-full h-[72px]">
               <div className="flex justify-center flex-col items-center text-xl md:text-3xl uppercase bg-text-blue font-bold relative top-[-20px]">
-                <p className="py-1">Tăng chiều cao</p>
-                <p className="py-1">Tại nguyên bào xương</p>
+                <p className="py-1">to Increase Height</p>
+                <p className="py-1">through Osteoblasts</p>
               </div>
             </div>
           </div>
@@ -621,15 +621,15 @@ function Product() {
             <div className="md:w-1/2">
               <div className="mb-4 pb-2 border-b-[1px] border-[#edb000] flex items-center">
                 <span className="text-[#002A9E] italic text-5xl mr-4">1</span>
-                <span className="text-[#84571B]">Tạo ra chất nền của khung xương <strong>giúp xương dài ra</strong></span>
+                <span className="text-[#84571B]">Create the matrix of the skeletal framework to <strong>allow bones to lengthen</strong>.</span>
               </div>
               <div className="mb-4 pb-2 border-b-[1px] border-[#edb000] flex items-center">
                 <span className="text-[#002A9E] italic text-5xl mr-4">2</span>
-                <span className="text-[#84571B]">Phát sóng siêu tần thu hút <strong>canxi và 23 dưỡng chất</strong> cần thiết</span>
+                <span className="text-[#84571B]">Emit ultra-frequency signals to attract <strong>calcium and 23 essential</strong> nutrients.</span>
               </div>
               <div className="mb-4 pb-2 border-b-[1px] border-[#edb000] flex items-center">
                 <span className="text-[#002A9E] italic text-5xl mr-4">3</span>
-                <span className="text-[#84571B]">Khoá các dưỡng chất cần thiết cho <strong>tăng trưởng</strong> và <strong>giúp xương chắc khoẻ</strong></span>
+                <span className="text-[#84571B]">Lock in these vital nutrients to <strong>promote growth</strong> and <strong>strengthen bones</strong>.</span>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
@@ -641,7 +641,7 @@ function Product() {
       <section className="bg-[url('/artboard17.png')] bg-[length:100%_100%] h-[800px] max-w-4xl m-auto mb-8">
         <div className="flex justify-end relative max-md:flex-col">
           <p className="text-[#002A9E] font-black text-8xl">OPO</p>
-          <p className="bg-[url('/bgr-tp-2.png')] bg-[length:100%_100%] text-[#84571B] text-6xl font-bold px-16 py-4">HỮU CƠ</p>
+          <p className="bg-[url('/bgr-tp-2.png')] bg-[length:100%_100%] text-[#84571B] text-6xl font-bold px-16 py-4">Organic</p>
         </div>
         <div className="flex justify-end">
           <p className="w-2/3 text-xl text-[#002A9E]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam harum officia cupiditate doloremque fugit assumenda, sint necessitatibus reprehenderit.</p>
@@ -652,11 +652,11 @@ function Product() {
         <div className="max-w-6xl m-auto px-4">
           <div className="flex justify-center py-4">
             <div className="bg-text2 flex px-12 py-4 text-4xl rounded-full">
-              <h3 className="text-[#84571B] font-bold">Đăng kí dùng thử</h3>
+              <h3 className="text-[#84571B] font-bold">Sign up for a trial</h3>
             </div>
           </div>
           <div className="mb-8">
-            <h2 className="text-xl md:text-5xl text-[#002A9E] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
+            <h2 className="text-xl md:text-5xl text-[#002A9E] uppercase text-center !leading-tight">The milk source from <strong>the happiest cows in the world</strong></h2>
           </div>
           <div className="flex flex-col">
             <div className="flex justify-between w-full mb-8">
@@ -695,15 +695,15 @@ function Product() {
                 <div className="flex flex-col items-center relative z-20 p-8">
                   <div className="flex justify-center items-center gap-2">
                     <Image src="/chung-nhan-1.png" alt='chung-nhan-1' width={276} height={276} className="w-1/6" />
-                    <p className="text-[#002A9E] font-bold text-xl">Non-GMO: Chứng nhận nguồn nguyên liệu không biến đổi Gen</p>
+                    <p className="text-[#002A9E] font-bold text-xl">Non-GMO: Certification for non-genetically modified ingredients</p>
                   </div>
                   <div className="flex justify-center items-center gap-2">
                     <Image src="/chung-nhan-2.png" alt='chung-nhan-2' width={276} height={276} className="w-1/6" />
-                    <p className="text-[#002A9E] font-bold text-xl">GRASS FED: Chứng nhận 100% Bò ăn cỏ tự nhiên</p>
+                    <p className="text-[#002A9E] font-bold text-xl">GRASS FED: Certification that 100% of cows are fed natural grass</p>
                   </div>
                   <div className="flex justify-center items-center gap-2">
                     <Image src="/chung-nhan-3.png" alt='chung-nhan-3' width={276} height={276} className="w-1/6" />
-                    <p className="text-[#002A9E] font-bold text-xl">NATURAL INGREDIENTS: Sử dụng nguồn nguyên liệu từ thiên nhiên</p>
+                    <p className="text-[#002A9E] font-bold text-xl">NATURAL INGREDIENTS: Using ingredients sourced from nature</p>
                   </div>
                 </div>
               </div>
@@ -716,7 +716,7 @@ function Product() {
       </section>
       <section className="bg-[url('/bg-co-m.png')] bg-center bg-[length:100%_100%] relative lg:hidden py-8 z-[30]">
         <div className="mb-8">
-          <h2 className="text-[5vw] text-[#002A9E] uppercase text-center !leading-tight">Nguồn sữa từ những chú bò <br /><span><strong>hạnh phúc nhất thế giới</strong></span></h2>
+          <h2 className="text-[5vw] text-[#002A9E] uppercase text-center !leading-tight">The milk source from <strong>the happiest cows in the world</strong></h2>
         </div>
         <div className="flex justify-center w-full flex-col">
           <div className="mx-auto w-2/3">
@@ -749,19 +749,19 @@ function Product() {
         <Image src="/nha-may.jpeg" width={2400} height={1800} alt='nhà máy' className="absolute inset-0 h-full w-full" />
         <div className="px-4 relative z-10">
           <div className="bg-[url('/asset_10.png')] bg-[length:100%_100%] text-center py-4">
-            <h2 className="uppercase md:text-4xl text-[#002A9E] font-bold pb-1">Nhà máy sản xuất WOWTOP tại NewZealand</h2>
-            <p className="md:text-4xl text-[#002A9E] uppercase">Dẫn đầu về công nghệ sản xuất sữa</p>
+            <h2 className="uppercase md:text-4xl text-[#002A9E] font-bold pb-1">Wowtop manufacturing plant in New Zealand</h2>
+            <p className="md:text-4xl text-[#002A9E] uppercase">Leads in dairy production technology</p>
           </div>
         </div>
       </section>
       <section className="py-8 mt-[-120px]">
         <div className="max-w-4xl m-auto px-4 relative">
           <div className="flex absolute top-[-24%] md:top-[-40%] left-[50%] transform -translate-x-1/2">
-            <h2 className="text-center text-[calc(1rem+0.9vw)] md:text-4xl mb-4 text-white uppercase font-bold bg-[url('/gfh.png')] px-16 py-12 bg-[length:100%_100%]">Thành phần</h2>
+            <h2 className="text-center text-[calc(1rem+0.9vw)] md:text-4xl mb-4 text-white uppercase font-bold bg-[url('/gfh.png')] px-16 py-12 bg-[length:100%_100%]">Ingredients</h2>
           </div>
           <div className="bg-white border border-[yellow] shadow-md rounded-2xl">
             <p className="p-8 pt-12 text-center text-[#065691] font-semibold">
-              Sữa bột [sữa tách béo, bột whey khử khoáng (từ sữa), lactose (từ sữa), đạm whey cô đặc (từ sữa)]. Sản phẩm chứa Calci 1475 mg/100g, Đạm Sữa non chuẩn hóa (CBP) 125mg/100g, Casein Phosphopeptide (CPP) 571mg/100g, Bifidobaterium animalis Probiotic DHA từ tảo, ARA, 1,3-Dioleoyl-2-Palmitoyl Triglyceride (OPO), Lactoferrin, Immunoglobulin G (IgG), và hơn 30 loại vitamin khoáng chất và dưỡng chất thiết yếu.
+            Powdered milk [skimmed milk, demineralized whey powder (from milk), lactose (from milk), whey protein concentrate (from milk)]. The product contains 1475 mg/100g of Calcium, 125 mg/100g of standardized colostrum protein (CBP), 571 mg/100g of Casein Phosphopeptides (CPP), Bifidobacterium animalis, Probiotic DHA from algae, ARA, 1,3-Dioleoyl-2-Palmitoyl Triglyceride (OPO), Lactoferrin, Immunoglobulin G (IgG), and over 30 types of essential vitamins, minerals, and nutrients.
             </p>
           </div>
         </div>
@@ -769,16 +769,16 @@ function Product() {
       <section className="mb-8">
         <div className="max-w-6xl m-auto rounded-2xl p-1 shadow-2xl">
           <div className="bg-[#fefaee] rounded-t-2xl">
-            <div className="bg-[#fefaee] text-center bg-text text-[calc(1.5rem+1vw)] py-8 md:text-5xl font-bold rounded-t-2xl uppercase">Thông tin dinh dưỡng</div>
+            <div className="bg-[#fefaee] text-center bg-text text-[calc(1.5rem+1vw)] py-8 md:text-5xl font-bold rounded-t-2xl uppercase">Nutritional Information</div>
           </div>
           <table className="w-full text-center rounded-b-2xl">
             <thead className="block">
               <tr className="bg-[#f4ddb1] w-full block">
-                <th className="text-lg text-[#84571B] p-3 inline-block w-[30%]">Mục</th>
-                <th className="text-lg text-[#84571B] p-3 inline-block w-[10%]">Đơn vị</th>
-                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">TB trên mỗi khẩu phần</th>
-                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">TB trên 100g</th>
-                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">TB trên 100kJ</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-[30%]">Nutritional</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-[10%]">Unit</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">Average per serving</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">average per 100g</th>
+                <th className="text-lg text-[#84571B] p-3 inline-block w-1/5">average per 100kJ</th>
               </tr>
             </thead>
             <tbody className="block w-full h-[400px] overflow-auto">
@@ -798,7 +798,7 @@ function Product() {
       <section className="mb-8">
         <div className="max-w-6xl m-auto">
           <div className="font-semibold text-center py-4 bg-[url('/hdgh.png')] bg-[length:100%_100%] w-full md:w-2/3 m-auto">
-            <p className="text-[calc(1.5rem+1vw)] md:text-4xl font-bold uppercase bg-text">Hướng dẫn sử dụng</p>
+            <p className="text-[calc(1.5rem+1vw)] md:text-4xl font-bold uppercase bg-text">Instructions for use</p>
           </div>
           <div className="max-md:px-4">
             <div className="flex max-md:flex-col">
@@ -815,7 +815,7 @@ function Product() {
                       <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
                     </div>
                   </div>
-                  <p className="flex-1 ml-4 flex items-center">Rửa sạch tay trước khi pha sữa. Vệ sinh và tiệt trùng tất cả dụng cụ bằng cách đun sôi trong 5 phút hoặc sử dụng máy tiệt trùng đã được kiểm duyệt.</p>
+                  <p className="flex-1 ml-4 flex items-center">Wash your hands before preparing the milk. Sanitize all utensils by boiling for 5 minutes or using a certified sterilizer.</p>
                 </li>
                 <li className="flex gap-2">
                   <div className="flex w-[120px] relative">
@@ -826,7 +826,7 @@ function Product() {
                       <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
                     </div>
                   </div>
-                  <p className="flex-1 ml-4 flex items-center">Đun sôi nước sạch và để nguội xuống 45&#8451; trước khi pha sữa.</p>
+                  <p className="flex-1 ml-4 flex items-center">Boil clean water and let it cool to 45°C before preparing the milk.</p>
                 </li>
                 <li className="flex gap-2">
                   <div className="flex w-[120px] relative">
@@ -837,7 +837,7 @@ function Product() {
                       <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
                     </div>
                   </div>
-                  <p className="flex-1 ml-4 flex items-center">Sau khi nước đã nguội, đo lượng nước cần thiết và đổ vào bình sữa đã được tiệt trùng.</p>
+                  <p className="flex-1 ml-4 flex items-center">After the water cools, measure the required amount and pour it into the sterilized bottle.</p>
                 </li>
                 <li className="flex gap-2">
                   <div className="flex w-[120px] relative">
@@ -848,13 +848,13 @@ function Product() {
                       <Image src="/mui_ten.png" alt="mui_ten" width={50} height={60} className="w-full" />
                     </div>
                   </div>
-                  <p className="flex-1 ml-4 flex items-center">Sử dụng muỗng kèm theo. Pha 1 muỗng gạt sữa bột với mỗi 25.7mL nước, theo hướng dẫn pha sữa. Lắc nhanh để sữa tan hoàn toàn. Mỗi bình nên được pha riêng.</p>
+                  <p className="flex-1 ml-4 flex items-center">Use the included spoon. Mix 1 level scoop of milk powder with every 25.7 mL of water. Shake well until fully dissolved. Prepare each bottle separately.</p>
                 </li>
                 <li className="flex gap-2">
                   <div className="flex w-[120px] justify-center">
                     <Image src="/dghd.png" alt="dghd" width={240} height={240} className="w-[80px]" />
                   </div>
-                  <p className="flex-1 ml-4 flex items-center">Kiểm tra nhiệt độ sữa trên cổ tay trước khi cho bé uống. Sử dụng ngay sau khi pha. Loại bỏ sữa thừa không dùng hết.</p>
+                  <p className="flex-1 ml-4 flex items-center">Check the milk temperature on your wrist before feeding. Use immediately after preparation and discard any leftover milk.</p>
                 </li>
               </ul>
             </div>
