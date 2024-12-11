@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://wowtop.co.nz'),
   title: 'Wowtop',
   description: 'WOWTOP vừa bổ sung Canxi, Phospho, D3, K2 làm nguyên liệu cho quá trình tạo xương, vừa chứa thành phần CBP kích thích nguyên bào xương phát triển, nhờ ...',
-  keywords: 'Oz Farm Wowtop',
+  keywords: 'Wowtop',
   robots: {
     follow: true,
     index: true,

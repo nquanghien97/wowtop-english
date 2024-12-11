@@ -31,7 +31,7 @@ async function Successfully({ params }: { params: { code: string } }) {
             <p className="text-2xl py-2">Mã phác đồ: {params.code}</p>
           </div>
           <div className="max-w-2xl m-auto my-2">
-            <p className="text-center">Chúc mừng phụ huynh <strong>{data[0].parentName}</strong> đã hoàn thành thông tin của bé <strong>{data[0].fullName}</strong>, đội ngũ chuyên gia sức khỏe của OZ FARM sẽ lên phác đồ chi tiết để gửi lại bạn.</p>
+            <p className="text-center">Chúc mừng phụ huynh <strong>{data[0].parentName}</strong> đã hoàn thành thông tin của bé <strong>{data[0].fullName}</strong>, đội ngũ chuyên gia sức khỏe của WOWTOP sẽ lên phác đồ chi tiết để gửi lại bạn.</p>
           </div>
           <div className="flex justify-center my-2">
             <p className="px-4 py-2 bg-liner rounded-2xl">Dự kiến chiều cao của con ở độ tuổi 20 là: <strong>{resultCalculator?.predictedHeightAt20}</strong>cm</p>
@@ -81,7 +81,7 @@ async function Successfully({ params }: { params: { code: string } }) {
               <div className="mt-8 flex flex-col md:flex-row gap-10">
                 <div className="md:w-1/2 w-full">
                   <div className="mb-8">
-                    <LazyYouTubeEmbed videoId='6IrJ8Q4Fg6k' />
+                    <LazyYouTubeEmbed videoId='izcwyjUpurI' />
                   </div>
                   <p className="uppercase text-[#135689] font-bold text-center mx-8">Chuyên gia chia sẽ nguyên lý tăng chiều cao từ cấp độ nguyên bào</p>
                 </div>

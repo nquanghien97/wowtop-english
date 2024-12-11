@@ -81,7 +81,7 @@ export default async function Home() {
           </div>
           <div className="mt-4 flex flex-col md:flex-row gap-10">
             <div className="md:w-1/2 w-full">
-              <LazyYouTubeEmbed videoId='y9vlAFDEr7I' />
+              <LazyYouTubeEmbed videoId='izcwyjUpurI' />
             </div>
             <div className="md:w-1/2 w-full">
               <p className="text-[#84571B] text-justify">Bone lengthening occurs through the ossification of growth cartilage into bone tissue, a process primarily driven by osteoblasts. These cells create the bone matrix (the structural framework of bones) while enhancing metabolism and depositing calcium and phosphorus to fill and harden the matrix. This activity results in bone lengthening at both ends.<br /><strong>WOWTOP</strong> not only provides essential nutrients like <strong>Calcium, Phosphorus, Vitamin D3, and K2</strong> as building blocks for bone formation but also contains <strong>CBP</strong>, a unique ingredient that stimulates osteoblast activity. This combination accelerates the ossification process, promoting height growth in both quantity and quality.</p>

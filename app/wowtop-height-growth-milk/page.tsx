@@ -399,10 +399,10 @@ const data = [
 ];
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://wowtop.com.vn'),
-  title: 'Oz Farm Wowtop 800g',
-  description: 'Nếu được chăm sóc tốt, trẻ có thể cao lên đến 8-12cm mỗi năm. OZ FARM WOWTOP chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP ...',
-  keywords: 'Oz Farm Wowtop',
+  metadataBase: new URL('https://wowtop.co.nz'),
+  title: 'Wowtop 800g',
+  description: 'Nếu được chăm sóc tốt, trẻ có thể cao lên đến 8-12cm mỗi năm. WOWTOP chứa hệ dưỡng chất giàu thành phần quý hiếm với hàm lượng cao như CBP ...',
+  keywords: 'Wowtop',
   robots: {
     follow: true,
     index: true,
@@ -410,7 +410,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: 'vi_VN',
     title: 'Wowtop',
-    url: 'https://wowtop.com.vn/san-pham',
+    url: 'https://wowtop.co.nz/wowtop-height-growth-milk',
     siteName: 'Wowtop',
     type: 'website'
   }
