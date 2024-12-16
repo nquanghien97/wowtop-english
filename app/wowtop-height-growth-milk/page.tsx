@@ -891,7 +891,7 @@ function Product() {
         </div>
       </section> */}
       <Question />
-      <Feedback />
+      {/* <Feedback /> */}
       <FormOrder />
       <Experience />
     </main>

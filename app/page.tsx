@@ -264,7 +264,7 @@ export default async function Home() {
         </div>
       </section>
       <div className="mt-[-120px]">
-        <Feedback />
+        {/* <Feedback /> */}
         <FormOrder />
         <Experience />
       </div>
