@@ -21,28 +21,28 @@ interface FormValues extends OrderEntity {
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const schema = yup.object().shape({
-  fullName: yup.string().required('Vui lòng nhập họ tên'),
+  fullName: yup.string().required('Please enter your full name'),
   phoneNumber: yup
     .string()
-    .matches(phoneRegExp, 'Vui lòng nhập số điện thoại hợp lệ')
-    .required('Vui lòng nhập số điện thoại'),
-  productName: yup.string().required('Vui lòng nhập tên sản phẩm'),
+    .matches(phoneRegExp, 'Please enter a valid phone number')
+    .required('Please enter your phone number'),
+  productName: yup.string().required('Please enter the product name'),
   quantity: yup
     .number()
-    .typeError('Vui lòng chọn số lượng')
-    .required('Vui lòng chọn số lượng')
-    .test('quantity', 'Số lượng sản phẩm phải lớn hơn 0', (value: number) => {
+    .typeError('Please select a quantity')
+    .required('Please select a quantity')
+    .test('quantity', 'Quantity must be greater than 0', (value: number) => {
       if (!value) return false;
       return value > 0
     }),
-  province: yup.string().required('Vui lòng chọn tỉnh/thành phố'),
-  district: yup.string().required('Vui lòng chọn quận/huyện'),
-  ward: yup.string().required('Vui lòng chọn phường/xã'),
-  address: yup.string().required('Vui lòng nhập địa chỉ'),
+  province: yup.string().required('Please select a province/city'),
+  district: yup.string().required('Please select a district'),
+  ward: yup.string().required('Please select a ward'),
+  address: yup.string().required('Please enter an address'),
   provinceLabel: yup.string(),
   districtLabel: yup.string(),
   wardLabel: yup.string(),
-  term: yup.bool().oneOf([true], 'Bố mẹ phải đồng ý với điều khoản đăng ký')
+  term: yup.bool().oneOf([true], 'Parents must agree to the registration terms')
 });
 
 interface Option {
@@ -83,7 +83,7 @@ function FormOrder(props: { isProductTest?: boolean }) {
     }
     try {
       await createOrder(submitForm)
-      toast.success('Đăng ký đơn hàng thành công, Chúng tôi sẽ liên hệ quý khách trong thời gian tới')
+      toast.success('Order registration successful. We will contact you shortly!')
     } catch (err) {
       if (err instanceof Error) {
         toast.error(err.message)

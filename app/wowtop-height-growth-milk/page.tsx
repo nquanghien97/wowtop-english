@@ -643,9 +643,9 @@ function Product() {
           <p className="text-[#002A9E] font-black text-8xl">OPO</p>
           <p className="bg-[url('/bgr-tp-2.png')] bg-[length:100%_100%] text-[#84571B] text-6xl font-bold px-16 py-4">Organic</p>
         </div>
-        <div className="flex justify-end">
+        {/* <div className="flex justify-end">
           <p className="w-2/3 text-xl text-[#002A9E]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam harum officia cupiditate doloremque fugit assumenda, sint necessitatibus reprehenderit.</p>
-        </div>
+        </div> */}
       </section>
       <CongThuc />
       <section className="bg-[url('/dong-co.png')] bg-[length:100%_100%] bg-center h-[1062px] relative max-lg:hidden z-[30]">

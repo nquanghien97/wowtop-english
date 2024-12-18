@@ -14,8 +14,8 @@ export default async function Home() {
   return (
     <main>
       {/* <Banner /> */}
-      <section className="bg-[#fafafa]">
-        <div className="px-[10%] m-auto">
+      <section className="relative">
+        <div className="px-[10%] m-auto absolute top-1/2 -translate-y-1/2">
           <div className=" flex justify-between items-center">
             <div className="w-1/2">
               <p className="bg-text-blue uppercase font-bold text-xs md:text-5xl lg:mb-4 py-2 lg:!leading-[64px]">
@@ -25,11 +25,9 @@ export default async function Home() {
                 Learn more
               </Link>
             </div>
-            <div className="w-1/2">
-              <Image src="/banner.png" alt='' width={1000} height={1000} className="w-full" />
-            </div>
           </div>
         </div>
+        <Image src="/bg-banner.png" alt="bg-banner" width={1920} height={1080} className="w-full" />
       </section>
       <CongThuc />
       <section className="mb-20 bg-[url('/pt-bg-yellow.webp')] bg-[length:100%_100%]">
@@ -50,7 +48,7 @@ export default async function Home() {
           <div className="flex flex-col">
             <div className="flex max-md:flex-col gap-10 px-4">
               <div className="md:w-1/2 bg-[url('/bg2f.png')] bg-cover bg-center rounded-2xl px-8 py-5 shadow-2xl">
-                <Image src="/cbp.webp" alt="bg-sua" width={160} height={175} className="m-auto" />
+                <Image src="/cbp.png" alt="bg-sua" width={160} height={175} className="m-auto" />
                 <span className="text-[#135689]">
                   <strong>The CBP</strong> in WOWTOP features an exceptionally small molecular size of <strong>30 kilodaltons (roughly 1/50 billionth the size of a nano particle)</strong>, enabling it to penetrate deeply and effectively stimulate osteoblast activity.
                 </span>
